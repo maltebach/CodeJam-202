@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class PhysicsController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public float shakeForceMultiplier;
+    public Rigidbody2D[] shakingRigidbodies;
+    
+    public void ShakeRigidbodies(Vector3 deviceAcceleration)
     {
-        
+        foreach (var rigidbody in shakingRigidbodies)
+        {
+            rigidbody.AddForce(deviceAcceleration * shakeForceMultiplier, ForceMode2D.Impulse);
+
+
+        }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
 }
