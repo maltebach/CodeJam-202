@@ -103,11 +103,9 @@ public class GameManager : MonoBehaviour
     {
         if (!isLoading)
         {
-
             //Tjekker lige om det er menuen man har tænkt sig at unloade (det må man nemlig ikke)
-            if (SceneManager.GetActiveScene().buildIndex != 1 && SceneManager.sceneCount > 1)
+            if (SceneManager.GetActiveScene().buildIndex != menuScene && SceneManager.sceneCount > 1)
             {
-
                 //Hvis det ikke er menuen, giver vi os i kast med at unloade den nuværende scene. 
                 AsyncOperation unloadScene = SceneManager.UnloadSceneAsync(SceneManager.GetActiveScene().buildIndex);
                 while (!unloadScene.isDone)
@@ -121,11 +119,12 @@ public class GameManager : MonoBehaviour
             //Hvis vi på noget tidspunkt loader den, får vi flere aktive menu-scener. Det er dumt og dårligt. 
             //MEN, hvis det ikke er menuen, så sætter vi gang i coroutinen som additivt loader en ny scene.
             int current = SceneManager.GetActiveScene().buildIndex;
-            if (i != 1 && i != current)
+            if (i != menuScene && i != current)
             {
 
                 StartCoroutine(LoadSceneAsync(i));
             }
+            Debug.Log("Load");
         }
 
     }
