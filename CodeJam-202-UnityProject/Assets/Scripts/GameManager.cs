@@ -35,6 +35,7 @@ public class GameManager : MonoBehaviour
         }
     }
     public void LoadNextScene()
+
     {
         if (!isLoading)
         {
