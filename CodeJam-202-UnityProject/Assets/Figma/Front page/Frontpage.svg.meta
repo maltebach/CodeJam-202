@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8c9d4e57d90847c4996bcf5b4e73909e
+guid: dacbae4f34e4be043bc9a2e60952acb5
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -50,6 +50,6 @@ ScriptedImporter:
         y: 0
         width: 0
         height: 0
-      spriteID: 9832a524be4c19642be55aed0d1ef4f4
+      spriteID: 86c9511b6d0c1ac4895d9772d079efcd
       internalID: 0
     PhysicsOutlines: []
