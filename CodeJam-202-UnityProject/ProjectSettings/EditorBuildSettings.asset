@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/SceneManagerTestScene.unity
     guid: fd0cdef5c62b73c498f7e8617295495b
   - enabled: 1
+    path: Assets/Scenes/Shake the bag shee.unity
+    guid: 3dbc99b0a47880141903c2270b58da19
+  - enabled: 1
     path: Assets/Scenes/EventListeScene.unity
     guid: c368914a0f518f04fad4110337d61ad9
   m_configObjects: {}
