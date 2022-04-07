@@ -81,17 +81,10 @@ public class ShakeDetector : MonoBehaviour
         }
         if (shaking)
         {
-            //Vector3 newPos = new Vector3(0, shakePower * maxMoveSpeed, 0);
-            //newPos.y = transform.position.y;
-            //transform.position = Vector3.SmoothDamp(transform.position, newPos, ref currentVelocity, smoothTime, maxMoveSpeed);
-            //newPos = new Vector3(0, -(shakePower * maxMoveSpeed), 0);
-            //newPos.y = transform.position.y;
-            //transform.position = Vector3.SmoothDamp(transform.position, newPos, ref currentVelocity, smoothTime, maxMoveSpeed);
-            
+
             Handheld.Vibrate();
             Vector3 newPos = new Vector3(0,Input.acceleration.y * shakeWeightPercentile,0);
-            //transform.position = newPos;
-            transform.position = Vector3.Lerp(transform.position, newPos, minShakeInterval);
+            StartCoroutine(LerpPosition(newPos, waitForSeconds));
             Debug.Log(Input.acceleration.y * shakeWeightPercentile);
 
 
@@ -114,6 +107,28 @@ public class ShakeDetector : MonoBehaviour
         transform.position = originalPos;
 
     }
+
+    //Hjælper på at gøre rystebevægelsen mindre hakket ved at lerpe bevægelsen til target postion og tilbage til start positionen
+    IEnumerator LerpPosition(Vector3 targetPosition, float duration)
+    {
+        float time = 0;
+        Vector3 startPosition = transform.position;
+        while (time < duration/2)
+        {
+            transform.position = Vector3.Lerp(startPosition, targetPosition, time / duration);
+            time += Time.deltaTime;
+            yield return null;
+        }
+        transform.position = targetPosition;
+        while (time > duration /2 && time < duration)
+        {
+            transform.position = Vector3.Lerp(targetPosition, startPosition, time / duration);
+            time += Time.deltaTime;
+            yield return null;
+        }
+        transform.position = startPosition;
+    }
+
 
 
 }
