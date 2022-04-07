@@ -160,7 +160,8 @@ MonoBehaviour:
   shakeFinishMin: 8
   shakeFinishMax: 12
   shaker: {fileID: 0}
-  clip: {fileID: 8300000, guid: e0d8e552cfd50496ba1720eaeac4dae8, type: 3}
+  shakeSound: {fileID: 8300000, guid: 544a556d8d0014c53ad93e0d0b67931c, type: 3}
+  finishSound: {fileID: 8300000, guid: e0d8e552cfd50496ba1720eaeac4dae8, type: 3}
   shaking: 0
 --- !u!4 &971205450
 Transform:
