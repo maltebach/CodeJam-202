@@ -33,6 +33,7 @@ public class MoroEventManager : MonoBehaviour
     public List<MoroEvent> moroEvents = new List<MoroEvent>();
 
     [Header("References")]
+    //Currently there is not reason to have multiple eventbuilders, but it could be useful for future use.
     public List<MoroEventBuilder> moroEventBuilders = new List<MoroEventBuilder>();
 
     public GameObject eventPrefab;
@@ -41,6 +42,9 @@ public class MoroEventManager : MonoBehaviour
 
 
     [Header("Layout")]
+    //These numbers determine the size and placement of the event on screen.
+    //xMargin is the horizontal space between the edge of the screen and the event (on both sides), yMargin is the same but vertial.
+    //x- and yOffset adds an offset in pixels to the event on screen.
     public float xMargin = 50;
 
     public float yMargin = 250;
@@ -66,6 +70,7 @@ public class MoroEventManager : MonoBehaviour
     public void BuildEvent(int index)
     {
         //Calculating the middle of the screen to figure out where to place the event after its built
+        //x- and yOffset values are added here to move the spot where the event is placed.
         Vector3 middleOfScreen = new Vector3(Screen.width / 2 + xOffset, Screen.height / 2 + yOffset, 0);
 
         //Instansiate the event prefab and get the MoroEventBuilder script associated with that prefab.
@@ -74,16 +79,18 @@ public class MoroEventManager : MonoBehaviour
         //Check if MoroEventBuilder was found on the prefab.
         if(mrb == null)
         {
+            //Notifies the user in the editor that the prefab is missing the MoroEventBuilder component.
             Debug.LogError("MoroEventBuilder missing from event prefab!");
         }
         else
         {
-            //Calculating width and height of event prefab based on the users screen size and a desired margin.
+            //Calculating width and height of event prefab based on the users screen size and a desired margin. Margin values are doubled as they represent the margin on only one side of the event.
             float width = Screen.width - (xMargin * 2);
             float height = Screen.height - (yMargin * 2);
 
             mrb.BuildEvent(moroEvents[index], width, height, canvas);
         }
+        //Adding the eventBuilder to a list to represent the active event.
         moroEventBuilders.Add(mrb);
     }
 
@@ -103,6 +110,7 @@ public class MoroEventManager : MonoBehaviour
         mrb.DeleteEvent();
     }
 
+    //Logic used to remove any existing events and generating a new one based on a random index from GetRandomEventIndex()
     public void RollEvent()
     {
         if (moroEventBuilders.Count != 0)

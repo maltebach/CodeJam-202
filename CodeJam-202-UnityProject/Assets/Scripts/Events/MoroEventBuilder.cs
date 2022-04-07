@@ -162,6 +162,7 @@ public class MoroEventBuilder : MonoBehaviour
         eventImage.sprite = moroEvent.eventImage;
     }
 
+    //Called by MoroEventManager
     public void DeleteEvent()
     {
         Destroy(this.gameObject);
