@@ -18,6 +18,9 @@ public class ShakeDetector : MonoBehaviour
     public int shakeFinishMin;
     public int shakeFinishMax;
 
+    [SerializeField]
+    private AudioClip clip;
+
     private float sqrShakeDetectionThreshold;
     private float timeSinceLastShake;
     private bool shaking = false;
@@ -70,6 +73,8 @@ public class ShakeDetector : MonoBehaviour
             shakeCount = 0;
             shakeFinish = Random.Range(shakeFinishMin, shakeFinishMax);
 
+            SoundManager.Instance.PlaySound(clip);
+
             //INDSÆT SIGNAL TIL EVENTMANAGER HER
 
 
@@ -85,7 +90,8 @@ public class ShakeDetector : MonoBehaviour
             
             Handheld.Vibrate();
             Vector3 newPos = new Vector3(0,Input.acceleration.y * shakeWeightPercentile,0);
-            transform.position = newPos;
+            //transform.position = newPos;
+            transform.position = Vector3.Lerp(transform.position, newPos, minShakeInterval);
             Debug.Log(Input.acceleration.y * shakeWeightPercentile);
 
 
