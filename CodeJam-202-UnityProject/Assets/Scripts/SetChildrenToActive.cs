@@ -11,9 +11,9 @@ public class SetChildrenToActive : MonoBehaviour
     //Denne funktion bliver kaldt når UI elementerne fra menuen skal skjules, da vi skal til at loade en scene der ikke er menuen
     public void TurnOffUI()
     {
+
         foreach (GameObject child in children)
         {
-
             if (SceneManager.GetActiveScene().buildIndex == desiredBuildIndex)
             {
                 child.SetActive(true);
@@ -22,6 +22,7 @@ public class SetChildrenToActive : MonoBehaviour
             {
                 child.SetActive(false);
                 Debug.Log("Disappear");
+                desiredBuildIndex = 0;
             }
 
         }

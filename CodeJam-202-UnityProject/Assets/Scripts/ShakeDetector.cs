@@ -17,13 +17,14 @@ public class ShakeDetector : MonoBehaviour
     public int shakeFinish;
     public int shakeFinishMin;
     public int shakeFinishMax;
+    public ParticleSystem shaker;
 
     [SerializeField]
     private AudioClip clip;
 
     private float sqrShakeDetectionThreshold;
     private float timeSinceLastShake;
-    private bool shaking = false;
+    public bool shaking = false;
     private int shakeCount;
 
     //private void OnEnable()
@@ -70,13 +71,8 @@ public class ShakeDetector : MonoBehaviour
         else if (shakeCount == shakeFinish)
         {
             Debug.Log("Tillykke kammerat, her er dit event:");
-            shakeCount = 0;
-            shakeFinish = Random.Range(shakeFinishMin, shakeFinishMax);
-
             SoundManager.Instance.PlaySound(clip);
-
-            //INDSÆT SIGNAL TIL EVENTMANAGER HER
-
+            GameManager.Instance.LoadNextScene();
 
         }
         if (shaking)
@@ -86,7 +82,6 @@ public class ShakeDetector : MonoBehaviour
             Vector3 newPos = new Vector3(0,Input.acceleration.y * shakeWeightPercentile,0);
             StartCoroutine(LerpPosition(newPos, waitForSeconds));
             Debug.Log(Input.acceleration.y * shakeWeightPercentile);
-
 
         }
     }
