@@ -69,8 +69,8 @@ public class ShakeDetector : MonoBehaviour
         //Når vi er oppe på den endelige mængde af ryst, resetter vi shakeCount og sætter en ny shakeFinish værdi
         else if (shakeCount == shakeFinish)
         {
-            Vibration.Cancel();
-            Vibration.VibratePeek();
+            //Vibration.Cancel();
+            Vibration.Vibrate(10);
             Debug.Log("Tillykke kammerat, her er dit event:");
             SoundManager.Instance.StopSound();
             SoundManager.Instance.PlaySound(finishSound);
@@ -81,7 +81,7 @@ public class ShakeDetector : MonoBehaviour
         {
             //Når vi er igang med at ryste, vibrerer telefonen og posen på skærmen går op og ned via en lerp
             //Handheld.Vibrate();
-            Vibration.VibratePop();
+            Vibration.Vibrate(1000);
             Vector3 newPos = new Vector3(0,Input.acceleration.y * shakeWeightPercentile,0);
             StartCoroutine(LerpPosition(newPos, waitForSeconds));
             //Debug.Log(Input.acceleration.y * shakeWeightPercentile);
