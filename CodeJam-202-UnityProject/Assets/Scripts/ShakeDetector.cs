@@ -23,22 +23,26 @@ public class ShakeDetector : MonoBehaviour
     private bool shaking = false;
     private int shakeCount;
 
-/*    private void OnEnable()
-    {
-        // All sensors start out disabled so they have to manually be enabled first.
-        InputSystem.EnableDevice(Accelerometer.current);
-    }
+    //private void OnEnable()
+    //{
+    //    // All sensors start out disabled so they have to manually be enabled first.
+    //    InputSystem.EnableDevice(Accelerometer.current);
+    //}
 
-    private void OnDisable()
-    {
-        InputSystem.DisableDevice(Accelerometer.current);
-    }*/
+    //private void OnDisable()
+    //{
+    //    InputSystem.DisableDevice(Accelerometer.current);
+    //}
 
 
 
     // Start is called before the first frame update
     void Start()
     {
+        //if (Accelerometer.current != null)
+        //{
+        //    InputSystem.EnableDevice(Accelerometer.current);
+        //}
 
         shakeFinish = Random.Range(shakeFinishMin, shakeFinishMax);
         sqrShakeDetectionThreshold = Mathf.Pow(shakeDetectionThreshold, 2);
@@ -50,14 +54,13 @@ public class ShakeDetector : MonoBehaviour
         //Læser accelerometerets værdi i dette frame
         //Vector3 acceleration = Accelerometer.current.acceleration.ReadValue();
 
-
         // Hvis vi ryster telefonen og der er gået mere tid end ventetiden OG shakeCount er mindre end den endelige mængde af ryst inden 
         if (shakeCount < shakeFinish && Input.acceleration.sqrMagnitude >= sqrShakeDetectionThreshold
             && Time.unscaledTime >= timeSinceLastShake + minShakeInterval)
         {
             timeSinceLastShake = Time.unscaledTime;
             shakeCount++;
-            Debug.Log("Shake" + Input.acceleration.sqrMagnitude);
+            //Debug.Log("Shake" + Input.acceleration.sqrMagnitude);
             StartCoroutine(ShakeBag());
         }
         //Når vi er oppe på den endelige mængde af ryst, resetter vi shakeCount og sætter en ny shakeFinish værdi
@@ -83,6 +86,7 @@ public class ShakeDetector : MonoBehaviour
             Handheld.Vibrate();
             Vector3 newPos = new Vector3(0,Input.acceleration.y * shakeWeightPercentile,0);
             transform.position = newPos;
+            Debug.Log(Input.acceleration.y * shakeWeightPercentile);
 
 
         }
