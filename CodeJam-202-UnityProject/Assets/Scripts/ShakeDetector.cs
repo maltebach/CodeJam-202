@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using System.IO;
-
-[RequireComponent(typeof(PhysicsController))]
 public class ShakeDetector : MonoBehaviour
 {
     //Based on https://www.youtube.com/watch?v=CPGZZUjTMhU
@@ -81,6 +79,7 @@ public class ShakeDetector : MonoBehaviour
             //newPos = new Vector3(0, -(shakePower * maxMoveSpeed), 0);
             //newPos.y = transform.position.y;
             //transform.position = Vector3.SmoothDamp(transform.position, newPos, ref currentVelocity, smoothTime, maxMoveSpeed);
+            
             Handheld.Vibrate();
             Vector3 newPos = new Vector3(0,Input.acceleration.y * shakeWeightPercentile,0);
             transform.position = newPos;
