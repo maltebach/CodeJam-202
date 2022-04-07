@@ -37,6 +37,7 @@ public class GameManager : MonoBehaviour
     public void LoadNextScene()
 
     {
+        Debug.Log("button clicked");
         if (!isLoading)
         {
 
@@ -45,6 +46,7 @@ public class GameManager : MonoBehaviour
             nextScene = SceneManager.GetActiveScene().buildIndex;
 
             nextScene += 1;
+            Debug.Log("button clicked");
 
             //Hvis den bliver bedt om at loade en scene, som er uden for buildindexet, loader den bare menuen.
             if (nextScene > (SceneManager.sceneCountInBuildSettings - 1))
