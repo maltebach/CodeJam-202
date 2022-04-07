@@ -149,15 +149,15 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 150433286}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 10111.232}
+  m_LocalPosition: {x: 0, y: 0, z: -24.94}
   m_LocalScale: {x: 4.03623, y: 4.0356407, z: 3.9864}
   m_Children: []
-  m_Father: {fileID: 294347644}
+  m_Father: {fileID: 1781285769}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 239, y: 327.61716}
+  m_AnchoredPosition: {x: -5.7487793, y: -6.8367004}
   m_SizeDelta: {x: 360.61, y: 736.85}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &150433288
@@ -230,7 +230,7 @@ RectTransform:
   m_LocalScale: {x: 4.4501, y: 4.172147, z: 4.4501}
   m_Children: []
   m_Father: {fileID: 294347644}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -346,10 +346,9 @@ Transform:
   m_LocalPosition: {x: -244.74875, y: -334.45386, z: -10111.232}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 150433287}
   - {fileID: 289579420}
   m_Father: {fileID: 1781285769}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &294347645
 MonoBehaviour:
@@ -364,9 +363,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   children:
-  - {fileID: 150433286}
   - {fileID: 289579419}
-  desiredBuildIndex: 0
+  desiredBuildIndex: 1
 --- !u!1 &336713405
 GameObject:
   m_ObjectHideFlags: 0
@@ -731,8 +729,8 @@ Canvas:
   m_GameObject: {fileID: 1781285765}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 1117656576}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -754,6 +752,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
+  - {fileID: 150433287}
   - {fileID: 294347644}
   m_Father: {fileID: 0}
   m_RootOrder: 4
