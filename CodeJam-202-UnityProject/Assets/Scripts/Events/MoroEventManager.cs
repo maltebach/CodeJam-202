@@ -22,6 +22,7 @@ public class MoroEvent
     public Date date;
     public string venue;
     public string address;
+    public Sprite eventImage;
 }
 
 public class MoroEventManager : MonoBehaviour

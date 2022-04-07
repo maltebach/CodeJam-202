@@ -30,6 +30,9 @@ public class MoroEventBuilder : MonoBehaviour
 
     public MoroEvent moroEvent;
 
+    public Color32 textColor;
+
+    public Color32 bgColor;
     private void Awake()
     {
         if (rt == null)
@@ -50,9 +53,14 @@ public class MoroEventBuilder : MonoBehaviour
 
         //Set all attributes from given event.
         eventName.text = moroEvent.eventName;
+
         eventDescription.text = moroEvent.eventDescription;
 
         eventPrice.text = moroEvent.price.ToString() + " DKK";
+
+        eventVentue.text = moroEvent.venue;
+
+        eventAddress.text = moroEvent.address;
 
         //Hvis distance i meter er over 1000, konverteres det til kilometer
         if (moroEvent.distance > 1000)
@@ -64,10 +72,6 @@ public class MoroEventBuilder : MonoBehaviour
         {
             eventDistance.text = moroEvent.distance.ToString() + " m";
         }
-
-        eventVentue.text = moroEvent.venue;
-
-        eventAddress.text = moroEvent.address;
 
         //Date formatting, a lot of ugly adding together of strings.
         string yearShort = "NULL";
@@ -84,7 +88,6 @@ public class MoroEventBuilder : MonoBehaviour
             Debug.LogError("Unrecognised year format: " + moroEvent.date.year + " Please use either 2 or 4 characters (ie: 2022 or 22)");
         }
 
-        
         string date = moroEvent.date.day.ToString() + "/" + moroEvent.date.month.ToString() + "/" + yearShort;
         eventDate.text = date;
 
@@ -118,8 +121,10 @@ public class MoroEventBuilder : MonoBehaviour
             Debug.LogError("Unrecognised time format: " + moroEvent.date.endTime + " Please use either 2 or 4 characters (ie: 1430 or 14)");
         }
 
-
         eventTime.text = time1 + " - " + time2;
+
+        //set Image
+        eventImage.sprite = moroEvent.eventImage;
     }
 
     public void DeleteEvent()
