@@ -88,7 +88,26 @@ public class MoroEventBuilder : MonoBehaviour
             Debug.LogError("Unrecognised year format: " + moroEvent.date.year + " Please use either 2 or 4 characters (ie: 2022 or 22)");
         }
 
-        string date = moroEvent.date.day.ToString() + "/" + moroEvent.date.month.ToString() + "/" + yearShort;
+        string dayLong = "";
+        if (moroEvent.date.day.ToString().Length == 1)
+        {
+            dayLong = "0" + moroEvent.date.day.ToString();
+        } 
+        else
+        {
+            dayLong = moroEvent.date.day.ToString();
+        }
+
+        string monthLong = "";
+        if (moroEvent.date.month.ToString().Length == 1)
+        {
+            monthLong = "0" + moroEvent.date.month.ToString();
+        }
+        else
+        {
+            monthLong = moroEvent.date.month.ToString();
+        }
+        string date = dayLong + "/" + monthLong + "/" + yearShort;
         eventDate.text = date;
 
         //Time Formatting, see comment above.
@@ -103,6 +122,14 @@ public class MoroEventBuilder : MonoBehaviour
         {
             time1 = moroEvent.date.startTime.ToString() + ":00";
         } 
+        else if (moroEvent.date.startTime == 0)
+        {
+            time1 = "00:00";
+        }
+        else if (moroEvent.date.startTime.ToString().Length == 3)
+        {
+            time1 = "0" + moroEvent.date.startTime.ToString()[0].ToString() + ":" + moroEvent.date.startTime.ToString()[1].ToString() + moroEvent.date.startTime.ToString()[2].ToString();
+        }
         else
         {
             Debug.LogError("Unrecognised time format: " + moroEvent.date.startTime + " Please use either 2 or 4 characters (ie: 1430 or 14)");
@@ -116,7 +143,15 @@ public class MoroEventBuilder : MonoBehaviour
         {
             time2 = moroEvent.date.endTime.ToString() + ":00";
         }
-        else
+        else if (moroEvent.date.endTime == 0)
+        {
+            time2 = "00:00";
+        }
+        else if (moroEvent.date.endTime.ToString().Length == 3)
+        {
+            time2 = "0" + moroEvent.date.endTime.ToString()[0].ToString() + ":" + moroEvent.date.endTime.ToString()[1].ToString() + moroEvent.date.endTime.ToString()[2].ToString();
+        }
+        else 
         {
             Debug.LogError("Unrecognised time format: " + moroEvent.date.endTime + " Please use either 2 or 4 characters (ie: 1430 or 14)");
         }

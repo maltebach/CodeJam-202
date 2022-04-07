@@ -707,19 +707,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moroEvents:
-  - eventName: TestName
+  - eventName: Way too loud rave
     eventDescription: This is a test description for a moro event \n does it support
       things like this? aosnfoashgoangoia snfoashg oansgikamsgl
-    price: 100
-    distance: 4150
+    price: 75
+    distance: 35
     date:
-      day: 1
-      month: 1
-      year: 1970
-      startTime: 1200
-      endTime: 1630
-    venue: Ur mums house
-    address: lmao 21
+      day: 8
+      month: 4
+      year: 2022
+      startTime: 18
+      endTime: 200
+    venue: Werkstatt
+    address: Refshalevej 171
+    eventImage: {fileID: 21300000, guid: eb27da4c0b281fa44981699cb124dc52, type: 3}
   moroEventBuilders: []
   eventPrefab: {fileID: 7393934312647178075, guid: a48a51b1738d1274186ac5000efdb0cc, type: 3}
   canvas: {fileID: 1931952322}
