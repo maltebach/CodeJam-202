@@ -10,10 +10,6 @@ public class ShakeDetector : MonoBehaviour
     public float minShakeInterval;
     public float waitForSeconds;
     public float shakeWeightPercentile;
-    //public float shakePower;
-    //public Vector3 currentVelocity;
-    //public float maxMoveSpeed = 10;
-    //public float smoothTime = 0.3f;
     public int shakeFinish;
     public int shakeFinishMin;
     public int shakeFinishMax;
@@ -47,9 +43,12 @@ public class ShakeDetector : MonoBehaviour
         //{
         //    InputSystem.EnableDevice(Accelerometer.current);
         //}
-
+        
+        //Sætter mængden af ryst der skal til før den stopper til et tilfældigt tal inden for et bestemt omfang
         shakeFinish = Random.Range(shakeFinishMin, shakeFinishMax);
         sqrShakeDetectionThreshold = Mathf.Pow(shakeDetectionThreshold, 2);
+
+        Vibration.Init();
     }
 
     // Update is called once per frame
@@ -70,6 +69,8 @@ public class ShakeDetector : MonoBehaviour
         //Når vi er oppe på den endelige mængde af ryst, resetter vi shakeCount og sætter en ny shakeFinish værdi
         else if (shakeCount == shakeFinish)
         {
+            //Vibration.Cancel();
+            Vibration.Vibrate(10);
             Debug.Log("Tillykke kammerat, her er dit event:");
             SoundManager.Instance.StopSound();
             SoundManager.Instance.PlaySound(finishSound);
@@ -78,11 +79,12 @@ public class ShakeDetector : MonoBehaviour
         }
         if (shaking)
         {
-
-            Handheld.Vibrate();
+            //Når vi er igang med at ryste, vibrerer telefonen og posen på skærmen går op og ned via en lerp
+            //Handheld.Vibrate();
+            Vibration.Vibrate(1000);
             Vector3 newPos = new Vector3(0,Input.acceleration.y * shakeWeightPercentile,0);
             StartCoroutine(LerpPosition(newPos, waitForSeconds));
-            Debug.Log(Input.acceleration.y * shakeWeightPercentile);
+            //Debug.Log(Input.acceleration.y * shakeWeightPercentile);
 
         }
     }

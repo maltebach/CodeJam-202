@@ -725,9 +725,9 @@ MonoBehaviour:
   eventPrefab: {fileID: 7393934312647178075, guid: a48a51b1738d1274186ac5000efdb0cc, type: 3}
   canvas: {fileID: 1931952322}
   xMargin: 100
-  yMargin: 400
+  yMargin: 600
   xOffset: 0
-  yOffset: 0
+  yOffset: 150
 --- !u!4 &2021436068
 Transform:
   m_ObjectHideFlags: 0
