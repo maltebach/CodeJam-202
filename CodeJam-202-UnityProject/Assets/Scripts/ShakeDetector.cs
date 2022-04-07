@@ -19,8 +19,8 @@ public class ShakeDetector : MonoBehaviour
     public int shakeFinishMax;
     public ParticleSystem shaker;
 
-    [SerializeField]
-    private AudioClip clip;
+    [SerializeField] private AudioClip shakeSound;
+    [SerializeField] private AudioClip finishSound;
 
     private float sqrShakeDetectionThreshold;
     private float timeSinceLastShake;
@@ -71,7 +71,8 @@ public class ShakeDetector : MonoBehaviour
         else if (shakeCount == shakeFinish)
         {
             Debug.Log("Tillykke kammerat, her er dit event:");
-            SoundManager.Instance.PlaySound(clip);
+            SoundManager.Instance.StopSound();
+            SoundManager.Instance.PlaySound(finishSound);
             GameManager.Instance.LoadNextScene();
 
         }
@@ -95,7 +96,7 @@ public class ShakeDetector : MonoBehaviour
         {
             shaking = true;
         }
-
+        SoundManager.Instance.PlaySound(shakeSound);
         yield return new WaitForSeconds(waitForSeconds);
 
         shaking = false;
