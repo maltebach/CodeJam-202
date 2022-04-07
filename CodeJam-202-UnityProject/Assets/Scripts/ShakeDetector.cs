@@ -71,13 +71,8 @@ public class ShakeDetector : MonoBehaviour
         else if (shakeCount == shakeFinish)
         {
             Debug.Log("Tillykke kammerat, her er dit event:");
-            shakeCount = 0;
-            shakeFinish = Random.Range(shakeFinishMin, shakeFinishMax);
-
             SoundManager.Instance.PlaySound(clip);
-
-            //INDSÆT SIGNAL TIL EVENTMANAGER HER
-
+            GameManager.Instance.LoadNextScene();
 
         }
         if (shaking)
