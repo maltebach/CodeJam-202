@@ -18,8 +18,8 @@ public class ButtonClickTest : MonoBehaviour
     public void ClickToLoadScene()
     {
         Debug.Log("click");
-        setChildrenToActive.TurnOffUI();
         GameManager.Instance.LoadNextScene();
+        setChildrenToActive.TurnOffUI();
     }
 
 }
