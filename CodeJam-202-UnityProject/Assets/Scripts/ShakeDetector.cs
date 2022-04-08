@@ -22,28 +22,32 @@ public class ShakeDetector : MonoBehaviour
     private float timeSinceLastShake;
     public bool shaking = false;
     private int shakeCount;
+    private Vector3 resetPosition;
 
-    //private void OnEnable()
-    //{
-    //    // All sensors start out disabled so they have to manually be enabled first.
-    //    InputSystem.EnableDevice(Accelerometer.current);
-    //}
+    private void OnEnable()
+    {
+        // All sensors start out disabled so they have to manually be enabled first.
+        InputSystem.EnableDevice(Accelerometer.current);
+    }
 
-    //private void OnDisable()
-    //{
-    //    InputSystem.DisableDevice(Accelerometer.current);
-    //}
+    private void OnDisable()
+    {
+        InputSystem.DisableDevice(Accelerometer.current);
+    }
 
 
 
     // Start is called before the first frame update
     void Start()
     {
-        //if (Accelerometer.current != null)
-        //{
-        //    InputSystem.EnableDevice(Accelerometer.current);
-        //}
-        
+        //Bare for at være helt sikker på at accelerometeren er tilsluttet og registreret
+        if (Accelerometer.current != null)
+        {
+            InputSystem.EnableDevice(Accelerometer.current);
+        }
+
+        resetPosition = transform.position;
+
         //Sætter mængden af ryst der skal til før den stopper til et tilfældigt tal inden for et bestemt omfang
         shakeFinish = Random.Range(shakeFinishMin, shakeFinishMax);
         sqrShakeDetectionThreshold = Mathf.Pow(shakeDetectionThreshold, 2);
@@ -55,22 +59,20 @@ public class ShakeDetector : MonoBehaviour
     void Update()
     {
         //Læser accelerometerets værdi i dette frame
-        //Vector3 acceleration = Accelerometer.current.acceleration.ReadValue();
+        Vector3 acceleration = Accelerometer.current.acceleration.ReadValue();
 
         // Hvis vi ryster telefonen og der er gået mere tid end ventetiden OG shakeCount er mindre end den endelige mængde af ryst inden 
-        if (shakeCount < shakeFinish && Input.acceleration.sqrMagnitude >= sqrShakeDetectionThreshold
+        if (shakeCount < shakeFinish && acceleration.sqrMagnitude >= sqrShakeDetectionThreshold
             && Time.unscaledTime >= timeSinceLastShake + minShakeInterval)
         {
             timeSinceLastShake = Time.unscaledTime;
             shakeCount++;
-            //Debug.Log("Shake" + Input.acceleration.sqrMagnitude);
             StartCoroutine(ShakeBag());
         }
         //Når vi er oppe på den endelige mængde af ryst, resetter vi shakeCount og sætter en ny shakeFinish værdi
         else if (shakeCount == shakeFinish)
         {
-            //Vibration.Cancel();
-            Vibration.Vibrate(10);
+            Vibration.Vibrate(1000);
             Debug.Log("Tillykke kammerat, her er dit event:");
             SoundManager.Instance.StopSound();
             SoundManager.Instance.PlaySound(finishSound);
@@ -80,19 +82,23 @@ public class ShakeDetector : MonoBehaviour
         if (shaking)
         {
             //Når vi er igang med at ryste, vibrerer telefonen og posen på skærmen går op og ned via en lerp
-            //Handheld.Vibrate();
-            Vibration.Vibrate(1000);
-            Vector3 newPos = new Vector3(0,Input.acceleration.y * shakeWeightPercentile,0);
+            if (acceleration.y > 10)
+            {
+                Vibration.VibratePop();
+            }
+            else
+            {
+                Vibration.Vibrate(10);
+            }
+            Vector3 newPos = new Vector3(resetPosition.x,acceleration.y * shakeWeightPercentile,resetPosition.y);
             StartCoroutine(LerpPosition(newPos, waitForSeconds));
-            //Debug.Log(Input.acceleration.y * shakeWeightPercentile);
-
         }
     }
 
     //Coroutine der aktiverer shakeren, venter i en lille rums tid og stopper shaker funktionen
     IEnumerator ShakeBag()
     {
-        Vector3 originalPos = transform.position;
+        Vector3 originalPos = resetPosition;
 
         if(shaking == false)
         {
@@ -110,7 +116,7 @@ public class ShakeDetector : MonoBehaviour
     IEnumerator LerpPosition(Vector3 targetPosition, float duration)
     {
         float time = 0;
-        Vector3 startPosition = transform.position;
+        Vector3 startPosition = resetPosition;
         while (time < duration/2)
         {
             transform.position = Vector3.Lerp(startPosition, targetPosition, time / duration);
