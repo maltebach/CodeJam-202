@@ -2,17 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TemporaryScript : MonoBehaviour
+public class TemporaryScript : MonoBehaviour, IDataPersistence
 {
-    // Start is called before the first frame update
-    void Start()
+
+   public int deathCount = 1;
+
+    public void LoadData (GameData data)
     {
-        
+        this.deathCount = data.deathCount;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void SaveData (ref GameData data)
     {
-        
+        data.deathCount = this.deathCount;
     }
 }

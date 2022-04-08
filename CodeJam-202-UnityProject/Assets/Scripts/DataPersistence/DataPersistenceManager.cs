@@ -1,10 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+//using System.Linq giver syntax muligheder for at finde IDataPersistence Objekter
+using System.Linq;
+
+/// <summary>
+/// 
+/// </summary>
 
 public class DataPersistenceManager : MonoBehaviour
 {
     private GameData gameData;
+    private List<IDataPersistence> dataPersistenceObjects;
+
     public static DataPersistenceManager instance { get; private set; }
 
     private void Awake()
@@ -20,6 +28,7 @@ public class DataPersistenceManager : MonoBehaviour
     //Loads the game when started
     private void Start()
     {
+        this.dataPersistenceObjects = FindAllDataPersistenceObjects();
         LoadGame();
     }
 
@@ -30,7 +39,7 @@ public class DataPersistenceManager : MonoBehaviour
 
     public void LoadGame()
     {
-        //TODO - Load any saved data from a file using the data handler
+        // - Load any saved data from a file using the data handler
         //if no data can be loaded, initialize to a new game
         if (this.gameData == null)
         {
@@ -38,19 +47,48 @@ public class DataPersistenceManager : MonoBehaviour
             NewGame();
         }
 
-        // TODO - push the Loaded data to all other scripts that need it
-
+        // - push the Loaded data to all other scripts that need it
+        foreach (IDataPersistence dataPersistenceObj in dataPersistenceObjects)
+        {
+            dataPersistenceObj.LoadData(gameData);
+        }
+        ''
+        Debug.Log("Loaded death count = " + gameData.deathCount);
     }
+
 
     public void SaveGame()
     {
-        // TODO - pass the data to other scripts so they can update it
-        
+        // - pass the data to other scripts so they can update it
+        // (again, we are passing by 'ref' (reference) because we want to modify the value, and not only read it.
+        // if we had passed without 'ref' (passing by value) it would copy the data instead).
+
+        foreach(IDataPersistence dataPersistenceObj in dataPersistenceObjects)
+        {
+             dataPersistenceObj.SaveData(ref gameData);
+        }
+
+        Debug.Log("Saved death count = " + gameData.deathCount);
+
         // TODO - save that data to a file using the data handler
     }
 
     private void OnApplicationQuit()
     {
         SaveGame();
+    }
+
+    /// <summary>
+    /// Because we are using System.Linq, we can find all objects/scripts, which use/implement IDataPersistence in our scene.
+    /// </summary>
+    /// <returns></returns>
+    private List<IDataPersistence> FindAllDataPersistenceObjects()
+    {
+        IEnumerable<IDataPersistence> dataPersistenceObjects = FindObjectsOfType<MonoBehaviour>()
+            .OfType<IDataPersistence>();
+
+        //Returnere/constructer en ny liste med alle objector der implementerer interface.
+        return new List<IDataPersistence>(dataPersistenceObjects);
+
     }
 }
