@@ -315,7 +315,7 @@ GameObject:
   - component: {fileID: 294347645}
   - component: {fileID: 294347646}
   m_Layer: 0
-  m_Name: SetChildrenActive
+  m_Name: SetChildrenToActive
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -365,6 +365,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   click: 0
   UIHider: {fileID: 294347643}
+  buttonSound: {fileID: 8300000, guid: 707a85bcc05ee0142bf95b4e9206eacd, type: 3}
 --- !u!1 &336713405
 GameObject:
   m_ObjectHideFlags: 0
@@ -1030,7 +1031,7 @@ Canvas:
   serializedVersion: 3
   m_RenderMode: 1
   m_Camera: {fileID: 1117656576}
-  m_PlaneDistance: 100
+  m_PlaneDistance: 634.4
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0

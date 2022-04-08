@@ -720,7 +720,7 @@ MonoBehaviour:
       endTime: 200
     venue: Werkstatt
     address: Refshalevej 171
-    eventImage: {fileID: 21300000, guid: eb27da4c0b281fa44981699cb124dc52, type: 3}
+    eventImage: {fileID: 3075375336989598424, guid: 8af647750b1b9ef48b06409947b2bef9, type: 3}
   moroEventBuilders: []
   eventPrefab: {fileID: 7393934312647178075, guid: a48a51b1738d1274186ac5000efdb0cc, type: 3}
   canvas: {fileID: 1931952322}
