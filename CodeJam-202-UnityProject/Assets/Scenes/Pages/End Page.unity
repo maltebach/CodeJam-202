@@ -636,6 +636,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fireworks
       objectReference: {fileID: 0}
+    - target: {fileID: 5320658677814756773, guid: 0f7a1a1616fdc1749a9bb86f03f0a3ce, type: 3}
+      propertyPath: ShapeModule.type
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5320658677814756774, guid: 0f7a1a1616fdc1749a9bb86f03f0a3ce, type: 3}
       propertyPath: m_RootOrder
       value: 4
