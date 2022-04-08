@@ -36,9 +36,9 @@ public class MoroEventManager : MonoBehaviour
     //Currently there is not reason to have multiple eventbuilders, but it could be useful for future use.
     public List<MoroEventBuilder> moroEventBuilders = new List<MoroEventBuilder>();
 
-    public GameObject eventPrefab;
+    public GameObject eventPrefab; //The prefab that is instantiated and populated by the MoroEventBuilder script. Event prefab must include a MoroEventBuilder script.
 
-    public Canvas canvas;
+    public Canvas canvas; //The canvas of the scene, used to set as parent for the event prefab.
 
 
     [Header("Layout")]
@@ -68,8 +68,9 @@ public class MoroEventManager : MonoBehaviour
             Destroy(this);
         }
     }
-
-    //Takes an int as an input to build the specific event at that index in the event list.
+    /// <summary>
+    ///  Takes an int as an input to build the specific event at that index in the event list.
+    /// </summary>
     void BuildEvent(int index)
     {
         activeEventIndex = index;
@@ -98,15 +99,19 @@ public class MoroEventManager : MonoBehaviour
         moroEventBuilders.Add(mrb);
     }
 
-    //Generates a random int between 0 and the amount of events in the event list.
+    /// <summary>
+    /// Generates a random int between 0 and the amount of events in the event list.
+    /// </summary>
     public int GetRandomEventIndex()
     {
         int randomIndex = Random.Range(0, moroEvents.Count);
         Debug.Log("Random Index: " + randomIndex);
         return randomIndex;
     }
-    
-    //Removes an active event prefab
+
+    /// <summary>
+    /// Removes an active event prefab
+    /// </summary>
     public void RemoveEvent(int builderIndex)
     {
         activeEventIndex = -1;
@@ -115,7 +120,9 @@ public class MoroEventManager : MonoBehaviour
         mrb.DeleteEvent();
     }
 
-    //Logic used to remove any existing events and generating a new one based on a random index from GetRandomEventIndex()
+    /// <summary>
+    /// Logic used to remove any existing events and generating a new one based on a random index from GetRandomEventIndex()
+    /// </summary>
     public void RollEvent()
     {
         if (moroEventBuilders.Count != 0)
@@ -126,6 +133,9 @@ public class MoroEventManager : MonoBehaviour
 
     }
 
+    /// <summary>
+    /// This functions returns the event index of the event active on the screen right now. If no event is active it will return -1.
+    /// </summary>
     public int GetActiveEventIndex()
     {
         if(activeEventIndex >= 0)
@@ -136,6 +146,9 @@ public class MoroEventManager : MonoBehaviour
         return -1;
     }
 
+    ///<summary>
+    ///A function to build events that ensures that no other events are active. This one builds from a specific index.
+    ///</summary>
     public void BuildSpecificEvent(int index)
     {
         if (moroEventBuilders.Count != 0)
