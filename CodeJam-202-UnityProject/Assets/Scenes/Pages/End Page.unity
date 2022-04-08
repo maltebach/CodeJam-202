@@ -123,6 +123,83 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &25653854
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 25653856}
+  - component: {fileID: 25653855}
+  m_Layer: 0
+  m_Name: EventManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &25653855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 25653854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50773eaae363bd44e972fe927906e6c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moroEvents:
+  - eventName: 'DM I Freestyle Rap 2022 ***Finalen*** '
+    eventDescription: 
+    price: 230
+    distance: 0
+    date:
+      day: 16
+      month: 10
+      year: 22
+      startTime: 19
+      endTime: 200
+    venue: Pumpehuset
+    address: "Studiestr\xE6de 52, K\xF8benhavn V "
+    eventImage: {fileID: 0}
+  - eventName: 'DRONNING LOUISES BRO LOPPEMARKED '
+    eventDescription: 
+    price: 0
+    distance: 0
+    date:
+      day: 26
+      month: 6
+      year: 22
+      startTime: 10
+      endTime: 15
+    venue: 
+    address: Dronning Louises Bro
+    eventImage: {fileID: 0}
+  moroEventBuilders: []
+  eventPrefab: {fileID: 0}
+  canvas: {fileID: 0}
+  xMargin: 50
+  yMargin: 250
+  xOffset: 0
+  yOffset: 0
+--- !u!4 &25653856
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 25653854}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3002.0002, y: 1766.5403, z: 3081.4016}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &239033543 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8742538545776668643, guid: dacbae4f34e4be043bc9a2e60952acb5, type: 3}
