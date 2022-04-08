@@ -20,8 +20,13 @@ public class SoundManager : MonoBehaviour{
 
     public void PlaySound(AudioClip clip){
         _effectsSource.PlayOneShot(clip);
+        Debug.Log("Playing");
     }
 
+    public void StopSound()
+    {
+        _effectsSource.Stop();
+    }
 
     public void ChangeMasterVolume(float value){
         AudioListener.volume = value;
