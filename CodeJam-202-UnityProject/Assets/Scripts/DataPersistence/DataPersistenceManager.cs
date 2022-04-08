@@ -52,7 +52,6 @@ public class DataPersistenceManager : MonoBehaviour
         {
             dataPersistenceObj.LoadData(gameData);
         }
-        ''
         Debug.Log("Loaded death count = " + gameData.deathCount);
     }
 
