@@ -53,6 +53,9 @@ public class MoroEventManager : MonoBehaviour
 
     public float yOffset = 0;
 
+
+    int activeEventIndex = -1;
+
     //singleton logic; makes sure only one MoroEventManager exists.
     private void Awake()
     {
@@ -67,8 +70,9 @@ public class MoroEventManager : MonoBehaviour
     }
 
     //Takes an int as an input to build the specific event at that index in the event list.
-    public void BuildEvent(int index)
+    void BuildEvent(int index)
     {
+        activeEventIndex = index;
         //Calculating the middle of the screen to figure out where to place the event after its built
         //x- and yOffset values are added here to move the spot where the event is placed.
         Vector3 middleOfScreen = new Vector3(Screen.width / 2 + xOffset, Screen.height / 2 + yOffset, 0);
@@ -105,6 +109,7 @@ public class MoroEventManager : MonoBehaviour
     //Removes an active event prefab
     public void RemoveEvent(int builderIndex)
     {
+        activeEventIndex = -1;
         MoroEventBuilder mrb = moroEventBuilders[builderIndex];
         moroEventBuilders.RemoveAt(builderIndex);
         mrb.DeleteEvent();
@@ -119,6 +124,25 @@ public class MoroEventManager : MonoBehaviour
         }
         BuildEvent(GetRandomEventIndex());
 
+    }
+
+    public int GetActiveEventIndex()
+    {
+        if(activeEventIndex >= 0)
+        {
+            return activeEventIndex;
+        }
+        Debug.LogError("No events are currently active!");
+        return -1;
+    }
+
+    public void BuildSpecificEvent(int index)
+    {
+        if (moroEventBuilders.Count != 0)
+        {
+            RemoveEvent(0);
+        }
+        BuildEvent(index);
     }
 }
  
