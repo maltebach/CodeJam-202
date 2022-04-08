@@ -5,10 +5,11 @@ using UnityEngine;
 public class ButtonClickTest : MonoBehaviour
 {
     public bool click;
-
     public GameObject UIHider;
+    public AudioClip buttonSound;
 
     private SetChildrenToActive setChildrenToActive;
+
 
     public void Start()
     {
@@ -17,7 +18,7 @@ public class ButtonClickTest : MonoBehaviour
 
     public void ClickToLoadScene()
     {
-        Debug.Log("click");
+        SoundManager.Instance.PlaySound(buttonSound);        
         GameManager.Instance.LoadNextScene();
         setChildrenToActive.TurnOffUI();
     }

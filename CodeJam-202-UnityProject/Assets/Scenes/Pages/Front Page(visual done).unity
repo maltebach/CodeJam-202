@@ -365,6 +365,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   click: 0
   UIHider: {fileID: 294347643}
+  buttonSound: {fileID: 8300000, guid: 707a85bcc05ee0142bf95b4e9206eacd, type: 3}
 --- !u!1 &336713405
 GameObject:
   m_ObjectHideFlags: 0
