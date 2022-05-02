@@ -204,7 +204,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 98044873}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1175048012}
+        m_TargetAssemblyTypeName: RealLikertScale, Assembly-CSharp
+        m_MethodName: SetLikert
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &98044873
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -417,7 +429,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 308296169}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 559111812}
+        m_TargetAssemblyTypeName: RealLikertScale, Assembly-CSharp
+        m_MethodName: SetLikert
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &308296169
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -507,9 +531,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 340042491}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3688842d12888b54c904ce2fe19bc76a, type: 3}
+  m_Script: {fileID: 11500000, guid: da51e7420d3f13547b604669e3e3bb75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  likert1: {fileID: 669408604}
+  likert2: {fileID: 1962281878}
+  likert3: {fileID: 1245272034}
+  likert4: {fileID: 580262416}
+  likert5: {fileID: 442971997}
+  cursor: -1
 --- !u!1 &383609728
 GameObject:
   m_ObjectHideFlags: 0
@@ -591,7 +621,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 383609731}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1175048012}
+        m_TargetAssemblyTypeName: RealLikertScale, Assembly-CSharp
+        m_MethodName: SetLikert
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 5
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &383609731
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -856,7 +898,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 442971999}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 340042493}
+        m_TargetAssemblyTypeName: RealLikertScale, Assembly-CSharp
+        m_MethodName: SetLikert
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 5
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &442971999
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -976,7 +1030,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 453597887}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 559111812}
+        m_TargetAssemblyTypeName: RealLikertScale, Assembly-CSharp
+        m_MethodName: SetLikert
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &453597887
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1200,7 +1266,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 527487847}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 559111812}
+        m_TargetAssemblyTypeName: RealLikertScale, Assembly-CSharp
+        m_MethodName: SetLikert
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 5
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &527487847
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1320,7 +1398,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 528163263}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1175048012}
+        m_TargetAssemblyTypeName: RealLikertScale, Assembly-CSharp
+        m_MethodName: SetLikert
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &528163263
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1369,6 +1459,7 @@ GameObject:
   m_Component:
   - component: {fileID: 559111810}
   - component: {fileID: 559111811}
+  - component: {fileID: 559111812}
   m_Layer: 5
   m_Name: Likert Scale
   m_TagString: Untagged
@@ -1413,6 +1504,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3688842d12888b54c904ce2fe19bc76a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &559111812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 559111809}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da51e7420d3f13547b604669e3e3bb75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  likert1: {fileID: 308296167}
+  likert2: {fileID: 453597885}
+  likert3: {fileID: 1339116651}
+  likert4: {fileID: 664549530}
+  likert5: {fileID: 527487845}
+  cursor: -1
 --- !u!1 &572426124
 GameObject:
   m_ObjectHideFlags: 0
@@ -1628,7 +1737,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 580262418}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 340042493}
+        m_TargetAssemblyTypeName: RealLikertScale, Assembly-CSharp
+        m_MethodName: SetLikert
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 4
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &580262418
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1831,7 +1952,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 664549532}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 559111812}
+        m_TargetAssemblyTypeName: RealLikertScale, Assembly-CSharp
+        m_MethodName: SetLikert
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 4
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &664549532
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1951,7 +2084,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 669408606}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 340042493}
+        m_TargetAssemblyTypeName: RealLikertScale, Assembly-CSharp
+        m_MethodName: SetLikert
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &669408606
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2107,9 +2252,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1175048010}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3688842d12888b54c904ce2fe19bc76a, type: 3}
+  m_Script: {fileID: 11500000, guid: da51e7420d3f13547b604669e3e3bb75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  likert1: {fileID: 98044871}
+  likert2: {fileID: 528163261}
+  likert3: {fileID: 1867381482}
+  likert4: {fileID: 1340405049}
+  likert5: {fileID: 383609729}
+  cursor: -1
 --- !u!1 &1245272033
 GameObject:
   m_ObjectHideFlags: 0
@@ -2191,7 +2342,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1245272036}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 340042493}
+        m_TargetAssemblyTypeName: RealLikertScale, Assembly-CSharp
+        m_MethodName: SetLikert
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1245272036
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2311,7 +2474,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1339116653}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 559111812}
+        m_TargetAssemblyTypeName: RealLikertScale, Assembly-CSharp
+        m_MethodName: SetLikert
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1339116653
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2431,7 +2606,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1340405051}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1175048012}
+        m_TargetAssemblyTypeName: RealLikertScale, Assembly-CSharp
+        m_MethodName: SetLikert
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 4
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1340405051
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2626,7 +2813,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1867381484}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1175048012}
+        m_TargetAssemblyTypeName: RealLikertScale, Assembly-CSharp
+        m_MethodName: SetLikert
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1867381484
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2746,7 +2945,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1962281880}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 340042493}
+        m_TargetAssemblyTypeName: RealLikertScale, Assembly-CSharp
+        m_MethodName: SetLikert
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1962281880
 MonoBehaviour:
   m_ObjectHideFlags: 0
