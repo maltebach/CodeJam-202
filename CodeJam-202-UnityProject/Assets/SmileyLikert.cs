@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SmileyLikert : MonoBehaviour
+public class RealLikertScale : MonoBehaviour
 {
     public Transform likert1;
     public Transform likert2;
