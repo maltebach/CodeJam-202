@@ -9,6 +9,8 @@ public class RealLikertScale : MonoBehaviour
     public Transform likert3;
     public Transform likert4;
     public Transform likert5;
+    public Transform likert6;
+    public Transform likert7;
     public int cursor = -1;
 
     public void SetLikert(int i)
@@ -18,7 +20,6 @@ public class RealLikertScale : MonoBehaviour
         {
             case 1:
             likert1.localScale = new Vector3(1.2f, 1.2f, 1.2f);
-        
             break;
             case 2:
             likert2.localScale = new Vector3(1.2f, 1.2f, 1.2f);
@@ -31,6 +32,12 @@ public class RealLikertScale : MonoBehaviour
             break;
             case 5:
             likert5.localScale = new Vector3(1.2f, 1.2f, 1.2f);
+            break;  
+            case 6:
+            likert6.localScale = new Vector3(1.2f, 1.2f, 1.2f);
+            break;  
+            case 7:
+            likert7.localScale = new Vector3(1.2f, 1.2f, 1.2f);
             break;  
             default:
 
@@ -46,5 +53,7 @@ public class RealLikertScale : MonoBehaviour
         likert3.localScale = Vector3.one;
         likert4.localScale = Vector3.one;
         likert5.localScale = Vector3.one;
+        likert6.localScale = Vector3.one;
+        likert7.localScale = Vector3.one;
     }
 }
