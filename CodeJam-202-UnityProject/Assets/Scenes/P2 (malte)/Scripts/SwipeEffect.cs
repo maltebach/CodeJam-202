@@ -57,7 +57,7 @@ public class SwipeEffect : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndD
             time += Time.deltaTime; 
             if (_swipeLeft)
             {
-                transform.localPosition = new Vector3(Mathf.SmoothStep(transform.localPosition.x, transform.localPosition.x + Screen.width, 1*time), transform.localPosition.y, 0);
+                transform.localPosition = new Vector3(Mathf.SmoothStep(transform.localPosition.x, transform.localPosition.x + Screen.width, 1 * time), transform.localPosition.y, 0);
             }
             else
             {
