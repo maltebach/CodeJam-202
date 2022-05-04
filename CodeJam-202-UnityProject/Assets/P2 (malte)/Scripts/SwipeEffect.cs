@@ -9,8 +9,8 @@ using UnityEngine.UI;
 public class SwipeEffect : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHandler
 {
 
-    
 
+    public bool finalCard = false;
 
 
     private Vector3 _initialPosition;
@@ -65,7 +65,13 @@ public class SwipeEffect : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndD
             }
             GetComponent<Image>().color = new Color(1, 1, 1, Mathf.SmoothStep(1, 0, 4*time));
             yield return null;
-        }   
+        }
+        if(finalCard)
+        {
+            QuestionManager.instance.NextPage();
+        }
+
+    
         Destroy(gameObject);
     }
 
