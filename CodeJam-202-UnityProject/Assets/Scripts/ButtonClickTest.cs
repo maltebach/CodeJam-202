@@ -23,13 +23,15 @@ public class ButtonClickTest : MonoBehaviour
 
     public void ClickToLoadScene()
     {
+        setChildrenToActive.TurnOffUI();
         SoundManager.Instance.PlaySound(buttonSound);        
         GameManager.Instance.LoadNextScene();
-        setChildrenToActive.TurnOffUI();
     }
 
     public void ClickToLoadSpecificScene(int sceneNumber)
     {
+        setChildrenToActive.ChangeDesiredBuildIndex(2);
+        setChildrenToActive.TurnOffUI();
         GameManager.Instance.LoadSpecificScene(sceneNumber);
     }
 

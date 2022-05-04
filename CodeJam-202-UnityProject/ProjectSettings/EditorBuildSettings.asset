@@ -23,4 +23,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Pages/End Page.unity
     guid: 614221d580f4574409b916d1d54ad46c
+  - enabled: 1
+    path: Assets/Scenes/Likert.unity
+    guid: 0f1c1ed744cf85b4c851261bf4b839d2
+  - enabled: 1
+    path: Assets/Scenes/Likert 2.unity
+    guid: 52fd9a6f36329774ba696c89c1d13485
   m_configObjects: {}
