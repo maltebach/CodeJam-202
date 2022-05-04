@@ -157,7 +157,7 @@ PlayerSettings:
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
     Android: com.Gruppe202.RystPosen
-    Standalone: com.DefaultCompany.CodeJam-202-UnityProject
+    Standalone: com.Gruppe202.RystPosen
   buildNumber:
     Standalone: 0
     iPhone: 0
