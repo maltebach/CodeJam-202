@@ -45,7 +45,7 @@ public class MoroEventStack : MonoBehaviour
         float rand = Random.Range(0f,1f);
         if(rand < questionFrequency)
         {
-            element = QuestionManager.instance.GetQuestion(TestManager.instance.GetFilteredIndex());
+            element = MoroQuestionManager.instance.GetQuestion(TestManager.instance.GetFilteredIndex());
         } 
         else
         {
@@ -53,8 +53,8 @@ public class MoroEventStack : MonoBehaviour
         }
         AddElement(element);
         MoveCursor(element.height + gap);
-        Debug.Log("Cursor pos: " + GetCursor());
-        Debug.Log("Scroll pos: " + ScrollHandler.instance.GetScrollPos());
+        //Debug.Log("Cursor pos: " + GetCursor());
+        //Debug.Log("Scroll pos: " + ScrollHandler.instance.GetScrollPos());
     }
 
     public void MoveCursor(float amount)
@@ -75,7 +75,7 @@ public class MoroEventStack : MonoBehaviour
         //Debug.Log("Scroll pos: " + (ScrollHandler.instance.GetScrollPos()));
         if((-cursor) < ScrollHandler.instance.GetScrollPos() + Screen.height)
         {
-            Debug.Log("Out of bounds triggered");
+            //Debug.Log("Out of bounds triggered");
             return true;
         }
         return false;

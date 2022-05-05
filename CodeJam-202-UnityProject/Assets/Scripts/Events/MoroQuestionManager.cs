@@ -21,9 +21,9 @@ public class MoroQuestion
     public float neuroticism = 0;
 }
 
-public class QuestionManager : MonoBehaviour
+public class MoroQuestionManager : MonoBehaviour
 {
-    public static QuestionManager instance;
+    public static MoroQuestionManager instance;
 
     public List<MoroQuestion> moroQuestions = new List<MoroQuestion>();
 

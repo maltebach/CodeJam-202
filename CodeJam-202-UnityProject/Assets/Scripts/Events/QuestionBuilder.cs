@@ -12,7 +12,7 @@ public class QuestionBuilder : MoroElement
     int questionIndex;
     public override void BuildElement(int index)
     {
-        question = QuestionManager.instance.moroQuestions[index];
+        question = MoroQuestionManager.instance.moroQuestions[index];
         questionType = question.questionType;
         questionIndex = index;
 
