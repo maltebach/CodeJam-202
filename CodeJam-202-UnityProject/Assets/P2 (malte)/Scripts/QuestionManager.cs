@@ -4,13 +4,17 @@ using UnityEngine;
 
 public class QuestionManager : MonoBehaviour
 {
+    //Static for singleton script
     public static QuestionManager instance;
 
+    //Set public gameobjects to be called later
     public GameObject one;
     public GameObject two;
     public GameObject three;
     public GameObject four;
 
+
+    //Checks if this script already exists, so there will always only be one 
     private void Awake()
     {
         if(instance == null)
@@ -23,6 +27,7 @@ public class QuestionManager : MonoBehaviour
         }
     }
 
+    //Method for changing between the pages, activates and deactivates gameobjects
     public void NextPage()
     {
         if (one.activeInHierarchy)
