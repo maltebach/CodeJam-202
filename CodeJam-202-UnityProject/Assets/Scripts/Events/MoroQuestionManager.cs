@@ -57,7 +57,7 @@ public class MoroQuestionManager : MonoBehaviour
         question = moroQuestions[i];
         answeredQuestions.Add(question);
         moroQuestions.Remove(question);
-        TestManager.instance.Evaluate(question.openness, question.conscientiousness, question.extraversion, question.agreeableness, question.neuroticism);
+        TestManager.instance.Evaluate(question.ffm.openness, question.ffm.conscientiousness, question.ffm.extraversion, question.ffm.agreeableness, question.ffm.neuroticism);
     }
 
     public void ResetQuestions()

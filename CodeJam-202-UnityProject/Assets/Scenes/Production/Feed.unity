@@ -630,18 +630,20 @@ MonoBehaviour:
   moroQuestions:
   - title: Dingus
     questionType: 0
-    openness: 0
-    conscientiousness: 0
-    extraversion: 0
-    agreeableness: 0
-    neuroticism: 0
+    ffm:
+      openness: 0
+      conscientiousness: 0
+      extraversion: 0
+      agreeableness: 0
+      neuroticism: 0
   - title: Lmao
     questionType: 0
-    openness: 0
-    conscientiousness: 0
-    extraversion: 0
-    agreeableness: 0
-    neuroticism: 0
+    ffm:
+      openness: 0
+      conscientiousness: 0
+      extraversion: 0
+      agreeableness: 0
+      neuroticism: 0
   answeredQuestions: []
   eventPrefab: {fileID: 7393934312647178075, guid: b5f1dced6e1bda544a959a346ed45b50, type: 3}
   parentTransform: {fileID: 1651033621}
