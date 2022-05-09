@@ -39,6 +39,8 @@ public class CSVreader : MonoBehaviour
             MoroEvent moro = new MoroEvent();
             Date date = new Date();
             moro.date = date;
+            FFMData ffm = new FFMData();
+            moro.ffm = ffm;
             int j = 0; 
 
 
@@ -69,19 +71,19 @@ public class CSVreader : MonoBehaviour
             moro.address = data[(i + 1) * collumns + j];
             j++;
 
-            moro.openness = float.Parse(data[(i + 1) * collumns + j]);
+            moro.ffm.openness = float.Parse(data[(i + 1) * collumns + j]);
             j++;
 
-            moro.conscientiousness = float.Parse(data[(i + 1) * collumns + j]);
+            moro.ffm.conscientiousness = float.Parse(data[(i + 1) * collumns + j]);
             j++;
 
-            moro.extraversion = float.Parse(data[(i + 1) * collumns + j]);
+            moro.ffm.extraversion = float.Parse(data[(i + 1) * collumns + j]);
             j++;
 
-            moro.agreeableness = float.Parse(data[(i + 1) * collumns + j]);
+            moro.ffm.agreeableness = float.Parse(data[(i + 1) * collumns + j]);
             j++;
 
-            moro.neuroticism = float.Parse(data[(i + 1) * collumns + j]);
+            moro.ffm.neuroticism = float.Parse(data[(i + 1) * collumns + j]);
             j++;
 
             moroEvents.Add(moro);
