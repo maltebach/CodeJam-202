@@ -13,7 +13,8 @@ public class RealLikertScale : MonoBehaviour
     public Transform likert6;
     public Transform likert7;
     public int cursor = -1;
-    Vector3 originalSize = new Vector3 (0.65285f, 0.65285f, 0.65285f);
+    public float originalSizeFloat = 0.65f;
+    Vector3 originalSize = Vector3.zero;
     public Image limg1;
     public Image limg2;
     public Image limg3;
@@ -27,6 +28,7 @@ public class RealLikertScale : MonoBehaviour
     private void Start() 
     {
         originalColor = limg1.color;
+        originalSize = new Vector3(originalSizeFloat, originalSizeFloat, 1);
     }
     public void SetLikert(int i)
     {

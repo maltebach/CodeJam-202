@@ -33,8 +33,6 @@ public class MoroQuestionManager : MonoBehaviour
 
     public GameObject eventPrefab;
 
-    public MoroEventStack stack;
-
     public Transform parentTransform;
 
     private void Awake()
@@ -49,9 +47,9 @@ public class MoroQuestionManager : MonoBehaviour
         }
     }
 
-    public MoroElementHandler GetQuestion(int i)
+    public MoroElementHandler GetQuestion(int i, Vector3 cursor)
     {
-        MoroElementHandler element = Instantiate(eventPrefab, stack.GetCursor(), Quaternion.identity).GetComponent<MoroElementHandler>();
+        MoroElementHandler element = Instantiate(eventPrefab, cursor, Quaternion.identity).GetComponent<MoroElementHandler>();
         element.referenceIndex = i;
         element.transform.SetParent(parentTransform, false);
         return element;
