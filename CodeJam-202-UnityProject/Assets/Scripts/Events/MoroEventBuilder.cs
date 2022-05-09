@@ -43,7 +43,7 @@ public class MoroEventBuilder : MoroElement
     {
 
 
-        //Set all attributes from given event.
+        //Set all attributes from given event. Checks to see if the proper Game Object is present before it sets the value.
         if (eventName != null)
             eventName.text = moroEvent.eventName;
 

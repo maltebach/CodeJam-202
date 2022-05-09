@@ -2,6 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// This is a class that just hold FFM relevant values.
+/// </summary>
+[System.Serializable]
+public class FFMData
+{
+    public float openness;
+    public float conscientiousness;
+    public float extraversion;
+    public float agreeableness;
+    public float neuroticism;
+}
+
+
 public class TestManager : MonoBehaviour
 {
     public static TestManager instance;
