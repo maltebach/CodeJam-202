@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2352737900695663367}
   - component: {fileID: 8065832620939290693}
   m_Layer: 5
-  m_Name: Event Element
+  m_Name: Likert Element Builder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -35,7 +35,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: -979.99994}
-  m_SizeDelta: {x: 1240, y: 1000}
+  m_SizeDelta: {x: 1240, y: 600}
   m_Pivot: {x: 0.5, y: 0.99999994}
 --- !u!222 &2352737900695663367
 CanvasRenderer:
@@ -57,12 +57,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3cd06e7a4cdd77a4087965c57f4c9824, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  elementPrefab: {fileID: 2991164599931565918, guid: 0ab9084aaeb0c7448a3508f4c15b18d7, type: 3}
+  elementPrefab: {fileID: 7725613433845143839, guid: 8ba09a1b3a413e34385ed3e2a886fbe7, type: 3}
   rect: {fileID: 6447829403282465485}
   element: {fileID: 0}
-  height: 1000
+  height: 600
   xMargin: 150
   disappearBuffer: 150
   referenceIndex: 0
-  containsEventBuilder: 1
-  containsQuestion: 0

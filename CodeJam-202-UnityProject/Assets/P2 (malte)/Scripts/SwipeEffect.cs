@@ -10,7 +10,7 @@ public class SwipeEffect : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndD
 {
 
 
-    public bool finalCard = false;
+    public bool finalCard = false; //bool used later for checking if the final card is swiped
 
 
     private Vector3 _initialPosition;
@@ -18,29 +18,29 @@ public class SwipeEffect : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndD
     private bool _swipeLeft;
     public void OnDrag(PointerEventData eventData)
     {
-        transform.localPosition = new Vector2(transform.localPosition.x + eventData.delta.x, transform.localPosition.y);
+        transform.localPosition = new Vector2(transform.localPosition.x + eventData.delta.x, transform.localPosition.y); //changes x of the card value when swiping
 
     }
 
     public void OnBeginDrag(PointerEventData eventData)
     {
-        _initialPosition = transform.localPosition;
+        _initialPosition = transform.localPosition; //stores the value for the original position of the swipe card
     }
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        _distanceMoved = Mathf.Abs(transform.localPosition.x - _initialPosition.x);
-        if (_distanceMoved < 0.4 * Screen.width)
+        _distanceMoved = Mathf.Abs(transform.localPosition.x - _initialPosition.x); //how far the card has been swiped
+        if (_distanceMoved < 0.4 * Screen.width)//checks if the the card has been swiped more than 0.4 of the screen size
         {
-            transform.localPosition = _initialPosition;
+            transform.localPosition = _initialPosition; //if not, resets the card position
         }
         else
         {
-            if (transform.localPosition.x > _initialPosition.x)
+            if (transform.localPosition.x > _initialPosition.x)//checks if the card is being swiped left
             {
                 _swipeLeft = true;
             }
-            else
+            else //or right
             {
                 _swipeLeft = false;
             }
@@ -49,7 +49,7 @@ public class SwipeEffect : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndD
         }
     }
 
-    private IEnumerator MovedCard()
+    private IEnumerator MovedCard() //
     {
         float time = 0;
         while(GetComponent<Image>().color != new Color(1, 1, 1, 0))
