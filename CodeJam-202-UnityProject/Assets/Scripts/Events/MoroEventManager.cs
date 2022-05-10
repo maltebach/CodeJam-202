@@ -49,7 +49,7 @@ public class MoroEventManager : MonoBehaviour
     public GameObject eventPrefab; //The prefab that is instantiated and populated by the MoroEventBuilder script. Event prefab must include a MoroEventBuilder script.
 
     [Header("ScrollView")]
-    public Transform parentTransform; //This transform should be the "content" Game Object of the Scrollview in the scene. Used to set generated events as child.
+    Transform parentTransform; //This transform should be the "content" Game Object of the Scrollview in the scene. Used to set generated events as child.
 
     //singleton logic; makes sure only one MoroEventManager exists.
     private void Awake()
@@ -80,5 +80,10 @@ public class MoroEventManager : MonoBehaviour
         //Setting the transform like this instead of in the Instantiate method, because we need the world position functionality of this method for it to be placed properly
         element.transform.SetParent(parentTransform, false);
         return element;
+    }
+
+    public void SetParentTransform(Transform pt)
+    {
+        parentTransform = pt;
     }
 } 

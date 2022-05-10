@@ -23,12 +23,12 @@ public class RealLikertScale : MonoBehaviour
     public Image limg6;
     public Image limg7;
     public Color red;
-    private Color originalColor; 
+    private Color originalColor = Color.white; 
 
-    private void Start() 
+    private void Awake() 
     {
-        originalColor = limg1.color;
         originalSize = new Vector3(originalSizeFloat, originalSizeFloat, 1);
+        ResetScale();
     }
     public void SetLikert(int i)
     {

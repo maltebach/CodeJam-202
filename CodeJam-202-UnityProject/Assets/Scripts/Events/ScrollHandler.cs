@@ -9,8 +9,9 @@ public class ScrollHandler : MonoBehaviour
     public static ScrollHandler instance;
 
     //Reference to the scrollview's scrollrect. Set in the inspector.
-    public ScrollRect sr; 
+    public ScrollRect sr;
 
+    public Transform parentTransform;
     //Singleton logic.
     private void Awake()
     {
@@ -22,8 +23,10 @@ public class ScrollHandler : MonoBehaviour
         {
             Destroy(this);
         }
+        MoroEventManager.instance.SetParentTransform(parentTransform);
+        MoroQuestionManager.instance.SetParentTransform(parentTransform);
     }
-    
+
     // Update is called once per frame
     void Update()
     {
@@ -40,4 +43,5 @@ public class ScrollHandler : MonoBehaviour
         float pos = sr.content.anchoredPosition.y;
         return pos;
     }
+
 }

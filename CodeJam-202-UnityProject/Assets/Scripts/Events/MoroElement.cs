@@ -16,4 +16,10 @@ public abstract class MoroElement : MonoBehaviour
     {
         Debug.LogError("BuildElement method must be defined");
     }
+
+    //Used by MoroElementHandler to check if the associated element is a likert question.
+    public virtual bool IsLikert()
+    {
+        return false;
+    }
 }

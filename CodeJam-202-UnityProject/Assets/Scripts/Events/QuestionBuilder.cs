@@ -12,7 +12,6 @@ public class QuestionBuilder : MoroElement
     MoroQuestion question; //Private reference to a specific question. Used to keep code cleaner.
     int questionIndex; //Internal reference to the index of the specific question this object represents to.
 
-
     public override void BuildElement(int index)
     {
         question = MoroQuestionManager.instance.moroQuestions[index]; //Gets the specific question that the index refers to.
@@ -36,6 +35,19 @@ public class QuestionBuilder : MoroElement
             default:
                 Debug.LogError("QuestionType not implemented!");
                 break;
+        }
+    }
+
+    //Returns true of questionType is equal to QuestionType.Likert
+    public override bool IsLikert()
+    {
+        if (questionType == QuestionType.Likert)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
         }
     }
 }

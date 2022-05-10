@@ -1366,6 +1366,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   titleText: {fileID: 3732515108199188337}
   questionType: 0
+  likert: {fileID: 4041936463743700845}
 --- !u!222 &5193365676746656978
 CanvasRenderer:
   m_ObjectHideFlags: 0

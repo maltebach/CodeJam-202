@@ -29,7 +29,7 @@ public class MoroQuestionManager : MonoBehaviour
 
     public GameObject eventPrefab;
 
-    public Transform parentTransform;
+    Transform parentTransform;
 
     private void Awake()
     {
@@ -67,5 +67,10 @@ public class MoroQuestionManager : MonoBehaviour
             moroQuestions.Add(question);
             answeredQuestions.Remove(question);
         }
+    }
+
+    public void SetParentTransform(Transform pt)
+    {
+        parentTransform = pt;
     }
 }

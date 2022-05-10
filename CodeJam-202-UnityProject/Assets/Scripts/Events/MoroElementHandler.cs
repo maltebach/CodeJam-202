@@ -23,6 +23,13 @@ public class MoroElementHandler : MonoBehaviour
 
     bool isCulled = false; //This bool is used to check whether or not the associated element already exists or not.
 
+
+    //Variables blow this comment are used only when a likert question is detected in this builders associated element.
+
+    RealLikertScale likert;
+
+    int likertCursor = -1;
+
     private void Start()
     {
         BuildAssociatedElement(); //Element Handler is only ever generated when it's supposed to be on screen, so we make sure to build its associated element as soon as the element handler is instantiated.
@@ -37,6 +44,11 @@ public class MoroElementHandler : MonoBehaviour
         {
             if(!isCulled)
             {
+                if (likertCursor == -1 && likert != null)
+                {
+                    likertCursor = likert.cursor;
+                }
+
                 element.CullElement();
                 isCulled = true; //Setting isCulled to true ensures we only try to cull the element once.
             }
@@ -67,6 +79,16 @@ public class MoroElementHandler : MonoBehaviour
         {
             float width = CanvasRef.instance.GetCanvasWidth() - (xMargin * 2); //Width is set based on the xMargin value. This is dynamic to support different screen sizes. xMargin is multiplied by 2 because there's a margin on both sides of the element and the element is placed on the middle of the screen.
             element.BuildElement(referenceIndex); //Make sure the element knows its respective reference index so that it can tell manager objects which element it represents.
+      
+            if(element.IsLikert())
+            {
+                likert = element.GetComponent<RealLikertScale>();
+                
+                if(likertCursor != -1)
+                {
+                likert.SetLikert(likertCursor);
+                }
+            }
         }
     }
 
