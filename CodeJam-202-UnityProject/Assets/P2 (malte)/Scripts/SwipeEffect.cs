@@ -49,7 +49,7 @@ public class SwipeEffect : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndD
         }
     }
 
-    private IEnumerator MovedCard() //
+    private IEnumerator MovedCard() //animates the card moving out of the screen and dissapearing
     {
         float time = 0;
         while(GetComponent<Image>().color != new Color(1, 1, 1, 0))
