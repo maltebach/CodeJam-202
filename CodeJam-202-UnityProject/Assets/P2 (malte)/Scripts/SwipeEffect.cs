@@ -30,7 +30,7 @@ public class SwipeEffect : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndD
     public void OnEndDrag(PointerEventData eventData)
     {
         _distanceMoved = Mathf.Abs(transform.localPosition.x - _initialPosition.x); //how far the card has been swiped
-        if (_distanceMoved < 0.4 * Screen.width)//checks if the the card has been swiped more than 0.4 of the screen size
+        if (_distanceMoved < 0.2 * Screen.width)//checks if the the card has been swiped more than 0.4 of the screen size
         {
             transform.localPosition = _initialPosition; //if not, resets the card position
         }
