@@ -14,11 +14,7 @@ public class MoroQuestion
 {
     public string title = "TODO: Set title";
     public QuestionType questionType = QuestionType.Likert;
-    public float openness = 0;
-    public float conscientiousness = 0;
-    public float extraversion = 0;
-    public float agreeableness = 0;
-    public float neuroticism = 0;
+    public FFMData ffm;
 }
 
 public class MoroQuestionManager : MonoBehaviour
