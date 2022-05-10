@@ -2355,6 +2355,7 @@ MonoBehaviour:
   likert6: {fileID: 1415974431}
   likert7: {fileID: 272012081}
   cursor: -1
+  originalSizeFloat: 0.65
   limg1: {fileID: 988953867}
   limg2: {fileID: 1790918002}
   limg3: {fileID: 427680717}
@@ -3557,6 +3558,7 @@ MonoBehaviour:
   likert6: {fileID: 1150671135}
   likert7: {fileID: 1252877417}
   cursor: -1
+  originalSizeFloat: 0.65
   limg1: {fileID: 2032075518}
   limg2: {fileID: 1099753865}
   limg3: {fileID: 284021904}
@@ -3630,6 +3632,7 @@ MonoBehaviour:
   likert6: {fileID: 1708395400}
   likert7: {fileID: 182479379}
   cursor: -1
+  originalSizeFloat: 0.65
   limg1: {fileID: 856834474}
   limg2: {fileID: 146389209}
   limg3: {fileID: 552063258}
@@ -5626,6 +5629,7 @@ MonoBehaviour:
   likert6: {fileID: 1105682971}
   likert7: {fileID: 1963428117}
   cursor: -1
+  originalSizeFloat: 0.65
   limg1: {fileID: 1939657989}
   limg2: {fileID: 2130904678}
   limg3: {fileID: 1813974620}
@@ -5963,6 +5967,7 @@ MonoBehaviour:
   likert6: {fileID: 1085321815}
   likert7: {fileID: 1015741541}
   cursor: -1
+  originalSizeFloat: 0.65
   limg1: {fileID: 294069294}
   limg2: {fileID: 1649166403}
   limg3: {fileID: 510684461}
@@ -8862,6 +8867,7 @@ MonoBehaviour:
   likert6: {fileID: 602132021}
   likert7: {fileID: 672144850}
   cursor: -1
+  originalSizeFloat: 0.65
   limg1: {fileID: 673252738}
   limg2: {fileID: 1071560033}
   limg3: {fileID: 2093723284}
@@ -8935,6 +8941,7 @@ MonoBehaviour:
   likert6: {fileID: 802964129}
   likert7: {fileID: 2003463616}
   cursor: -1
+  originalSizeFloat: 0.65
   limg1: {fileID: 834086169}
   limg2: {fileID: 199506693}
   limg3: {fileID: 1838034582}
@@ -9780,6 +9787,7 @@ MonoBehaviour:
   likert6: {fileID: 37037753}
   likert7: {fileID: 1751274941}
   cursor: -1
+  originalSizeFloat: 0.65
   limg1: {fileID: 1891344283}
   limg2: {fileID: 486930218}
   limg3: {fileID: 1778109111}
