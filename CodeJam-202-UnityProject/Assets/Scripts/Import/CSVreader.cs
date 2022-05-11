@@ -14,7 +14,7 @@ public class CSVreader : MonoBehaviour
 //https://www.youtube.com/watch?v=tI9NEm02EuE 
 
 {
-    public TextAsset textaAssetData;
+    public TextAsset textAssetData;
 
     //public EventList MoroEventList = new EventList();
 
@@ -28,7 +28,7 @@ public class CSVreader : MonoBehaviour
 
     void ReadCSV()
     {
-        string[] data = textaAssetData.text.Split(new string[] { ",", "\n" }, StringSplitOptions.None);
+        string[] data = textAssetData.text.Split(new string[] { ",", "\n" }, StringSplitOptions.None);
         int collumns = 14; //Det ville være fedt hvis programmet selv kunne finde ud af hvor mange collumns den skal springe over, så den ville være dynamisk istedet for statisk.
         int tableSize = (data.Length / collumns) - 1;
 
