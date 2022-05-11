@@ -80,7 +80,7 @@ public class MoroElementHandler : MonoBehaviour
             float width = CanvasRef.instance.GetCanvasWidth() - (xMargin * 2); //Width is set based on the xMargin value. This is dynamic to support different screen sizes. xMargin is multiplied by 2 because there's a margin on both sides of the element and the element is placed on the middle of the screen.
             element.BuildElement(referenceIndex); //Make sure the element knows its respective reference index so that it can tell manager objects which element it represents.
       
-            if(element.IsLikert())
+            if(element.IsLikert()) //element.IsLikert() only returns true if the element is a likert question.
             {
                 likert = element.GetComponent<RealLikertScale>();
                 

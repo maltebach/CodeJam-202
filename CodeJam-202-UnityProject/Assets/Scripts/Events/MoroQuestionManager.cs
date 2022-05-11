@@ -4,8 +4,8 @@ using UnityEngine;
 
 public enum QuestionType
 {
-    Likert,
-    Swipe,
+    Likert = 0,
+    Swipe = 1,
 
 }
 
