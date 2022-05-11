@@ -20,11 +20,23 @@ public class TestManager : MonoBehaviour
 {
     public static TestManager instance;
 
-    public float openness = 0;
-    public float conscientiousness = 0;
-    public float extraversion = 0;
-    public float agreeableness = 0;
-    public float neuroticism = 0;
+    public float openness;
+
+    public float conscientiousness;
+
+    public float extraversion;
+
+    public float agreeableness;
+
+    public float neuroticism;
+
+    public float standardDeviation;
+
+    public float standardDeviationSquaredPI;
+
+    public float mean = 50f;
+
+    private float adjustmentFactor;
 
     private void Awake()
     {
@@ -37,6 +49,12 @@ public class TestManager : MonoBehaviour
             Destroy(this);
         }
     }
+
+    private void Start()
+    {
+        standardDeviationSquaredPI = standardDeviation * Mathf.Sqrt(2 * Mathf.PI);
+    }
+
 
     public int GetFilteredIndex()
     {
@@ -248,11 +266,90 @@ public class TestManager : MonoBehaviour
             }
         }
 
+        //List<float> ffmTraits = new List<float>();
+        //ffmTraits.Add(ffm.openness);
+        //ffmTraits.Add(ffm.conscientiousness);
+        //ffmTraits.Add(ffm.extraversion);
+        //ffmTraits.Add(ffm.agreeableness);
+        //ffmTraits.Add(ffm.neuroticism);
+
+        //foreach (float trait in ffmTraits)
+        //{
+        //    if (trait != 0)
+        //    {
+        //        float adjustmentFactor = GaussianCalculation(trait);
+
+        //        return trait *= adjustmentFactor;
+
+
+        //    }
 
 
 
 
+        //}
 
+        if (ffm.openness != 0)
+        {
+            adjustmentFactor = GaussianCalculation(ffm.openness);
 
+            ffm.openness *= adjustmentFactor;
+
+            openness *= ffm.openness;
+
+            Debug.Log(openness + adjustmentFactor);
+        }
+        if (ffm.conscientiousness != 0)
+        {
+            adjustmentFactor = GaussianCalculation(ffm.conscientiousness);
+
+            ffm.conscientiousness *= adjustmentFactor;
+
+            conscientiousness *= ffm.conscientiousness;
+
+            Debug.Log(conscientiousness + adjustmentFactor);
+        }
+        if (ffm.extraversion != 0)
+        {
+            adjustmentFactor = GaussianCalculation(ffm.extraversion);
+
+            ffm.extraversion *= adjustmentFactor;
+
+            extraversion *= ffm.extraversion;
+
+            Debug.Log(extraversion + adjustmentFactor);
+        }
+        if (ffm.agreeableness != 0)
+        {
+            adjustmentFactor = GaussianCalculation(ffm.agreeableness);
+
+            ffm.agreeableness *= adjustmentFactor;
+
+            agreeableness *= ffm.agreeableness;
+
+            Debug.Log(agreeableness + adjustmentFactor);
+        }
+        if (ffm.neuroticism != 0)
+        {
+            adjustmentFactor = GaussianCalculation(ffm.neuroticism);
+
+            ffm.neuroticism *= adjustmentFactor;
+
+            neuroticism *= ffm.neuroticism;
+
+            Debug.Log(neuroticism + adjustmentFactor);
+        } 
     }
+
+
+    public float GaussianCalculation(float ffmTrait)
+    {
+        
+        float traitSubtractedByMean = ffmTrait - mean;
+        float ffmAdjustmentMetric = (1 / standardDeviationSquaredPI) * Mathf.Exp(-((Mathf.Pow(traitSubtractedByMean,2f)) / 2 * Mathf.Pow(standardDeviation,2f)));
+
+        return ffmAdjustmentMetric;
+    }
+
+
 }
