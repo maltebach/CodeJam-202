@@ -48,37 +48,211 @@ public class TestManager : MonoBehaviour
         return i;
     }
 
-    public void ChangeOpenness(float amount)
+    public void Evaluate(FFMData ffm, int likert)
     {
-        openness += amount;
-    }
 
-    public void ChangeConsientiousness(float amount)
-    {
-        conscientiousness += amount;
-    }
+        Mathf.Clamp(likert, 1, 7);
 
-    public void ChangeExtraversion(float amount)
-    {
-        extraversion += amount;
-    }
+        if (ffm.openness != 0)
+        {
+            switch (likert)
+            {
+                case 1:
+                    ffm.openness *= (-1);
 
-    public void ChangeAgreeableness(float amount)
-    {
-        agreeableness += amount;
-    }
+                    break;
 
-    public void ChangeNeuroticism(float amount)
-    {
-        neuroticism += amount;
-    }
+                case 2:
+                    ffm.openness *= (-0.66f);
 
-    public void Evaluate(float o, float c, float e, float a, float n)
-    {
-        ChangeOpenness(o);
-        ChangeConsientiousness(c);
-        ChangeExtraversion(e);
-        ChangeAgreeableness(a);
-        ChangeNeuroticism(n);
+                    break;
+
+                case 3:
+                    ffm.openness *= (-0.33f);
+
+                    break;
+                case 4:
+
+                    return;
+
+                case 5:
+                    ffm.openness *= (0.33f);
+
+                    break;
+                case 6:
+                    ffm.openness *= (0.66f);
+
+                    break;
+                case 7:
+                    ffm.openness *= (1);
+
+                    break;
+                default:
+                    break;
+            }
+        }
+
+        if (ffm.conscientiousness != 0)
+        {
+            switch (likert)
+            {
+                case 1:
+                    ffm.conscientiousness *= (-1);
+
+                    break;
+
+                case 2:
+                    ffm.conscientiousness *= (-0.66f);
+
+                    break;
+
+                case 3:
+                    ffm.conscientiousness *= (-0.33f);
+
+                    break;
+                case 4:
+
+                    return;
+
+                case 5:
+                    ffm.conscientiousness *= (0.33f);
+
+                    break;
+                case 6:
+                    ffm.conscientiousness *= (0.66f);
+
+                    break;
+                case 7:
+                    ffm.conscientiousness *= (1);
+
+                    break;
+                default:
+                    break;
+            }
+        }
+
+        if (ffm.extraversion != 0)
+        {
+            switch (likert)
+            {
+                case 1:
+                    ffm.extraversion *= (-1);
+
+                    break;
+
+                case 2:
+                    ffm.extraversion *= (-0.66f);
+
+                    break;
+
+                case 3:
+                    ffm.extraversion *= (-0.33f);
+
+                    break;
+                case 4:
+
+                    return;
+
+                case 5:
+                    ffm.extraversion *= (0.33f);
+
+                    break;
+                case 6:
+                    ffm.extraversion *= (0.66f);
+
+                    break;
+                case 7:
+                    ffm.extraversion *= (1);
+
+                    break;
+                default:
+                    break;
+            }
+        }
+
+        if (ffm.agreeableness != 0)
+        {
+            switch (likert)
+            {
+                case 1:
+                    ffm.agreeableness *= (-1);
+
+                    break;
+
+                case 2:
+                    ffm.agreeableness *= (-0.66f);
+
+                    break;
+
+                case 3:
+                    ffm.agreeableness *= (-0.33f);
+
+                    break;
+                case 4:
+
+                    return;
+
+                case 5:
+                    ffm.agreeableness *= (0.33f);
+
+                    break;
+                case 6:
+                    ffm.agreeableness *= (0.66f);
+
+                    break;
+                case 7:
+                    ffm.agreeableness *= (1);
+
+                    break;
+                default:
+                    break;
+            }
+        }
+
+        if (ffm.neuroticism != 0)
+        {
+            switch (likert)
+            {
+                case 1:
+                    ffm.neuroticism *= (-1);
+
+                    break;
+
+                case 2:
+                    ffm.neuroticism *= (-0.66f);
+
+                    break;
+
+                case 3:
+                    ffm.neuroticism *= (-0.33f);
+
+                    break;
+                case 4:
+
+                    return;
+
+                case 5:
+                    ffm.neuroticism *= (0.33f);
+
+                    break;
+                case 6:
+                    ffm.neuroticism *= (0.66f);
+
+                    break;
+                case 7:
+                    ffm.neuroticism *= (1);
+
+                    break;
+                default:
+                    break;
+            }
+        }
+
+
+
+
+
+
+
     }
 }
