@@ -762,10 +762,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   openness: 20
-  conscientiousness: 23
-  extraversion: 40
-  agreeableness: 80
-  neuroticism: 29
+  conscientiousness: 35
+  extraversion: 33
+  agreeableness: 55
+  neuroticism: 70
+  standardDeviation: 2
+  standardDeviationSquaredPI: 0
+  mean: 50
 --- !u!4 &1386556221
 Transform:
   m_ObjectHideFlags: 0
