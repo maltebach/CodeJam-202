@@ -30,9 +30,13 @@ public class TestManager : MonoBehaviour
 
     public float neuroticism;
 
-    public float standardDeviation;
+    public float likertNumber;
 
-    public float standardDeviationSquaredPI;
+    public float curveAdjustment;
+
+    public float peakAdjustment = 1.2f;
+
+    private float standardDeviationSquaredPI;
 
     public float mean = 50f;
 
@@ -52,7 +56,7 @@ public class TestManager : MonoBehaviour
 
     private void Start()
     {
-        standardDeviationSquaredPI = standardDeviation * Mathf.Sqrt(2 * Mathf.PI);
+        standardDeviationSquaredPI = curveAdjustment * Mathf.Sqrt(2 * Mathf.PI);
     }
 
 
@@ -66,11 +70,19 @@ public class TestManager : MonoBehaviour
         return i;
     }
 
+    /// <summary>
+    /// This function evaluates how much your personality trait score gets adjusted when answering a Likert question.
+    /// </summary>
+    /// <param name="ffm"></param>
+    /// <param name="likert"></param>
+
     public void Evaluate(FFMData ffm, int likert)
     {
-
+        // To avoid weird input errors, we clamp it to the scale values
         Mathf.Clamp(likert, 1, 7);
 
+        // For every trait, we check if it has a correlation, and if it has
+        // we run a switch case, adjusting the correlation coeffienct depeding on the Likert scale answer
         if (ffm.openness != 0)
         {
             switch (likert)
@@ -289,64 +301,80 @@ public class TestManager : MonoBehaviour
 
         //}
 
+        // we again check if there is a correlation with every personality trait, and for the once with a correlation
+        // we us a gaussian function to adjust the factor further, depending on how close to the center (50) the persons personality score is
         if (ffm.openness != 0)
         {
-            adjustmentFactor = GaussianCalculation(ffm.openness);
+            adjustmentFactor = GaussianCalculation(openness);
 
             ffm.openness *= adjustmentFactor;
 
             openness *= ffm.openness;
 
+            Mathf.Clamp(openness,0, 100);
+
             Debug.Log(openness + adjustmentFactor);
         }
         if (ffm.conscientiousness != 0)
         {
-            adjustmentFactor = GaussianCalculation(ffm.conscientiousness);
+            adjustmentFactor = GaussianCalculation(conscientiousness);
 
             ffm.conscientiousness *= adjustmentFactor;
 
             conscientiousness *= ffm.conscientiousness;
 
+            Mathf.Clamp(conscientiousness, 0, 100);
+
             Debug.Log(conscientiousness + adjustmentFactor);
         }
         if (ffm.extraversion != 0)
         {
-            adjustmentFactor = GaussianCalculation(ffm.extraversion);
+            adjustmentFactor = GaussianCalculation(extraversion);
 
             ffm.extraversion *= adjustmentFactor;
 
             extraversion *= ffm.extraversion;
 
+            Mathf.Clamp(extraversion, 0, 100);
+
             Debug.Log(extraversion + adjustmentFactor);
         }
         if (ffm.agreeableness != 0)
         {
-            adjustmentFactor = GaussianCalculation(ffm.agreeableness);
+            adjustmentFactor = GaussianCalculation(agreeableness);
 
             ffm.agreeableness *= adjustmentFactor;
 
             agreeableness *= ffm.agreeableness;
 
+            Mathf.Clamp(agreeableness, 0, 100);
+
             Debug.Log(agreeableness + adjustmentFactor);
         }
         if (ffm.neuroticism != 0)
         {
-            adjustmentFactor = GaussianCalculation(ffm.neuroticism);
+            adjustmentFactor = GaussianCalculation(neuroticism);
 
             ffm.neuroticism *= adjustmentFactor;
 
             neuroticism *= ffm.neuroticism;
 
+            Mathf.Clamp(neuroticism, 0, 100);
+
             Debug.Log(neuroticism + adjustmentFactor);
         } 
     }
 
-
+    /// <summary>
+    /// Using a gaussian function, this method adjust the correlation coefficient of a ffmTrait
+    /// </summary>
+    /// <param name="ffmTrait"></param>
+    /// <returns></returns>
     public float GaussianCalculation(float ffmTrait)
     {
         
         float traitSubtractedByMean = ffmTrait - mean;
-        float ffmAdjustmentMetric = (1 / standardDeviationSquaredPI) * Mathf.Exp(-((Mathf.Pow(traitSubtractedByMean,2f)) / 2 * Mathf.Pow(standardDeviation,2f)));
+        float ffmAdjustmentMetric = peakAdjustment * Mathf.Exp(-((Mathf.Pow(traitSubtractedByMean,2f)) / 2 * Mathf.Pow(curveAdjustment,2f)));
 
         return ffmAdjustmentMetric;
     }

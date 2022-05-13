@@ -766,8 +766,8 @@ MonoBehaviour:
   extraversion: 33
   agreeableness: 55
   neuroticism: 70
-  standardDeviation: 2
-  standardDeviationSquaredPI: 0
+  curveAdjustment: 12
+  peakAdjustment: 1.2
   mean: 50
 --- !u!4 &1386556221
 Transform:
