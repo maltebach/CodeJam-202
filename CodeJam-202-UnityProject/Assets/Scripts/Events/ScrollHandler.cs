@@ -12,6 +12,9 @@ public class ScrollHandler : MonoBehaviour
     public ScrollRect sr;
 
     public Transform parentTransform;
+
+    public float endPos = -1;
+    public bool stopped = false;
     //Singleton logic.
     private void Awake()
     {
@@ -35,6 +38,10 @@ public class ScrollHandler : MonoBehaviour
         {
             sr.verticalNormalizedPosition = 1;
         }
+        if(stopped && sr.verticalNormalizedPosition < endPos)
+        {
+            sr.verticalNormalizedPosition = endPos;
+        }
     }
 
     //Just returns how far down the user have scrolled in pixels. Used by the event stack to check out of bounds as well as elements to figure out if they're on screen or not.
@@ -44,4 +51,15 @@ public class ScrollHandler : MonoBehaviour
         return pos;
     }
 
+    public void StopScroll()
+    {
+        endPos = sr.verticalNormalizedPosition;
+        stopped = true;
+    }
+
+    public void StopScroll(float offset)
+    {
+        endPos = sr.verticalNormalizedPosition + offset;
+        stopped = true;
+    }
 }

@@ -19,6 +19,11 @@ public class MoroEvent
     public Sprite eventImage;
     public FFMData ffm;
     public Date date;
+
+    public float relatabilityValue;
+
+
+
 }
 
 /// <summary>
@@ -34,6 +39,15 @@ public class Date
     public int endTime;
 }
 
+public class MoroEventOrderer : IComparer<MoroEvent>
+{
+    public int Compare(MoroEvent x, MoroEvent y)
+    {
+        int compareEvent = x.relatabilityValue.CompareTo(y.relatabilityValue);
+        return compareEvent;
+    }
+}
+
 /// <summary>
 /// This singleton contains a list of possible events and can provide a builder element to build any specific element based on an index value.
 /// </summary>
@@ -44,12 +58,16 @@ public class MoroEventManager : MonoBehaviour
 
     [Header("List of Events")]
     public List<MoroEvent> moroEvents = new List<MoroEvent>(); //This list contains all events possible. This list is not sorted or filtered.
+    public List<MoroEvent> unshownEvents = new List<MoroEvent>();
 
     [Header("References")]
     public GameObject eventPrefab; //The prefab that is instantiated and populated by the MoroEventBuilder script. Event prefab must include a MoroEventBuilder script.
 
     [Header("ScrollView")]
     Transform parentTransform; //This transform should be the "content" Game Object of the Scrollview in the scene. Used to set generated events as child.
+
+
+    bool isDone = false;
 
     //singleton logic; makes sure only one MoroEventManager exists.
     private void Awake()
@@ -62,6 +80,11 @@ public class MoroEventManager : MonoBehaviour
         {
             Destroy(this);
         }
+
+        foreach (MoroEvent item in moroEvents)
+        {
+            unshownEvents.Add(item);
+        }
     }
 
     /// <summary>
@@ -69,13 +92,13 @@ public class MoroEventManager : MonoBehaviour
     /// </summary>
     /// <param name="i"></param>
     /// <returns></returns>
-    public MoroElementHandler GetBuilder(int i, Vector3 cursor)
+    public MoroElementHandler GetBuilder(MoroEvent moro, Vector3 cursor)
     {
         //Instantiate an element handler object based on a prefab. The object is instantiated at the end of the feed (Or the position of the EventStack's cursor)
         MoroElementHandler element = Instantiate(eventPrefab, cursor, Quaternion.identity).GetComponent<MoroElementHandler>();
 
-        //ReferenceIndex is a number used by the element so it knows which event it represents.
-        element.referenceIndex = i;
+        //ReferenceIndex is a number used by the element so it knows which event it represents. TODO CHANGE COMMENT
+        element.moroEvent = moro;
 
         //Setting the transform like this instead of in the Instantiate method, because we need the world position functionality of this method for it to be placed properly
         element.transform.SetParent(parentTransform, false);
@@ -85,5 +108,96 @@ public class MoroEventManager : MonoBehaviour
     public void SetParentTransform(Transform pt)
     {
         parentTransform = pt;
+    }
+
+    float EvaluateEvent(FFMData ffm)
+    {
+        float relatability = 0;
+
+
+        float o = 0;
+        float a = 0;
+        float e = 0;
+        float c = 0;
+        float n = 0;
+
+        float numOfFactors = 0;
+
+        if (ffm.openness != 0)
+        {
+            o = TestManager.instance.openness - ffm.openness;
+            o = Mathf.Abs(o);
+            numOfFactors++;
+        }
+
+        if (ffm.agreeableness != 0)
+        {
+            a = TestManager.instance.agreeableness - ffm.agreeableness;
+            a = Mathf.Abs(a);
+            numOfFactors++;
+        }
+
+        if (ffm.extraversion != 0)
+        {
+            e = TestManager.instance.extraversion - ffm.extraversion;
+            e = Mathf.Abs(e);
+            numOfFactors++;
+        }
+
+        if (ffm.conscientiousness != 0)
+        {
+            c = TestManager.instance.conscientiousness - ffm.conscientiousness;
+            c = Mathf.Abs(c);
+            numOfFactors++;
+        }
+
+        if (ffm.neuroticism != 0)
+        {
+            n = TestManager.instance.neuroticism - ffm.neuroticism;
+            n = Mathf.Abs(n);
+            numOfFactors++;
+        }
+
+        if (numOfFactors != 0)
+            relatability = (o + a + e + c + n) / numOfFactors;
+        else relatability = 0;
+
+        return relatability;
+    }
+
+    public void EvalAllEvents()
+    {
+        foreach (MoroEvent item in unshownEvents)
+        {
+            item.relatabilityValue = EvaluateEvent(item.ffm);
+        }
+
+        IComparer<MoroEvent> comparer = new MoroEventOrderer();
+        unshownEvents.Sort(comparer);
+    }
+
+    private void Start()
+    {
+        EvalAllEvents();
+    }
+
+    public MoroEvent GetNextEvent()
+    {
+        MoroEvent moro;
+
+        moro = unshownEvents[0];
+
+        unshownEvents.RemoveAt(0);
+
+        if (unshownEvents.Count == 0)
+        {
+            isDone = true;
+        }
+        return moro;
+    }
+
+    public bool OutOfEvents()
+    {
+        return isDone;
     }
 } 

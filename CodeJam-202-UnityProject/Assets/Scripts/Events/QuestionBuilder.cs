@@ -10,13 +10,11 @@ public class QuestionBuilder : MoroElement
     public QuestionType questionType; //Currently unused. But may be used to differentiate between different types of questions. (IE. Likert and swipe)
 
     MoroQuestion question; //Private reference to a specific question. Used to keep code cleaner.
-    int questionIndex; //Internal reference to the index of the specific question this object represents to.
+    //int questionIndex; //Internal reference to the index of the specific question this object represents to.
 
-    public override void BuildElement(int index)
+    public override void BuildElement()
     {
-        question = MoroQuestionManager.instance.moroQuestions[index]; //Gets the specific question that the index refers to.
         questionType = question.questionType; //Currently unused.
-        questionIndex = index; //Will be used later for evaluating the question.
 
         //Checks to see if the text field exists before trying to edit it.
         if(titleText != null)
@@ -49,5 +47,10 @@ public class QuestionBuilder : MoroElement
         {
             return false;
         }
+    }
+
+    public override void AttachElement(MoroElementHandler handler)
+    {
+        question = handler.moroQuestion;
     }
 }
