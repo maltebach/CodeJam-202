@@ -265,78 +265,254 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moroQuestions:
-  - title: Dingus
+  - title: Udadvendt & entusiastisk
     questionType: 0
     ffm:
-      openness: 5
+      openness: 0
       conscientiousness: 0
-      extraversion: 0
-      agreeableness: -3
+      extraversion: 1
+      agreeableness: 0
       neuroticism: 0
-  - title: Lmao
-    questionType: 0
-    ffm:
-      openness: 0
-      conscientiousness: 3
-      extraversion: 3
-      agreeableness: -5
-      neuroticism: 5
-  - title: asdasdasd
-    questionType: 0
-    ffm:
-      openness: 3
-      conscientiousness: 3
-      extraversion: -3
-      agreeableness: -3
-      neuroticism: -5
-  - title: fffff
-    questionType: 0
-    ffm:
-      openness: -5
-      conscientiousness: -3
-      extraversion: 0
-      agreeableness: 0
-      neuroticism: 3
-  - title: gggggggggggggggggggggggggggg
+  - title: Kritisk & stridig
     questionType: 0
     ffm:
       openness: 0
       conscientiousness: 0
-      extraversion: 3
-      agreeableness: 0
-      neuroticism: 3
-  - title: a
-    questionType: 0
-    ffm:
-      openness: -5
-      conscientiousness: -5
-      extraversion: -5
-      agreeableness: -5
-      neuroticism: -5
-  - title: Yoooo wtf
-    questionType: 0
-    ffm:
-      openness: 5
-      conscientiousness: 3
       extraversion: 0
-      agreeableness: 3
-      neuroticism: 3
-  - title: Do you eat ass?
+      agreeableness: -1
+      neuroticism: 0
+  - title: "P\xE5lidelig & selv-disciplineret"
     questionType: 0
     ffm:
-      openness: 5
-      conscientiousness: 5
-      extraversion: 5
-      agreeableness: 5
-      neuroticism: -5
-  - title: What do you mean you don't eat ass?
+      openness: 0
+      conscientiousness: 1
+      extraversion: 0
+      agreeableness: 0
+      neuroticism: 0
+  - title: "\xC6ngstelig & let opr\xF8rt"
     questionType: 0
     ffm:
       openness: 0
       conscientiousness: 0
-      extraversion: -5
+      extraversion: 0
       agreeableness: 0
-      neuroticism: 5
+      neuroticism: 1
+  - title: "\xC5ben for nye oplevelser & kompleks"
+    questionType: 0
+    ffm:
+      openness: 1
+      conscientiousness: 0
+      extraversion: 0
+      agreeableness: 0
+      neuroticism: 0
+  - title: Reserveret & stille
+    questionType: 0
+    ffm:
+      openness: 0
+      conscientiousness: 0
+      extraversion: -1
+      agreeableness: 0
+      neuroticism: 0
+  - title: Sympatisk & varm
+    questionType: 0
+    ffm:
+      openness: 0
+      conscientiousness: 0
+      extraversion: 0
+      agreeableness: 1
+      neuroticism: 0
+  - title: "Uorganiseret & sk\xF8desl\xF8s"
+    questionType: 0
+    ffm:
+      openness: 0
+      conscientiousness: -1
+      extraversion: 0
+      agreeableness: 0
+      neuroticism: 0
+  - title: Rolig & emotionel stabil
+    questionType: 0
+    ffm:
+      openness: 0
+      conscientiousness: 0
+      extraversion: 0
+      agreeableness: 0
+      neuroticism: -1
+  - title: konventionel & ukreativ
+    questionType: 0
+    ffm:
+      openness: -1
+      conscientiousness: 0
+      extraversion: 0
+      agreeableness: 0
+      neuroticism: 0
+  - title: Jeg kan godt lide pop-musik
+    questionType: 0
+    ffm:
+      openness: -1
+      conscientiousness: 0
+      extraversion: 1
+      agreeableness: 1
+      neuroticism: 1
+  - title: Jeg kan godt lide rap musik
+    questionType: 0
+    ffm:
+      openness: 0
+      conscientiousness: 0
+      extraversion: 1
+      agreeableness: 0
+      neuroticism: 0
+  - title: Jeg kan godt lide jazz musik
+    questionType: 0
+    ffm:
+      openness: 1
+      conscientiousness: 0
+      extraversion: 0
+      agreeableness: 0
+      neuroticism: 0
+  - title: Jeg kan godt lide alternativ musik
+    questionType: 0
+    ffm:
+      openness: 1
+      conscientiousness: 1
+      extraversion: 0
+      agreeableness: 0
+      neuroticism: 1
+  - title: Jeg kan godt lide at spise frugt
+    questionType: 0
+    ffm:
+      openness: 1
+      conscientiousness: 1
+      extraversion: 0
+      agreeableness: 0
+      neuroticism: 0
+  - title: "Jeg kan godt lide at spise k\xF8d"
+    questionType: 0
+    ffm:
+      openness: -1
+      conscientiousness: -1
+      extraversion: 1
+      agreeableness: -1
+      neuroticism: 0
+  - title: Jeg kan godt lide at drikke vin
+    questionType: 0
+    ffm:
+      openness: 1
+      conscientiousness: 0
+      extraversion: 1
+      agreeableness: -1
+      neuroticism: 0
+  - title: "Jeg kan lide at spise s\xF8d mad"
+    questionType: 0
+    ffm:
+      openness: 0
+      conscientiousness: -1
+      extraversion: 1
+      agreeableness: 0
+      neuroticism: 1
+  - title: Jeg kan godt lide animationsfilm
+    questionType: 0
+    ffm:
+      openness: 0
+      conscientiousness: -1
+      extraversion: -1
+      agreeableness: -1
+      neuroticism: 1
+  - title: Jeg kan godt lide romance film
+    questionType: 0
+    ffm:
+      openness: -1
+      conscientiousness: 0
+      extraversion: 1
+      agreeableness: 1
+      neuroticism: 0
+  - title: Jeg kan godt lide adventure film
+    questionType: 0
+    ffm:
+      openness: 0
+      conscientiousness: 1
+      extraversion: 0
+      agreeableness: 1
+      neuroticism: -1
+  - title: Jeg kan godt lide komedie film
+    questionType: 0
+    ffm:
+      openness: -1
+      conscientiousness: 0
+      extraversion: 1
+      agreeableness: 1
+      neuroticism: 0
+  - title: Jeg kan godt lide indie film
+    questionType: 0
+    ffm:
+      openness: 1
+      conscientiousness: 1
+      extraversion: 0
+      agreeableness: 0
+      neuroticism: -1
+  - title: Jeg kan godt lide action film
+    questionType: 0
+    ffm:
+      openness: -1
+      conscientiousness: 0
+      extraversion: 1
+      agreeableness: 0
+      neuroticism: 0
+  - title: Jeg kan godt lide tragedie film
+    questionType: 0
+    ffm:
+      openness: 1
+      conscientiousness: 0
+      extraversion: -1
+      agreeableness: 0
+      neuroticism: 1
+  - title: Jeg kan godt lide kult film
+    questionType: 0
+    ffm:
+      openness: 1
+      conscientiousness: -1
+      extraversion: 0
+      agreeableness: -1
+      neuroticism: 1
+  - title: Jeg kan godt lide neo-noir film
+    questionType: 0
+    ffm:
+      openness: 1
+      conscientiousness: 0
+      extraversion: -1
+      agreeableness: -1
+      neuroticism: 0
+  - title: Jeg kan godt lide science fiction film
+    questionType: 0
+    ffm:
+      openness: 0
+      conscientiousness: 1
+      extraversion: -1
+      agreeableness: 0
+      neuroticism: 0
+  - title: Jeg kan godt lide abstrakt kunst
+    questionType: 0
+    ffm:
+      openness: 1
+      conscientiousness: 0
+      extraversion: 0
+      agreeableness: 0
+      neuroticism: 1
+  - title: Jeg kan godt lide pop art
+    questionType: 0
+    ffm:
+      openness: 1
+      conscientiousness: 0
+      extraversion: 0
+      agreeableness: 0
+      neuroticism: 1
+  - title: Jeg kan godt lide folk musik
+    questionType: 0
+    ffm:
+      openness: 1
+      conscientiousness: -1
+      extraversion: 0
+      agreeableness: 1
+      neuroticism: 0
   unansweredQuestions: []
   eventPrefab: {fileID: 7393934312647178075, guid: b5f1dced6e1bda544a959a346ed45b50, type: 3}
 --- !u!114 &888998133
@@ -352,173 +528,995 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moroEvents:
-  - eventName: 'DM I Freestyle Rap 2022 ***Finalen*** '
-    eventDescription: 
-    price: 230
-    distance: 0
-    venue: Pumpehuset
-    address: "Studiestr\xE6de 52, K\xF8benhavn V "
-    eventImage: {fileID: 21300000, guid: fd4bce617642b7247a7aabe88312d44f, type: 3}
-    ffm:
-      openness: 0
-      conscientiousness: 0
-      extraversion: 10
-      agreeableness: 0
-      neuroticism: 55
-    date:
-      day: 16
-      month: 10
-      year: 22
-      startTime: 19
-      endTime: 200
-    relatabilityValue: 99
-  - eventName: 'DRONNING LOUISES BRO LOPPEMARKED '
-    eventDescription: 
-    price: 0
-    distance: 0
-    venue: 
-    address: "S\xF8torvet 2, K\xF8benhavn K"
-    eventImage: {fileID: 3075375336989598424, guid: 8af647750b1b9ef48b06409947b2bef9, type: 3}
-    ffm:
-      openness: 35
-      conscientiousness: 0
-      extraversion: 0
-      agreeableness: 35
-      neuroticism: 75
-    date:
-      day: 26
-      month: 6
-      year: 22
-      startTime: 10
-      endTime: 15
-    relatabilityValue: 0
   - eventName: 'Fernisering: Afgang 2022 / MFA Degree Show'
     eventDescription: 
     price: 0
     distance: 0
-    venue: 'Kunsthal Charlottenborg '
-    address: "Kongens Nytorv 1, K\xF8benhavn K"
-    eventImage: {fileID: 21300000, guid: ef32310bba1e13742b4b26acb3f050aa, type: 3}
+    venue: Kunsthal Charlottenborg
+    address: "Indre K\xF8benhavn"
+    eventImage: {fileID: 0}
     ffm:
-      openness: 0
-      conscientiousness: 0
-      extraversion: 75
-      agreeableness: 0
-      neuroticism: 75
-    date:
-      day: 19
-      month: 4
-      year: 22
-      startTime: 12
-      endTime: 20
-    relatabilityValue: 0
-  - eventName: 'Science & Cocktails: The infertility crisis '
-    eventDescription: 
-    price: 80
-    distance: 0
-    venue: DR Koncerthuset
-    address: "\xD8restads Boulevard 13, K\xF8benhavn S"
-    eventImage: {fileID: 21300000, guid: 086961f38ee35ed4685f3fbf672a1e25, type: 3}
-    ffm:
-      openness: 0
+      openness: 80
       conscientiousness: 0
       extraversion: 0
       agreeableness: 0
       neuroticism: 0
     date:
-      day: 30
-      month: 5
+      day: 19
+      month: 6
       year: 22
-      startTime: 19
-      endTime: 22
-    relatabilityValue: 4
-  - eventName: 'Rex Orange County i K.B. Hallen '
-    eventDescription: 
-    price: 395
-    distance: 0
-    venue: 'K.B. Hallen '
-    address: Peter Bangs Vej 147, Frederiksberg
-    eventImage: {fileID: -7872424597466564420, guid: ddfeb542476682540841534b73cbffeb, type: 3}
-    ffm:
-      openness: 100
-      conscientiousness: 0
-      extraversion: 0
-      agreeableness: 0
-      neuroticism: 50
-    date:
-      day: 16
-      month: 11
-      year: 22
-      startTime: 20
-      endTime: 22
-    relatabilityValue: 6
-  - eventName: 'Queens Of Picnic '
+      startTime: 1200
+      endTime: 2000
+    relatabilityValue: 0
+  - eventName: "The Informants \u2013 filmprogram kurateret af New Red Order"
     eventDescription: 
     price: 0
     distance: 0
-    venue: Byhaven
-    address: "Studiestr\xE6de 52, K\xF8benhavn V"
-    eventImage: {fileID: 21300000, guid: e9d12a28cacd0bf47a586935ebd5cb67, type: 3}
+    venue: Kunsthal Charlottenborg
+    address: "Indre K\xF8benhavn"
+    eventImage: {fileID: 0}
     ffm:
-      openness: 0
+      openness: 80
       conscientiousness: 0
-      extraversion: 20
+      extraversion: 0
       agreeableness: 0
       neuroticism: 0
     date:
-      day: 6
-      month: 5
+      day: 17
+      month: 6
       year: 22
-      startTime: 15
-      endTime: 200
-    relatabilityValue: 87
-  - eventName: "Glyptoteket fylder 125 \xE5r "
+      startTime: 1200
+      endTime: 2000
+    relatabilityValue: 0
+  - eventName: "Long Runs \u2013 Hotel Cecil [Copenhagen Jazz Festival 2022]"
     eventDescription: 
-    price: 115
+    price: 170
     distance: 0
-    venue: 'Glyptoteket '
-    address: "Dantes Plads 7, K\xF8benhavn K "
-    eventImage: {fileID: 21300000, guid: bb99ea44e00e26f4baa891b6a48bc08d, type: 3}
+    venue: Hotel Cecil
+    address: "Indre K\xF8benhavn"
+    eventImage: {fileID: 0}
     ffm:
-      openness: 15
+      openness: 65
       conscientiousness: 0
       extraversion: 0
-      agreeableness: 85
+      agreeableness: 0
       neuroticism: 0
     date:
-      day: 1
-      month: 5
+      day: 8
+      month: 7
       year: 22
-      startTime: 10
-      endTime: 17
-    relatabilityValue: 55
-  - eventName: 'Ary & Friends: Awinbeh + MALU + Ju Kaia + flere // Pumpehuset'
+      startTime: 2000
+      endTime: 2200
+    relatabilityValue: 0
+  - eventName: 'Pleasure Control Presents: DJ Mell G + Sedef Adasi at Distortion
+      Club'
     eventDescription: 
-    price: 125
+    price: 200
     distance: 0
     venue: Pumpehuset
-    address: "Studiestr\xE6de 52, K\xF8benhavn V "
-    eventImage: {fileID: 7615911556902982741, guid: 1f4355bb3d26e6c44b546044f3913361, type: 3}
+    address: "Indre K\xF8benhavn"
+    eventImage: {fileID: 0}
     ffm:
       openness: 0
-      conscientiousness: 35
+      conscientiousness: 0
+      extraversion: 65
+      agreeableness: 0
+      neuroticism: 0
+    date:
+      day: 2
+      month: 6
+      year: 22
+      startTime: 2200
+      endTime: 60
+    relatabilityValue: 0
+  - eventName: Kunstakademiets Maj Marked
+    eventDescription: 
+    price: 0
+    distance: 0
+    venue: Det Kongelige Danske Kunstakademis Billedkunstskole
+    address: "Indre K\xF8benhavn"
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 80
+      conscientiousness: 0
+      extraversion: 0
+      agreeableness: 0
+      neuroticism: 0
+    date:
+      day: 29
+      month: 5
+      year: 22
+      startTime: 1100
+      endTime: 1600
+    relatabilityValue: 0
+  - eventName: COPENHELL 2022
+    eventDescription: 
+    price: 500
+    distance: 0
+    venue: "Refshale\xF8en"
+    address: "Refshale\xF8en"
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 65
+      conscientiousness: 0
       extraversion: 65
       agreeableness: 0
       neuroticism: 35
     date:
-      day: 23
-      month: 4
+      day: 15
+      month: 6
       year: 22
-      startTime: 20
-      endTime: 200
-    relatabilityValue: 34
-  - eventName: "Medicinske planter: Naturens b\xE6redygtige apotek"
+      startTime: 12
+      endTime: 0
+    relatabilityValue: 0
+  - eventName: "Pal\xE6stina Folkek\xF8kken"
     eventDescription: 
-    price: 125
+    price: 50
     distance: 0
-    venue: "K\xF8benhavns universitet medicinsk fakultet"
-    address: "Blegdamsvej 3B, K\xF8benhavn N "
-    eventImage: {fileID: 21300000, guid: 93ff872b167345c438fdb11bb7888241, type: 3}
+    venue: Folkets Hus
+    address: "N\xF8rrebro"
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 65
+      conscientiousness: 0
+      extraversion: 0
+      agreeableness: 0
+      neuroticism: 0
+    date:
+      day: 25
+      month: 5
+      year: 22
+      startTime: 1800
+      endTime: 2100
+    relatabilityValue: 0
+  - eventName: Samba- og Dansefestival i Enghaveparke
+    eventDescription: 
+    price: 0
+    distance: 0
+    venue: Enghaveparken
+    address: Vesterbro
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 0
+      conscientiousness: 0
+      extraversion: 65
+      agreeableness: 0
+      neuroticism: 0
+    date:
+      day: 5
+      month: 6
+      year: 22
+      startTime: 1200
+      endTime: 1800
+    relatabilityValue: 0
+  - eventName: "I KAN IKKE SL\xC5 OS IHJEL"
+    eventDescription: 
+    price: 159
+    distance: 0
+    venue: Operaen Christiania
+    address: Christania
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 65
+      conscientiousness: 0
+      extraversion: 65
+      agreeableness: 0
+      neuroticism: 0
+    date:
+      day: 26
+      month: 5
+      year: 22
+      startTime: 2100
+      endTime: 100
+    relatabilityValue: 0
+  - eventName: Die Antword // Pumpehuset
+    eventDescription: 
+    price: 250
+    distance: 0
+    venue: Pumpehuset
+    address: "Indre K\xF8benhavn"
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 65
+      conscientiousness: 0
+      extraversion: 65
+      agreeableness: 0
+      neuroticism: 0
+    date:
+      day: 17
+      month: 9
+      year: 22
+      startTime: 2000
+      endTime: 2300
+    relatabilityValue: 0
+  - eventName: Shadow World - Inside the Global Arms Trade
+    eventDescription: 
+    price: 75
+    distance: 0
+    venue: Cinemateket
+    address: "Indre K\xF8benhavn"
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 65
+      conscientiousness: 0
+      extraversion: 0
+      agreeableness: 0
+      neuroticism: 0
+    date:
+      day: 21
+      month: 5
+      year: 22
+      startTime: 1845
+      endTime: 2100
+    relatabilityValue: 0
+  - eventName: 'Pitchblack Playback: Radiohead: OK Computer (25th Anniversary)'
+    eventDescription: 
+    price: 250
+    distance: 0
+    venue: Empire Bio
+    address: "N\xF8rrebro"
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 65
+      conscientiousness: 0
+      extraversion: 65
+      agreeableness: 0
+      neuroticism: 0
+    date:
+      day: 26
+      month: 5
+      year: 22
+      startTime: 2000
+      endTime: 2130
+    relatabilityValue: 0
+  - eventName: "Thomas Vinterberg & Thomas Bo Larsen TALK | K\xF8benhavn"
+    eventDescription: 
+    price: 199
+    distance: 0
+    venue: Det Kongelige Teater
+    address: "Indre K\xF8benhavn"
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 65
+      conscientiousness: 0
+      extraversion: 0
+      agreeableness: 65
+      neuroticism: 0
+    date:
+      day: 24
+      month: 5
+      year: 22
+      startTime: 1900
+      endTime: 2100
+    relatabilityValue: 0
+  - eventName: The Rocky Horror Picture Show
+    eventDescription: 
+    price: 70
+    distance: 0
+    venue: Husets Biograf
+    address: "Indre K\xF8benhavn"
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 65
+      conscientiousness: 0
+      extraversion: 0
+      agreeableness: 65
+      neuroticism: 0
+    date:
+      day: 21
+      month: 5
+      year: 22
+      startTime: 2000
+      endTime: 2230
+    relatabilityValue: 0
+  - eventName: Bas i Byhaven 2022
+    eventDescription: 
+    price: 0
+    distance: 0
+    venue: Byhaven Pumpehuset
+    address: "Indre K\xF8benhavn"
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 0
+      conscientiousness: 0
+      extraversion: 65
+      agreeableness: 0
+      neuroticism: 0
+    date:
+      day: 18
+      month: 6
+      year: 22
+      startTime: 1500
+      endTime: 2000
+    relatabilityValue: 0
+  - eventName: Kicking The Curb Party w. Leizure & Tender Youth & Emma Acs (DJ)
+    eventDescription: 
+    price: 0
+    distance: 0
+    venue: "Byhaven Pumpehuset\r"
+    address: "Indre K\xF8benhavn"
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 65
+      conscientiousness: 0
+      extraversion: 65
+      agreeableness: 0
+      neuroticism: 35
+    date:
+      day: 11
+      month: 6
+      year: 22
+      startTime: 1500
+      endTime: 2000
+    relatabilityValue: 0
+  - eventName: "Fernisering p\xE5 Nina Sikkersoqs udstilling \\ Sikkernerup Nalaa"
+    eventDescription: 
+    price: 0
+    distance: 0
+    venue: "Det Gr\xF8nlandske Hus KBH"
+    address: "Indre K\xF8benhavn"
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 80
+      conscientiousness: 0
+      extraversion: 65
+      agreeableness: 0
+      neuroticism: 0
+    date:
+      day: 3
+      month: 6
+      year: 22
+      startTime: 1700
+      endTime: 1900
+    relatabilityValue: 0
+  - eventName: "Reggae Spot p\xE5 Momentum. G\xE6st: Mamba Di Lion"
+    eventDescription: 
+    price: 50
+    distance: 0
+    venue: Huset-KBH
+    address: "Indre K\xF8benhavn"
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 0
+      conscientiousness: 0
+      extraversion: 65
+      agreeableness: 0
+      neuroticism: 0
+    date:
+      day: 27
+      month: 5
+      year: 22
+      startTime: 2100
+      endTime: 200
+    relatabilityValue: 0
+  - eventName: 'Science & Cocktails: The Neuroscience of Health and Performance'
+    eventDescription: 
+    price: 150
+    distance: 0
+    venue: DR Koncerthuset
+    address: "\xD8restaden"
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 65
+      conscientiousness: 0
+      extraversion: 0
+      agreeableness: 0
+      neuroticism: 0
+    date:
+      day: 3
+      month: 6
+      year: 22
+      startTime: 1900
+      endTime: 2200
+    relatabilityValue: 0
+  - eventName: Vild Vin Festival 2022 - Summer Edition
+    eventDescription: 
+    price: 0
+    distance: 0
+    venue: Villa Kultur
+    address: "\xD8sterbro"
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 80
+      conscientiousness: 0
+      extraversion: 65
+      agreeableness: 35
+      neuroticism: 0
+    date:
+      day: 13
+      month: 8
+      year: 22
+      startTime: 1400
+      endTime: 1800
+    relatabilityValue: 0
+  - eventName: 'Science & Cocktails: Reality & Physics & Philosophy with Nobel prize
+      Frank Wilczek'
+    eventDescription: 
+    price: 100
+    distance: 0
+    venue: DR Koncerthuset
+    address: "\xD8restaden"
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 65
+      conscientiousness: 0
+      extraversion: 0
+      agreeableness: 0
+      neuroticism: 0
+    date:
+      day: 28
+      month: 6
+      year: 22
+      startTime: 1900
+      endTime: 2100
+    relatabilityValue: 0
+  - eventName: "MARIANNE & LEONARD: WORDS OF LOVE m. gr\xE6sk naturvin & talk"
+    eventDescription: 
+    price: 100
+    distance: 0
+    venue: Cinemateket
+    address: "Indre K\xF8benhavn"
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 80
+      conscientiousness: 0
+      extraversion: 0
+      agreeableness: 0
+      neuroticism: 0
+    date:
+      day: 9
+      month: 7
+      year: 22
+      startTime: 1900
+      endTime: 2120
+    relatabilityValue: 0
+  - eventName: "Sang og Sjask: F\xE6llessang / opl\xE6g / naturvin "
+    eventDescription: 
+    price: 0
+    distance: 0
+    venue: "Gethsemane Kirk\r"
+    address: Vesterbro
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 80
+      conscientiousness: 0
+      extraversion: 0
+      agreeableness: 0
+      neuroticism: 0
+    date:
+      day: 20
+      month: 7
+      year: 22
+      startTime: 1920
+      endTime: 2040
+    relatabilityValue: 0
+  - eventName: 'Vinsmagning: Slovakisk Naturvin'
+    eventDescription: 
+    price: 50
+    distance: 0
+    venue: 20a
+    address: "N\xF8rrebro"
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 80
+      conscientiousness: 0
+      extraversion: 0
+      agreeableness: 0
+      neuroticism: 0
+    date:
+      day: 22
+      month: 8
+      year: 22
+      startTime: 1600
+      endTime: 1800
+    relatabilityValue: 0
+  - eventName: Pop-up udstilling og naturvin
+    eventDescription: 
+    price: 0
+    distance: 0
+    venue: "P\xE8tillant"
+    address: "\xD8sterbro"
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 80
+      conscientiousness: 0
+      extraversion: 0
+      agreeableness: 0
+      neuroticism: 0
+    date:
+      day: 5
+      month: 7
+      year: 22
+      startTime: 1500
+      endTime: 1700
+    relatabilityValue: 0
+  - eventName: Naturvin - Smagning og foredrag
+    eventDescription: 
+    price: 150
+    distance: 0
+    venue: "K\xF8dbyens Fiskebar"
+    address: "K\xF8dbyen"
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 80
+      conscientiousness: 0
+      extraversion: 0
+      agreeableness: 0
+      neuroticism: 0
+    date:
+      day: 7
+      month: 8
+      year: 22
+      startTime: 1400
+      endTime: 1600
+    relatabilityValue: 0
+  - eventName: Kind mod Kind @Hotel Cecil
+    eventDescription: 
+    price: 185
+    distance: 0
+    venue: Hotel Cecil
+    address: "Indre K\xF8benhavn"
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 80
+      conscientiousness: 0
+      extraversion: 0
+      agreeableness: 65
+      neuroticism: 0
+    date:
+      day: 22
+      month: 9
+      year: 22
+      startTime: 2000
+      endTime: 2300
+    relatabilityValue: 0
+  - eventName: FOXY FESTIVAL
+    eventDescription: 
+    price: 0
+    distance: 0
+    venue: Reffen
+    address: "Refshale\xF8en"
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 65
+      conscientiousness: 0
+      extraversion: 0
+      agreeableness: 65
+      neuroticism: 0
+    date:
+      day: 26
+      month: 5
+      year: 22
+      startTime: 1100
+      endTime: 200
+    relatabilityValue: 0
+  - eventName: Christiania Comedy Club
+    eventDescription: 
+    price: 50
+    distance: 0
+    venue: "Christianias Jazzclub & B\xF8rneteater"
+    address: Christania
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 35
+      conscientiousness: 0
+      extraversion: 0
+      agreeableness: 65
+      neuroticism: 20
+    date:
+      day: 2
+      month: 6
+      year: 22
+      startTime: 1900
+      endTime: 2100
+    relatabilityValue: 0
+  - eventName: Pest Fest 2022
+    eventDescription: 
+    price: 333
+    distance: 0
+    venue: Pumpehuset
+    address: "Indre K\xF8benhavn"
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 65
+      conscientiousness: 0
+      extraversion: 65
+      agreeableness: 0
+      neuroticism: 35
+    date:
+      day: 18
+      month: 10
+      year: 22
+      startTime: 1900
+      endTime: 0
+    relatabilityValue: 0
+  - eventName: "Her G\xE5r Det Godt: Live Podcast"
+    eventDescription: 
+    price: 150
+    distance: 0
+    venue: Bremen Teater
+    address: Vesterbro
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 0
+      conscientiousness: 0
+      extraversion: 0
+      agreeableness: 65
+      neuroticism: 0
+    date:
+      day: 2
+      month: 9
+      year: 22
+      startTime: 2000
+      endTime: 2200
+    relatabilityValue: 0
+  - eventName: Tame Impala - Royal Arena
+    eventDescription: 
+    price: 390
+    distance: 0
+    venue: Royal Arena
+    address: "\xD8restaden"
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 0
+      conscientiousness: 0
+      extraversion: 65
+      agreeableness: 80
+      neuroticism: 0
+    date:
+      day: 22
+      month: 8
+      year: 22
+      startTime: 2000
+      endTime: 2300
+    relatabilityValue: 0
+  - eventName: 'Filmaften: Find Nemo'
+    eventDescription: 
+    price: 85
+    distance: 0
+    venue: Cinemateket
+    address: "Indre K\xF8benhavn"
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 0
+      conscientiousness: 35
+      extraversion: 0
+      agreeableness: 0
+      neuroticism: 65
+    date:
+      day: 19
+      month: 5
+      year: 22
+      startTime: 2000
+      endTime: 2200
+    relatabilityValue: 0
+  - eventName: 'Filmaften: Parasite'
+    eventDescription: 
+    price: 85
+    distance: 0
+    venue: Cinemateket
+    address: "Indre K\xF8benhavn"
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 80
+      conscientiousness: 0
+      extraversion: 0
+      agreeableness: 0
+      neuroticism: 0
+    date:
+      day: 26
+      month: 5
+      year: 22
+      startTime: 2000
+      endTime: 2200
+    relatabilityValue: 0
+  - eventName: 'Filmaften: The Notebook'
+    eventDescription: 
+    price: 85
+    distance: 0
+    venue: Cinemateket
+    address: "Indre K\xF8benhavn"
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 0
+      conscientiousness: 0
+      extraversion: 0
+      agreeableness: 65
+      neuroticism: 0
+    date:
+      day: 2
+      month: 6
+      year: 22
+      startTime: 2000
+      endTime: 2200
+    relatabilityValue: 0
+  - eventName: 'Filmaften: The Dark Knight'
+    eventDescription: 
+    price: 85
+    distance: 0
+    venue: Cinemateket
+    address: "Indre K\xF8benhavn"
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 35
+      conscientiousness: 0
+      extraversion: 65
+      agreeableness: 0
+      neuroticism: 0
+    date:
+      day: 8
+      month: 6
+      year: 22
+      startTime: 2000
+      endTime: 2200
+    relatabilityValue: 0
+  - eventName: 'Filmaften: Titanic'
+    eventDescription: 
+    price: 85
+    distance: 0
+    venue: Cinemateket
+    address: "Indre K\xF8benhavn"
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 65
+      conscientiousness: 0
+      extraversion: 0
+      agreeableness: 0
+      neuroticism: 65
+    date:
+      day: 15
+      month: 6
+      year: 22
+      startTime: 2000
+      endTime: 2200
+    relatabilityValue: 0
+  - eventName: 'Filmaften: Superbad'
+    eventDescription: 
+    price: 85
+    distance: 0
+    venue: Cinemateket
+    address: "Indre K\xF8benhavn"
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 35
+      conscientiousness: 0
+      extraversion: 0
+      agreeableness: 65
+      neuroticism: 20
+    date:
+      day: 22
+      month: 6
+      year: 22
+      startTime: 2000
+      endTime: 2200
+    relatabilityValue: 0
+  - eventName: 'Filmaften: Pulp Fiction'
+    eventDescription: 
+    price: 85
+    distance: 0
+    venue: Cinemateket
+    address: "Indre K\xF8benhavn"
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 65
+      conscientiousness: 0
+      extraversion: 0
+      agreeableness: 0
+      neuroticism: 65
+    date:
+      day: 29
+      month: 6
+      year: 22
+      startTime: 2000
+      endTime: 2200
+    relatabilityValue: 0
+  - eventName: 'Filmaften: Taxi Driver'
+    eventDescription: 
+    price: 85
+    distance: 0
+    venue: Cinemateket
+    address: "Indre K\xF8benhavn"
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 65
+      conscientiousness: 0
+      extraversion: 0
+      agreeableness: 30
+      neuroticism: 65
+    date:
+      day: 6
+      month: 7
+      year: 22
+      startTime: 2000
+      endTime: 2200
+    relatabilityValue: 0
+  - eventName: 'Filmaften: Ringenes Herre: Kongen vender tilbage'
+    eventDescription: 
+    price: 85
+    distance: 0
+    venue: Cinemateket
+    address: "Indre K\xF8benhavn"
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 0
+      conscientiousness: 65
+      extraversion: 0
+      agreeableness: 65
+      neuroticism: 35
+    date:
+      day: 13
+      month: 7
+      year: 22
+      startTime: 2000
+      endTime: 2200
+    relatabilityValue: 0
+  - eventName: 'Filmaften: Interstellar'
+    eventDescription: 
+    price: 85
+    distance: 0
+    venue: Cinemateket
+    address: "Indre K\xF8benhavn"
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 0
+      conscientiousness: 65
+      extraversion: 35
+      agreeableness: 0
+      neuroticism: 0
+    date:
+      day: 20
+      month: 7
+      year: 22
+      startTime: 2000
+      endTime: 2200
+    relatabilityValue: 0
+  - eventName: "Cookout: B\xF8ffer & \xD8ller & P\xF8ller"
+    eventDescription: 
+    price: 150
+    distance: 0
+    venue: "K\xF8dbyen"
+    address: "K\xF8dbyen"
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 0
+      conscientiousness: 0
+      extraversion: 0
+      agreeableness: 65
+      neuroticism: 0
+    date:
+      day: 20
+      month: 7
+      year: 22
+      startTime: 1700
+      endTime: 2200
+    relatabilityValue: 0
+  - eventName: 'Cookout: Burgers & Shakes'
+    eventDescription: 
+    price: 150
+    distance: 0
+    venue: "K\xF8dbyen"
+    address: "K\xF8dbyen"
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 0
+      conscientiousness: 0
+      extraversion: 0
+      agreeableness: 65
+      neuroticism: 0
+    date:
+      day: 27
+      month: 7
+      year: 22
+      startTime: 1700
+      endTime: 2200
+    relatabilityValue: 0
+  - eventName: 'Ariana Grande [support: Ella Mai] / Royal Arena'
+    eventDescription: 
+    price: 399
+    distance: 0
+    venue: Royal Arena
+    address: "\xD8restaden"
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 65
+      conscientiousness: 35
+      extraversion: 65
+      agreeableness: 65
+      neuroticism: 65
+    date:
+      day: 26
+      month: 8
+      year: 22
+      startTime: 1900
+      endTime: 2300
+    relatabilityValue: 0
+  - eventName: Bremer/McCoy
+    eventDescription: 
+    price: 199
+    distance: 0
+    venue: Bremen Teater
+    address: Vesterbro
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 65
+      conscientiousness: 0
+      extraversion: 0
+      agreeableness: 0
+      neuroticism: 0
+    date:
+      day: 3
+      month: 10
+      year: 22
+      startTime: 1930
+      endTime: 2230
+    relatabilityValue: 0
+  - eventName: 'Torsdags Jazz: Arturo Serra'
+    eventDescription: 
+    price: 0
+    distance: 0
+    venue: "S\xF8hesten"
+    address: "Indre K\xF8benhavn"
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 65
+      conscientiousness: 0
+      extraversion: 0
+      agreeableness: 0
+      neuroticism: 0
+    date:
+      day: 19
+      month: 5
+      year: 22
+      startTime: 2000
+      endTime: 2130
+    relatabilityValue: 0
+  - eventName: "Yussef Dayes (UK) \u2013 Copenhagen Jazz Festival 2022"
+    eventDescription: 
+    price: 300
+    distance: 0
+    venue: DR Koncerthuset
+    address: "\xD8restaden"
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 65
+      conscientiousness: 0
+      extraversion: 0
+      agreeableness: 0
+      neuroticism: 0
+    date:
+      day: 4
+      month: 7
+      year: 22
+      startTime: 2100
+      endTime: 2230
+    relatabilityValue: 0
+  - eventName: "FABR\xC4K "
+    eventDescription: 
+    price: 120
+    distance: 0
+    venue: Rust
+    address: "N\xF8rrebro"
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 0
+      conscientiousness: 0
+      extraversion: 65
+      agreeableness: 0
+      neuroticism: 0
+    date:
+      day: 10
+      month: 6
+      year: 22
+      startTime: 1900
+      endTime: 2200
+    relatabilityValue: 0
+  - eventName: 'Denzel Curry [support: Skt. DeLarge + Playthatboizay]'
+    eventDescription: 
+    price: 299
+    distance: 0
+    venue: Vega
+    address: Vesterbro
+    eventImage: {fileID: 0}
     ffm:
       openness: 0
       conscientiousness: 0
@@ -526,152 +1524,352 @@ MonoBehaviour:
       agreeableness: 0
       neuroticism: 0
     date:
-      day: 27
-      month: 4
-      year: 22
-      startTime: 19
-      endTime: 21
-    relatabilityValue: 23
-  - eventName: 'Landskamp: Danmark - Finland'
-    eventDescription: 
-    price: 125
-    distance: 0
-    venue: "R\xF8dovre Centrum Arena "
-    address: "R\xF8dovre Parkvej 425, R\xF8dovre"
-    eventImage: {fileID: 21300000, guid: dda1f89a984b6704ab351a19c2665474, type: 3}
-    ffm:
-      openness: 50
-      conscientiousness: 0
-      extraversion: 0
-      agreeableness: 70
-      neuroticism: 40
-    date:
-      day: 14
+      day: 21
       month: 5
       year: 22
-      startTime: 15
-      endTime: 17
-    relatabilityValue: 29
-  - eventName: Soundvenue INPUT 2022 - Torsdag
-    eventDescription: 
-    price: 150
-    distance: 0
-    venue: 
-    address: "Enghavevej 81 K\xF8benhavn V "
-    eventImage: {fileID: 21300000, guid: 748f94a220435d84fba6aea736b86577, type: 3}
-    ffm:
-      openness: 55
-      conscientiousness: 0
-      extraversion: 55
-      agreeableness: 0
-      neuroticism: 25
-    date:
-      day: 19
-      month: 5
-      year: 22
-      startTime: 18
-      endTime: 200
-    relatabilityValue: 90
-  - eventName: Soundvenue INPUT 2022 - Fredag
-    eventDescription: 
-    price: 150
-    distance: 0
-    venue: 
-    address: "Enghavevej 81 K\xF8benhavn V"
-    eventImage: {fileID: 21300000, guid: 748f94a220435d84fba6aea736b86577, type: 3}
-    ffm:
-      openness: 75
-      conscientiousness: 0
-      extraversion: 75
-      agreeableness: 0
-      neuroticism: 30
-    date:
-      day: 20
-      month: 5
-      year: 22
-      startTime: 18
-      endTime: 200
-    relatabilityValue: 66
-  - eventName: "Fortovsfest l\xF8rdag d. 7. maj 2022 "
+      startTime: 1900
+      endTime: 2300
+    relatabilityValue: 0
+  - eventName: "Frugt & Juice & Sydens rytmer p\xE5 Guldbergsgade "
     eventDescription: 
     price: 0
     distance: 0
-    venue: Enghave Plads
-    address: "Enghave Plads, K\xF8benhavn V"
-    eventImage: {fileID: 21300000, guid: 748f94a220435d84fba6aea736b86577, type: 3}
+    venue: Guldbergsgade
+    address: "N\xF8rrebro"
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 65
+      conscientiousness: 65
+      extraversion: 0
+      agreeableness: 0
+      neuroticism: 0
+    date:
+      day: 16
+      month: 6
+      year: 22
+      startTime: 1300
+      endTime: 1600
+    relatabilityValue: 0
+  - eventName: Fantastiske Kvinder
+    eventDescription: 
+    price: 100
+    distance: 0
+    venue: Lousiana
+    address: "Indre K\xF8benhavn"
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 80
+      conscientiousness: 0
+      extraversion: 65
+      agreeableness: 0
+      neuroticism: 0
+    date:
+      day: 30
+      month: 7
+      year: 22
+      startTime: 1000
+      endTime: 2000
+    relatabilityValue: 0
+  - eventName: The Room
+    eventDescription: 
+    price: 70
+    distance: 0
+    venue: Husets Biograf
+    address: "Indre K\xF8benhavn"
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 65
+      conscientiousness: 35
+      extraversion: 0
+      agreeableness: 65
+      neuroticism: 65
+    date:
+      day: 3
+      month: 6
+      year: 22
+      startTime: 1830
+      endTime: 2030
+    relatabilityValue: 0
+  - eventName: Digte i solen ft. Helle Helle
+    eventDescription: 
+    price: 0
+    distance: 0
+    venue: "\xD8stre Anl\xE6g"
+    address: "\xD8sterbro"
+    eventImage: {fileID: 0}
     ffm:
       openness: 65
       conscientiousness: 0
-      extraversion: 75
+      extraversion: 0
       agreeableness: 0
-      neuroticism: 30
-    date:
-      day: 7
-      month: 5
-      year: 22
-      startTime: 10
-      endTime: 22
-    relatabilityValue: 34
-  - eventName: 'Daggry KBH Koncerter: Vilje, SIRENE, DJ Prettygrrl og MINERVA'
-    eventDescription: 
-    price: 0
-    distance: 0
-    venue: 
-    address: "Bl\xE5g\xE5rds Plads 5, K\xF8benhavn N "
-    eventImage: {fileID: 21300000, guid: 54baad2610cda8949a138a19fe1cab73, type: 3}
-    ffm:
-      openness: 75
-      conscientiousness: 0
-      extraversion: 65
-      agreeableness: 35
       neuroticism: 0
     date:
-      day: 22
-      month: 4
+      day: 4
+      month: 6
       year: 22
-      startTime: 1830
-      endTime: 23
-    relatabilityValue: 65
-  - eventName: "Det Bl\xF8de Rum with Daggry KBH: Hvordan opretter man en st\xF8ttegruppe"
+      startTime: 1100
+      endTime: 1300
+    relatabilityValue: 0
+  - eventName: "Digte med J\xF8rgen Leth"
     eventDescription: 
-    price: 0
+    price: 50
     distance: 0
-    venue: 
-    address: "Bl\xE5g\xE5rds Plads 5, K\xF8benhavn N "
-    eventImage: {fileID: 21300000, guid: 720994fef0bd7c746978ea8b869cbade, type: 3}
+    venue: "Caf\xE9 Mellemrummet"
+    address: "N\xF8rrebro"
+    eventImage: {fileID: 0}
     ffm:
-      openness: 0
-      conscientiousness: 20
-      extraversion: 10
+      openness: 65
+      conscientiousness: 0
+      extraversion: 0
       agreeableness: 0
-      neuroticism: 70
+      neuroticism: 0
     date:
-      day: 22
-      month: 4
+      day: 17
+      month: 7
       year: 22
-      startTime: 1830
-      endTime: 20
-    relatabilityValue: 22
-  - eventName: Women's Wrestling Bodyslam Showdown
+      startTime: 1845
+      endTime: 2130
+    relatabilityValue: 0
+  - eventName: Thorvaldsen og Te
+    eventDescription: 
+    price: 50
+    distance: 0
+    venue: Glyptoteket
+    address: Vesterbro
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 80
+      conscientiousness: 0
+      extraversion: 0
+      agreeableness: 0
+      neuroticism: 0
+    date:
+      day: 14
+      month: 7
+      year: 22
+      startTime: 1900
+      endTime: 2200
+    relatabilityValue: 0
+  - eventName: "Litter\xE6rer l\xF8rdage: True-Crime"
+    eventDescription: 
+    price: 25
+    distance: 0
+    venue: Folkehuset Absalon
+    address: Vesterbro
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 15
+      conscientiousness: 0
+      extraversion: 0
+      agreeableness: 35
+      neuroticism: 65
+    date:
+      day: 26
+      month: 8
+      year: 22
+      startTime: 1200
+      endTime: 1400
+    relatabilityValue: 0
+  - eventName: "Litter\xE6rer l\xF8rdage: Fantasy"
+    eventDescription: 
+    price: 25
+    distance: 0
+    venue: Folkehuset Absalon
+    address: Vesterbro
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 65
+      conscientiousness: 35
+      extraversion: 35
+      agreeableness: 0
+      neuroticism: 0
+    date:
+      day: 1
+      month: 9
+      year: 22
+      startTime: 1200
+      endTime: 1400
+    relatabilityValue: 0
+  - eventName: 'Ny udstilling: Stenalderen'
+    eventDescription: 
+    price: 115
+    distance: 0
+    venue: Naturhistorisk Museum
+    address: "Indre K\xF8benhavn"
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 80
+      conscientiousness: 0
+      extraversion: 0
+      agreeableness: 0
+      neuroticism: 0
+    date:
+      day: 1
+      month: 6
+      year: 22
+      startTime: 1000
+      endTime: 2000
+    relatabilityValue: 0
+  - eventName: Chilli Klaus Talk og Chilli Smagning
     eventDescription: 
     price: 150
     distance: 0
-    venue: Folkehuset Absalon
-    address: "S\xF8nder Blvd. 73,  K\xF8benhavn V"
-    eventImage: {fileID: 21300000, guid: 4e31da414c57c584580460ebecee830f, type: 3}
+    venue: Bremen Teater
+    address: Vesterbro
+    eventImage: {fileID: 0}
     ffm:
-      openness: 60
-      conscientiousness: 30
-      extraversion: 20
+      openness: 65
+      conscientiousness: 0
+      extraversion: 0
+      agreeableness: 0
+      neuroticism: 20
+    date:
+      day: 20
+      month: 6
+      year: 22
+      startTime: 1900
+      endTime: 2200
+    relatabilityValue: 0
+  - eventName: "Ren\xE6ssancens Erotiske  Eftervirkning"
+    eventDescription: 
+    price: 65
+    distance: 0
+    venue: Statens Museum For Kunst
+    address: "Indre K\xF8benhavn"
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 80
+      conscientiousness: 0
+      extraversion: 0
+      agreeableness: 0
+      neuroticism: 0
+    date:
+      day: 24
+      month: 6
+      year: 22
+      startTime: 1100
+      endTime: 2000
+    relatabilityValue: 0
+  - eventName: 'Spicy sauce & Tacos '
+    eventDescription: 
+    price: 0
+    distance: 0
+    venue: Mexihagen
+    address: "N\xF8rrebro"
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 0
+      conscientiousness: 0
+      extraversion: 0
+      agreeableness: 0
+      neuroticism: 20
+    date:
+      day: 25
+      month: 6
+      year: 22
+      startTime: 1200
+      endTime: 1500
+    relatabilityValue: 0
+  - eventName: Den Abstrakte Erotika
+    eventDescription: 
+    price: 100
+    distance: 0
+    venue: Lousiana
+    address: "Indre K\xF8benhavn"
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 65
+      conscientiousness: 0
+      extraversion: 0
       agreeableness: 0
       neuroticism: 0
     date:
       day: 9
-      month: 4
+      month: 7
       year: 22
-      startTime: 21
-      endTime: 23
-    relatabilityValue: 65
+      startTime: 1300
+      endTime: 2100
+    relatabilityValue: 0
+  - eventName: Andy Warhol Udstilling
+    eventDescription: 
+    price: 90
+    distance: 0
+    venue: Statens Museum for Kunst
+    address: "Indre K\xF8benhavn"
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 65
+      conscientiousness: 35
+      extraversion: 0
+      agreeableness: 0
+      neuroticism: 65
+    date:
+      day: 9
+      month: 8
+      year: 22
+      startTime: 1200
+      endTime: 1930
+    relatabilityValue: 0
+  - eventName: A History of Representational Art
+    eventDescription: 
+    price: 90
+    distance: 0
+    venue: 'Nationalmuseet '
+    address: "Indre K\xF8benhavn"
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 65
+      conscientiousness: 0
+      extraversion: 0
+      agreeableness: 0
+      neuroticism: 35
+    date:
+      day: 4
+      month: 8
+      year: 22
+      startTime: 1200
+      endTime: 1930
+    relatabilityValue: 0
+  - eventName: "Italiensk Is p\xE5 Enghave Plads"
+    eventDescription: 
+    price: 0
+    distance: 0
+    venue: Enghave Plads
+    address: Vesterbro
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 0
+      conscientiousness: 20
+      extraversion: 0
+      agreeableness: 65
+      neuroticism: 65
+    date:
+      day: 15
+      month: 6
+      year: 22
+      startTime: 1000
+      endTime: 1300
+    relatabilityValue: 0
+  - eventName: "En hyldest til Dan Turr\xE8l"
+    eventDescription: 
+    price: 0
+    distance: 0
+    venue: "\xD8stre Anl\xE6g"
+    address: "\xD8sterbro"
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 65
+      conscientiousness: 0
+      extraversion: 0
+      agreeableness: 0
+      neuroticism: 0
+    date:
+      day: 11
+      month: 6
+      year: 22
+      startTime: 1100
+      endTime: 1300
+    relatabilityValue: 0
   unshownEvents: []
   eventPrefab: {fileID: 7393934312647178075, guid: 7a4cd6894f8d86b4b9dee6409ea507e0, type: 3}
   randomMode: 0
@@ -803,7 +2001,1349 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textAssetData: {fileID: 4900000, guid: 2a4c7d20f141e0f48b26a538cd4f4f62, type: 3}
-  moroEvents: []
+  moroEvents:
+  - eventName: 'Fernisering: Afgang 2022 / MFA Degree Show'
+    eventDescription: 
+    price: 0
+    distance: 0
+    venue: Kunsthal Charlottenborg
+    address: "Indre K\xF8benhavn"
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 80
+      conscientiousness: 0
+      extraversion: 0
+      agreeableness: 0
+      neuroticism: 0
+    date:
+      day: 19
+      month: 6
+      year: 22
+      startTime: 1200
+      endTime: 2000
+    relatabilityValue: 0
+  - eventName: "The Informants \u2013 filmprogram kurateret af New Red Order"
+    eventDescription: 
+    price: 0
+    distance: 0
+    venue: Kunsthal Charlottenborg
+    address: "Indre K\xF8benhavn"
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 80
+      conscientiousness: 0
+      extraversion: 0
+      agreeableness: 0
+      neuroticism: 0
+    date:
+      day: 17
+      month: 6
+      year: 22
+      startTime: 1200
+      endTime: 2000
+    relatabilityValue: 0
+  - eventName: "Long Runs \u2013 Hotel Cecil [Copenhagen Jazz Festival 2022]"
+    eventDescription: 
+    price: 170
+    distance: 0
+    venue: Hotel Cecil
+    address: "Indre K\xF8benhavn"
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 65
+      conscientiousness: 0
+      extraversion: 0
+      agreeableness: 0
+      neuroticism: 0
+    date:
+      day: 8
+      month: 7
+      year: 22
+      startTime: 2000
+      endTime: 2200
+    relatabilityValue: 0
+  - eventName: 'Pleasure Control Presents: DJ Mell G + Sedef Adasi at Distortion
+      Club'
+    eventDescription: 
+    price: 200
+    distance: 0
+    venue: Pumpehuset
+    address: "Indre K\xF8benhavn"
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 0
+      conscientiousness: 0
+      extraversion: 65
+      agreeableness: 0
+      neuroticism: 0
+    date:
+      day: 2
+      month: 6
+      year: 22
+      startTime: 2200
+      endTime: 60
+    relatabilityValue: 0
+  - eventName: Kunstakademiets Maj Marked
+    eventDescription: 
+    price: 0
+    distance: 0
+    venue: Det Kongelige Danske Kunstakademis Billedkunstskole
+    address: "Indre K\xF8benhavn"
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 80
+      conscientiousness: 0
+      extraversion: 0
+      agreeableness: 0
+      neuroticism: 0
+    date:
+      day: 29
+      month: 5
+      year: 22
+      startTime: 1100
+      endTime: 1600
+    relatabilityValue: 0
+  - eventName: COPENHELL 2022
+    eventDescription: 
+    price: 500
+    distance: 0
+    venue: "Refshale\xF8en"
+    address: "Refshale\xF8en"
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 65
+      conscientiousness: 0
+      extraversion: 65
+      agreeableness: 0
+      neuroticism: 35
+    date:
+      day: 15
+      month: 6
+      year: 22
+      startTime: 12
+      endTime: 0
+    relatabilityValue: 0
+  - eventName: "Pal\xE6stina Folkek\xF8kken"
+    eventDescription: 
+    price: 50
+    distance: 0
+    venue: Folkets Hus
+    address: "N\xF8rrebro"
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 65
+      conscientiousness: 0
+      extraversion: 0
+      agreeableness: 0
+      neuroticism: 0
+    date:
+      day: 25
+      month: 5
+      year: 22
+      startTime: 1800
+      endTime: 2100
+    relatabilityValue: 0
+  - eventName: Samba- og Dansefestival i Enghaveparke
+    eventDescription: 
+    price: 0
+    distance: 0
+    venue: Enghaveparken
+    address: Vesterbro
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 0
+      conscientiousness: 0
+      extraversion: 65
+      agreeableness: 0
+      neuroticism: 0
+    date:
+      day: 5
+      month: 6
+      year: 22
+      startTime: 1200
+      endTime: 1800
+    relatabilityValue: 0
+  - eventName: "I KAN IKKE SL\xC5 OS IHJEL"
+    eventDescription: 
+    price: 159
+    distance: 0
+    venue: Operaen Christiania
+    address: Christania
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 65
+      conscientiousness: 0
+      extraversion: 65
+      agreeableness: 0
+      neuroticism: 0
+    date:
+      day: 26
+      month: 5
+      year: 22
+      startTime: 2100
+      endTime: 100
+    relatabilityValue: 0
+  - eventName: Die Antword // Pumpehuset
+    eventDescription: 
+    price: 250
+    distance: 0
+    venue: Pumpehuset
+    address: "Indre K\xF8benhavn"
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 65
+      conscientiousness: 0
+      extraversion: 65
+      agreeableness: 0
+      neuroticism: 0
+    date:
+      day: 17
+      month: 9
+      year: 22
+      startTime: 2000
+      endTime: 2300
+    relatabilityValue: 0
+  - eventName: Shadow World - Inside the Global Arms Trade
+    eventDescription: 
+    price: 75
+    distance: 0
+    venue: Cinemateket
+    address: "Indre K\xF8benhavn"
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 65
+      conscientiousness: 0
+      extraversion: 0
+      agreeableness: 0
+      neuroticism: 0
+    date:
+      day: 21
+      month: 5
+      year: 22
+      startTime: 1845
+      endTime: 2100
+    relatabilityValue: 0
+  - eventName: 'Pitchblack Playback: Radiohead: OK Computer (25th Anniversary)'
+    eventDescription: 
+    price: 250
+    distance: 0
+    venue: Empire Bio
+    address: "N\xF8rrebro"
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 65
+      conscientiousness: 0
+      extraversion: 65
+      agreeableness: 0
+      neuroticism: 0
+    date:
+      day: 26
+      month: 5
+      year: 22
+      startTime: 2000
+      endTime: 2130
+    relatabilityValue: 0
+  - eventName: "Thomas Vinterberg & Thomas Bo Larsen TALK | K\xF8benhavn"
+    eventDescription: 
+    price: 199
+    distance: 0
+    venue: Det Kongelige Teater
+    address: "Indre K\xF8benhavn"
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 65
+      conscientiousness: 0
+      extraversion: 0
+      agreeableness: 65
+      neuroticism: 0
+    date:
+      day: 24
+      month: 5
+      year: 22
+      startTime: 1900
+      endTime: 2100
+    relatabilityValue: 0
+  - eventName: The Rocky Horror Picture Show
+    eventDescription: 
+    price: 70
+    distance: 0
+    venue: Husets Biograf
+    address: "Indre K\xF8benhavn"
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 65
+      conscientiousness: 0
+      extraversion: 0
+      agreeableness: 65
+      neuroticism: 0
+    date:
+      day: 21
+      month: 5
+      year: 22
+      startTime: 2000
+      endTime: 2230
+    relatabilityValue: 0
+  - eventName: Bas i Byhaven 2022
+    eventDescription: 
+    price: 0
+    distance: 0
+    venue: Byhaven Pumpehuset
+    address: "Indre K\xF8benhavn"
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 0
+      conscientiousness: 0
+      extraversion: 65
+      agreeableness: 0
+      neuroticism: 0
+    date:
+      day: 18
+      month: 6
+      year: 22
+      startTime: 1500
+      endTime: 2000
+    relatabilityValue: 0
+  - eventName: Kicking The Curb Party w. Leizure & Tender Youth & Emma Acs (DJ)
+    eventDescription: 
+    price: 0
+    distance: 0
+    venue: "Byhaven Pumpehuset\r"
+    address: "Indre K\xF8benhavn"
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 65
+      conscientiousness: 0
+      extraversion: 65
+      agreeableness: 0
+      neuroticism: 35
+    date:
+      day: 11
+      month: 6
+      year: 22
+      startTime: 1500
+      endTime: 2000
+    relatabilityValue: 0
+  - eventName: "Fernisering p\xE5 Nina Sikkersoqs udstilling \\ Sikkernerup Nalaa"
+    eventDescription: 
+    price: 0
+    distance: 0
+    venue: "Det Gr\xF8nlandske Hus KBH"
+    address: "Indre K\xF8benhavn"
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 80
+      conscientiousness: 0
+      extraversion: 65
+      agreeableness: 0
+      neuroticism: 0
+    date:
+      day: 3
+      month: 6
+      year: 22
+      startTime: 1700
+      endTime: 1900
+    relatabilityValue: 0
+  - eventName: "Reggae Spot p\xE5 Momentum. G\xE6st: Mamba Di Lion"
+    eventDescription: 
+    price: 50
+    distance: 0
+    venue: Huset-KBH
+    address: "Indre K\xF8benhavn"
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 0
+      conscientiousness: 0
+      extraversion: 65
+      agreeableness: 0
+      neuroticism: 0
+    date:
+      day: 27
+      month: 5
+      year: 22
+      startTime: 2100
+      endTime: 200
+    relatabilityValue: 0
+  - eventName: 'Science & Cocktails: The Neuroscience of Health and Performance'
+    eventDescription: 
+    price: 150
+    distance: 0
+    venue: DR Koncerthuset
+    address: "\xD8restaden"
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 65
+      conscientiousness: 0
+      extraversion: 0
+      agreeableness: 0
+      neuroticism: 0
+    date:
+      day: 3
+      month: 6
+      year: 22
+      startTime: 1900
+      endTime: 2200
+    relatabilityValue: 0
+  - eventName: Vild Vin Festival 2022 - Summer Edition
+    eventDescription: 
+    price: 0
+    distance: 0
+    venue: Villa Kultur
+    address: "\xD8sterbro"
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 80
+      conscientiousness: 0
+      extraversion: 65
+      agreeableness: 35
+      neuroticism: 0
+    date:
+      day: 13
+      month: 8
+      year: 22
+      startTime: 1400
+      endTime: 1800
+    relatabilityValue: 0
+  - eventName: 'Science & Cocktails: Reality & Physics & Philosophy with Nobel prize
+      Frank Wilczek'
+    eventDescription: 
+    price: 100
+    distance: 0
+    venue: DR Koncerthuset
+    address: "\xD8restaden"
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 65
+      conscientiousness: 0
+      extraversion: 0
+      agreeableness: 0
+      neuroticism: 0
+    date:
+      day: 28
+      month: 6
+      year: 22
+      startTime: 1900
+      endTime: 2100
+    relatabilityValue: 0
+  - eventName: "MARIANNE & LEONARD: WORDS OF LOVE m. gr\xE6sk naturvin & talk"
+    eventDescription: 
+    price: 100
+    distance: 0
+    venue: Cinemateket
+    address: "Indre K\xF8benhavn"
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 80
+      conscientiousness: 0
+      extraversion: 0
+      agreeableness: 0
+      neuroticism: 0
+    date:
+      day: 9
+      month: 7
+      year: 22
+      startTime: 1900
+      endTime: 2120
+    relatabilityValue: 0
+  - eventName: "Sang og Sjask: F\xE6llessang / opl\xE6g / naturvin "
+    eventDescription: 
+    price: 0
+    distance: 0
+    venue: "Gethsemane Kirk\r"
+    address: Vesterbro
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 80
+      conscientiousness: 0
+      extraversion: 0
+      agreeableness: 0
+      neuroticism: 0
+    date:
+      day: 20
+      month: 7
+      year: 22
+      startTime: 1920
+      endTime: 2040
+    relatabilityValue: 0
+  - eventName: 'Vinsmagning: Slovakisk Naturvin'
+    eventDescription: 
+    price: 50
+    distance: 0
+    venue: 20a
+    address: "N\xF8rrebro"
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 80
+      conscientiousness: 0
+      extraversion: 0
+      agreeableness: 0
+      neuroticism: 0
+    date:
+      day: 22
+      month: 8
+      year: 22
+      startTime: 1600
+      endTime: 1800
+    relatabilityValue: 0
+  - eventName: Pop-up udstilling og naturvin
+    eventDescription: 
+    price: 0
+    distance: 0
+    venue: "P\xE8tillant"
+    address: "\xD8sterbro"
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 80
+      conscientiousness: 0
+      extraversion: 0
+      agreeableness: 0
+      neuroticism: 0
+    date:
+      day: 5
+      month: 7
+      year: 22
+      startTime: 1500
+      endTime: 1700
+    relatabilityValue: 0
+  - eventName: Naturvin - Smagning og foredrag
+    eventDescription: 
+    price: 150
+    distance: 0
+    venue: "K\xF8dbyens Fiskebar"
+    address: "K\xF8dbyen"
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 80
+      conscientiousness: 0
+      extraversion: 0
+      agreeableness: 0
+      neuroticism: 0
+    date:
+      day: 7
+      month: 8
+      year: 22
+      startTime: 1400
+      endTime: 1600
+    relatabilityValue: 0
+  - eventName: Kind mod Kind @Hotel Cecil
+    eventDescription: 
+    price: 185
+    distance: 0
+    venue: Hotel Cecil
+    address: "Indre K\xF8benhavn"
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 80
+      conscientiousness: 0
+      extraversion: 0
+      agreeableness: 65
+      neuroticism: 0
+    date:
+      day: 22
+      month: 9
+      year: 22
+      startTime: 2000
+      endTime: 2300
+    relatabilityValue: 0
+  - eventName: FOXY FESTIVAL
+    eventDescription: 
+    price: 0
+    distance: 0
+    venue: Reffen
+    address: "Refshale\xF8en"
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 65
+      conscientiousness: 0
+      extraversion: 0
+      agreeableness: 65
+      neuroticism: 0
+    date:
+      day: 26
+      month: 5
+      year: 22
+      startTime: 1100
+      endTime: 200
+    relatabilityValue: 0
+  - eventName: Christiania Comedy Club
+    eventDescription: 
+    price: 50
+    distance: 0
+    venue: "Christianias Jazzclub & B\xF8rneteater"
+    address: Christania
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 35
+      conscientiousness: 0
+      extraversion: 0
+      agreeableness: 65
+      neuroticism: 20
+    date:
+      day: 2
+      month: 6
+      year: 22
+      startTime: 1900
+      endTime: 2100
+    relatabilityValue: 0
+  - eventName: Pest Fest 2022
+    eventDescription: 
+    price: 333
+    distance: 0
+    venue: Pumpehuset
+    address: "Indre K\xF8benhavn"
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 65
+      conscientiousness: 0
+      extraversion: 65
+      agreeableness: 0
+      neuroticism: 35
+    date:
+      day: 18
+      month: 10
+      year: 22
+      startTime: 1900
+      endTime: 0
+    relatabilityValue: 0
+  - eventName: "Her G\xE5r Det Godt: Live Podcast"
+    eventDescription: 
+    price: 150
+    distance: 0
+    venue: Bremen Teater
+    address: Vesterbro
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 0
+      conscientiousness: 0
+      extraversion: 0
+      agreeableness: 65
+      neuroticism: 0
+    date:
+      day: 2
+      month: 9
+      year: 22
+      startTime: 2000
+      endTime: 2200
+    relatabilityValue: 0
+  - eventName: Tame Impala - Royal Arena
+    eventDescription: 
+    price: 390
+    distance: 0
+    venue: Royal Arena
+    address: "\xD8restaden"
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 0
+      conscientiousness: 0
+      extraversion: 65
+      agreeableness: 80
+      neuroticism: 0
+    date:
+      day: 22
+      month: 8
+      year: 22
+      startTime: 2000
+      endTime: 2300
+    relatabilityValue: 0
+  - eventName: 'Filmaften: Find Nemo'
+    eventDescription: 
+    price: 85
+    distance: 0
+    venue: Cinemateket
+    address: "Indre K\xF8benhavn"
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 0
+      conscientiousness: 35
+      extraversion: 0
+      agreeableness: 0
+      neuroticism: 65
+    date:
+      day: 19
+      month: 5
+      year: 22
+      startTime: 2000
+      endTime: 2200
+    relatabilityValue: 0
+  - eventName: 'Filmaften: Parasite'
+    eventDescription: 
+    price: 85
+    distance: 0
+    venue: Cinemateket
+    address: "Indre K\xF8benhavn"
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 80
+      conscientiousness: 0
+      extraversion: 0
+      agreeableness: 0
+      neuroticism: 0
+    date:
+      day: 26
+      month: 5
+      year: 22
+      startTime: 2000
+      endTime: 2200
+    relatabilityValue: 0
+  - eventName: 'Filmaften: The Notebook'
+    eventDescription: 
+    price: 85
+    distance: 0
+    venue: Cinemateket
+    address: "Indre K\xF8benhavn"
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 0
+      conscientiousness: 0
+      extraversion: 0
+      agreeableness: 65
+      neuroticism: 0
+    date:
+      day: 2
+      month: 6
+      year: 22
+      startTime: 2000
+      endTime: 2200
+    relatabilityValue: 0
+  - eventName: 'Filmaften: The Dark Knight'
+    eventDescription: 
+    price: 85
+    distance: 0
+    venue: Cinemateket
+    address: "Indre K\xF8benhavn"
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 35
+      conscientiousness: 0
+      extraversion: 65
+      agreeableness: 0
+      neuroticism: 0
+    date:
+      day: 8
+      month: 6
+      year: 22
+      startTime: 2000
+      endTime: 2200
+    relatabilityValue: 0
+  - eventName: 'Filmaften: Titanic'
+    eventDescription: 
+    price: 85
+    distance: 0
+    venue: Cinemateket
+    address: "Indre K\xF8benhavn"
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 65
+      conscientiousness: 0
+      extraversion: 0
+      agreeableness: 0
+      neuroticism: 65
+    date:
+      day: 15
+      month: 6
+      year: 22
+      startTime: 2000
+      endTime: 2200
+    relatabilityValue: 0
+  - eventName: 'Filmaften: Superbad'
+    eventDescription: 
+    price: 85
+    distance: 0
+    venue: Cinemateket
+    address: "Indre K\xF8benhavn"
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 35
+      conscientiousness: 0
+      extraversion: 0
+      agreeableness: 65
+      neuroticism: 20
+    date:
+      day: 22
+      month: 6
+      year: 22
+      startTime: 2000
+      endTime: 2200
+    relatabilityValue: 0
+  - eventName: 'Filmaften: Pulp Fiction'
+    eventDescription: 
+    price: 85
+    distance: 0
+    venue: Cinemateket
+    address: "Indre K\xF8benhavn"
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 65
+      conscientiousness: 0
+      extraversion: 0
+      agreeableness: 0
+      neuroticism: 65
+    date:
+      day: 29
+      month: 6
+      year: 22
+      startTime: 2000
+      endTime: 2200
+    relatabilityValue: 0
+  - eventName: 'Filmaften: Taxi Driver'
+    eventDescription: 
+    price: 85
+    distance: 0
+    venue: Cinemateket
+    address: "Indre K\xF8benhavn"
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 65
+      conscientiousness: 0
+      extraversion: 0
+      agreeableness: 30
+      neuroticism: 65
+    date:
+      day: 6
+      month: 7
+      year: 22
+      startTime: 2000
+      endTime: 2200
+    relatabilityValue: 0
+  - eventName: 'Filmaften: Ringenes Herre: Kongen vender tilbage'
+    eventDescription: 
+    price: 85
+    distance: 0
+    venue: Cinemateket
+    address: "Indre K\xF8benhavn"
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 0
+      conscientiousness: 65
+      extraversion: 0
+      agreeableness: 65
+      neuroticism: 35
+    date:
+      day: 13
+      month: 7
+      year: 22
+      startTime: 2000
+      endTime: 2200
+    relatabilityValue: 0
+  - eventName: 'Filmaften: Interstellar'
+    eventDescription: 
+    price: 85
+    distance: 0
+    venue: Cinemateket
+    address: "Indre K\xF8benhavn"
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 0
+      conscientiousness: 65
+      extraversion: 35
+      agreeableness: 0
+      neuroticism: 0
+    date:
+      day: 20
+      month: 7
+      year: 22
+      startTime: 2000
+      endTime: 2200
+    relatabilityValue: 0
+  - eventName: "Cookout: B\xF8ffer & \xD8ller & P\xF8ller"
+    eventDescription: 
+    price: 150
+    distance: 0
+    venue: "K\xF8dbyen"
+    address: "K\xF8dbyen"
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 0
+      conscientiousness: 0
+      extraversion: 0
+      agreeableness: 65
+      neuroticism: 0
+    date:
+      day: 20
+      month: 7
+      year: 22
+      startTime: 1700
+      endTime: 2200
+    relatabilityValue: 0
+  - eventName: 'Cookout: Burgers & Shakes'
+    eventDescription: 
+    price: 150
+    distance: 0
+    venue: "K\xF8dbyen"
+    address: "K\xF8dbyen"
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 0
+      conscientiousness: 0
+      extraversion: 0
+      agreeableness: 65
+      neuroticism: 0
+    date:
+      day: 27
+      month: 7
+      year: 22
+      startTime: 1700
+      endTime: 2200
+    relatabilityValue: 0
+  - eventName: 'Ariana Grande [support: Ella Mai] / Royal Arena'
+    eventDescription: 
+    price: 399
+    distance: 0
+    venue: Royal Arena
+    address: "\xD8restaden"
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 65
+      conscientiousness: 35
+      extraversion: 65
+      agreeableness: 65
+      neuroticism: 65
+    date:
+      day: 26
+      month: 8
+      year: 22
+      startTime: 1900
+      endTime: 2300
+    relatabilityValue: 0
+  - eventName: Bremer/McCoy
+    eventDescription: 
+    price: 199
+    distance: 0
+    venue: Bremen Teater
+    address: Vesterbro
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 65
+      conscientiousness: 0
+      extraversion: 0
+      agreeableness: 0
+      neuroticism: 0
+    date:
+      day: 3
+      month: 10
+      year: 22
+      startTime: 1930
+      endTime: 2230
+    relatabilityValue: 0
+  - eventName: 'Torsdags Jazz: Arturo Serra'
+    eventDescription: 
+    price: 0
+    distance: 0
+    venue: "S\xF8hesten"
+    address: "Indre K\xF8benhavn"
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 65
+      conscientiousness: 0
+      extraversion: 0
+      agreeableness: 0
+      neuroticism: 0
+    date:
+      day: 19
+      month: 5
+      year: 22
+      startTime: 2000
+      endTime: 2130
+    relatabilityValue: 0
+  - eventName: "Yussef Dayes (UK) \u2013 Copenhagen Jazz Festival 2022"
+    eventDescription: 
+    price: 300
+    distance: 0
+    venue: DR Koncerthuset
+    address: "\xD8restaden"
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 65
+      conscientiousness: 0
+      extraversion: 0
+      agreeableness: 0
+      neuroticism: 0
+    date:
+      day: 4
+      month: 7
+      year: 22
+      startTime: 2100
+      endTime: 2230
+    relatabilityValue: 0
+  - eventName: "FABR\xC4K "
+    eventDescription: 
+    price: 120
+    distance: 0
+    venue: Rust
+    address: "N\xF8rrebro"
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 0
+      conscientiousness: 0
+      extraversion: 65
+      agreeableness: 0
+      neuroticism: 0
+    date:
+      day: 10
+      month: 6
+      year: 22
+      startTime: 1900
+      endTime: 2200
+    relatabilityValue: 0
+  - eventName: 'Denzel Curry [support: Skt. DeLarge + Playthatboizay]'
+    eventDescription: 
+    price: 299
+    distance: 0
+    venue: Vega
+    address: Vesterbro
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 0
+      conscientiousness: 0
+      extraversion: 80
+      agreeableness: 0
+      neuroticism: 0
+    date:
+      day: 21
+      month: 5
+      year: 22
+      startTime: 1900
+      endTime: 2300
+    relatabilityValue: 0
+  - eventName: "Frugt & Juice & Sydens rytmer p\xE5 Guldbergsgade "
+    eventDescription: 
+    price: 0
+    distance: 0
+    venue: Guldbergsgade
+    address: "N\xF8rrebro"
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 65
+      conscientiousness: 65
+      extraversion: 0
+      agreeableness: 0
+      neuroticism: 0
+    date:
+      day: 16
+      month: 6
+      year: 22
+      startTime: 1300
+      endTime: 1600
+    relatabilityValue: 0
+  - eventName: Fantastiske Kvinder
+    eventDescription: 
+    price: 100
+    distance: 0
+    venue: Lousiana
+    address: "Indre K\xF8benhavn"
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 80
+      conscientiousness: 0
+      extraversion: 65
+      agreeableness: 0
+      neuroticism: 0
+    date:
+      day: 30
+      month: 7
+      year: 22
+      startTime: 1000
+      endTime: 2000
+    relatabilityValue: 0
+  - eventName: The Room
+    eventDescription: 
+    price: 70
+    distance: 0
+    venue: Husets Biograf
+    address: "Indre K\xF8benhavn"
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 65
+      conscientiousness: 35
+      extraversion: 0
+      agreeableness: 65
+      neuroticism: 65
+    date:
+      day: 3
+      month: 6
+      year: 22
+      startTime: 1830
+      endTime: 2030
+    relatabilityValue: 0
+  - eventName: Digte i solen ft. Helle Helle
+    eventDescription: 
+    price: 0
+    distance: 0
+    venue: "\xD8stre Anl\xE6g"
+    address: "\xD8sterbro"
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 65
+      conscientiousness: 0
+      extraversion: 0
+      agreeableness: 0
+      neuroticism: 0
+    date:
+      day: 4
+      month: 6
+      year: 22
+      startTime: 1100
+      endTime: 1300
+    relatabilityValue: 0
+  - eventName: "Digte med J\xF8rgen Leth"
+    eventDescription: 
+    price: 50
+    distance: 0
+    venue: "Caf\xE9 Mellemrummet"
+    address: "N\xF8rrebro"
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 65
+      conscientiousness: 0
+      extraversion: 0
+      agreeableness: 0
+      neuroticism: 0
+    date:
+      day: 17
+      month: 7
+      year: 22
+      startTime: 1845
+      endTime: 2130
+    relatabilityValue: 0
+  - eventName: Thorvaldsen og Te
+    eventDescription: 
+    price: 50
+    distance: 0
+    venue: Glyptoteket
+    address: Vesterbro
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 80
+      conscientiousness: 0
+      extraversion: 0
+      agreeableness: 0
+      neuroticism: 0
+    date:
+      day: 14
+      month: 7
+      year: 22
+      startTime: 1900
+      endTime: 2200
+    relatabilityValue: 0
+  - eventName: "Litter\xE6rer l\xF8rdage: True-Crime"
+    eventDescription: 
+    price: 25
+    distance: 0
+    venue: Folkehuset Absalon
+    address: Vesterbro
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 15
+      conscientiousness: 0
+      extraversion: 0
+      agreeableness: 35
+      neuroticism: 65
+    date:
+      day: 26
+      month: 8
+      year: 22
+      startTime: 1200
+      endTime: 1400
+    relatabilityValue: 0
+  - eventName: "Litter\xE6rer l\xF8rdage: Fantasy"
+    eventDescription: 
+    price: 25
+    distance: 0
+    venue: Folkehuset Absalon
+    address: Vesterbro
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 65
+      conscientiousness: 35
+      extraversion: 35
+      agreeableness: 0
+      neuroticism: 0
+    date:
+      day: 1
+      month: 9
+      year: 22
+      startTime: 1200
+      endTime: 1400
+    relatabilityValue: 0
+  - eventName: 'Ny udstilling: Stenalderen'
+    eventDescription: 
+    price: 115
+    distance: 0
+    venue: Naturhistorisk Museum
+    address: "Indre K\xF8benhavn"
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 80
+      conscientiousness: 0
+      extraversion: 0
+      agreeableness: 0
+      neuroticism: 0
+    date:
+      day: 1
+      month: 6
+      year: 22
+      startTime: 1000
+      endTime: 2000
+    relatabilityValue: 0
+  - eventName: Chilli Klaus Talk og Chilli Smagning
+    eventDescription: 
+    price: 150
+    distance: 0
+    venue: Bremen Teater
+    address: Vesterbro
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 65
+      conscientiousness: 0
+      extraversion: 0
+      agreeableness: 0
+      neuroticism: 20
+    date:
+      day: 20
+      month: 6
+      year: 22
+      startTime: 1900
+      endTime: 2200
+    relatabilityValue: 0
+  - eventName: "Ren\xE6ssancens Erotiske  Eftervirkning"
+    eventDescription: 
+    price: 65
+    distance: 0
+    venue: Statens Museum For Kunst
+    address: "Indre K\xF8benhavn"
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 80
+      conscientiousness: 0
+      extraversion: 0
+      agreeableness: 0
+      neuroticism: 0
+    date:
+      day: 24
+      month: 6
+      year: 22
+      startTime: 1100
+      endTime: 2000
+    relatabilityValue: 0
+  - eventName: 'Spicy sauce & Tacos '
+    eventDescription: 
+    price: 0
+    distance: 0
+    venue: Mexihagen
+    address: "N\xF8rrebro"
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 0
+      conscientiousness: 0
+      extraversion: 0
+      agreeableness: 0
+      neuroticism: 20
+    date:
+      day: 25
+      month: 6
+      year: 22
+      startTime: 1200
+      endTime: 1500
+    relatabilityValue: 0
+  - eventName: Den Abstrakte Erotika
+    eventDescription: 
+    price: 100
+    distance: 0
+    venue: Lousiana
+    address: "Indre K\xF8benhavn"
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 65
+      conscientiousness: 0
+      extraversion: 0
+      agreeableness: 0
+      neuroticism: 0
+    date:
+      day: 9
+      month: 7
+      year: 22
+      startTime: 1300
+      endTime: 2100
+    relatabilityValue: 0
+  - eventName: Andy Warhol Udstilling
+    eventDescription: 
+    price: 90
+    distance: 0
+    venue: Statens Museum for Kunst
+    address: "Indre K\xF8benhavn"
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 65
+      conscientiousness: 35
+      extraversion: 0
+      agreeableness: 0
+      neuroticism: 65
+    date:
+      day: 9
+      month: 8
+      year: 22
+      startTime: 1200
+      endTime: 1930
+    relatabilityValue: 0
+  - eventName: A History of Representational Art
+    eventDescription: 
+    price: 90
+    distance: 0
+    venue: 'Nationalmuseet '
+    address: "Indre K\xF8benhavn"
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 65
+      conscientiousness: 0
+      extraversion: 0
+      agreeableness: 0
+      neuroticism: 35
+    date:
+      day: 4
+      month: 8
+      year: 22
+      startTime: 1200
+      endTime: 1930
+    relatabilityValue: 0
+  - eventName: "Italiensk Is p\xE5 Enghave Plads"
+    eventDescription: 
+    price: 0
+    distance: 0
+    venue: Enghave Plads
+    address: Vesterbro
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 0
+      conscientiousness: 20
+      extraversion: 0
+      agreeableness: 65
+      neuroticism: 65
+    date:
+      day: 15
+      month: 6
+      year: 22
+      startTime: 1000
+      endTime: 1300
+    relatabilityValue: 0
+  - eventName: "En hyldest til Dan Turr\xE8l"
+    eventDescription: 
+    price: 0
+    distance: 0
+    venue: "\xD8stre Anl\xE6g"
+    address: "\xD8sterbro"
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 65
+      conscientiousness: 0
+      extraversion: 0
+      agreeableness: 0
+      neuroticism: 0
+    date:
+      day: 11
+      month: 6
+      year: 22
+      startTime: 1100
+      endTime: 1300
+    relatabilityValue: 0
 --- !u!114 &1578896461
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -817,7 +3357,255 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textAssetData: {fileID: 4900000, guid: f159a20a2b2f166409bf03f45b49d031, type: 3}
-  likertScales: []
+  likertScales:
+  - title: Udadvendt & entusiastisk
+    questionType: 0
+    ffm:
+      openness: 0
+      conscientiousness: 0
+      extraversion: 1
+      agreeableness: 0
+      neuroticism: 0
+  - title: Kritisk & stridig
+    questionType: 0
+    ffm:
+      openness: 0
+      conscientiousness: 0
+      extraversion: 0
+      agreeableness: -1
+      neuroticism: 0
+  - title: "P\xE5lidelig & selv-disciplineret"
+    questionType: 0
+    ffm:
+      openness: 0
+      conscientiousness: 1
+      extraversion: 0
+      agreeableness: 0
+      neuroticism: 0
+  - title: "\xC6ngstelig & let opr\xF8rt"
+    questionType: 0
+    ffm:
+      openness: 0
+      conscientiousness: 0
+      extraversion: 0
+      agreeableness: 0
+      neuroticism: 1
+  - title: "\xC5ben for nye oplevelser & kompleks"
+    questionType: 0
+    ffm:
+      openness: 1
+      conscientiousness: 0
+      extraversion: 0
+      agreeableness: 0
+      neuroticism: 0
+  - title: Reserveret & stille
+    questionType: 0
+    ffm:
+      openness: 0
+      conscientiousness: 0
+      extraversion: -1
+      agreeableness: 0
+      neuroticism: 0
+  - title: Sympatisk & varm
+    questionType: 0
+    ffm:
+      openness: 0
+      conscientiousness: 0
+      extraversion: 0
+      agreeableness: 1
+      neuroticism: 0
+  - title: "Uorganiseret & sk\xF8desl\xF8s"
+    questionType: 0
+    ffm:
+      openness: 0
+      conscientiousness: -1
+      extraversion: 0
+      agreeableness: 0
+      neuroticism: 0
+  - title: Rolig & emotionel stabil
+    questionType: 0
+    ffm:
+      openness: 0
+      conscientiousness: 0
+      extraversion: 0
+      agreeableness: 0
+      neuroticism: -1
+  - title: konventionel & ukreativ
+    questionType: 0
+    ffm:
+      openness: -1
+      conscientiousness: 0
+      extraversion: 0
+      agreeableness: 0
+      neuroticism: 0
+  - title: Jeg kan godt lide pop-musik
+    questionType: 0
+    ffm:
+      openness: -1
+      conscientiousness: 0
+      extraversion: 1
+      agreeableness: 1
+      neuroticism: 1
+  - title: Jeg kan godt lide rap musik
+    questionType: 0
+    ffm:
+      openness: 0
+      conscientiousness: 0
+      extraversion: 1
+      agreeableness: 0
+      neuroticism: 0
+  - title: Jeg kan godt lide jazz musik
+    questionType: 0
+    ffm:
+      openness: 1
+      conscientiousness: 0
+      extraversion: 0
+      agreeableness: 0
+      neuroticism: 0
+  - title: Jeg kan godt lide alternativ musik
+    questionType: 0
+    ffm:
+      openness: 1
+      conscientiousness: 1
+      extraversion: 0
+      agreeableness: 0
+      neuroticism: 1
+  - title: Jeg kan godt lide at spise frugt
+    questionType: 0
+    ffm:
+      openness: 1
+      conscientiousness: 1
+      extraversion: 0
+      agreeableness: 0
+      neuroticism: 0
+  - title: "Jeg kan godt lide at spise k\xF8d"
+    questionType: 0
+    ffm:
+      openness: -1
+      conscientiousness: -1
+      extraversion: 1
+      agreeableness: -1
+      neuroticism: 0
+  - title: Jeg kan godt lide at drikke vin
+    questionType: 0
+    ffm:
+      openness: 1
+      conscientiousness: 0
+      extraversion: 1
+      agreeableness: -1
+      neuroticism: 0
+  - title: "Jeg kan lide at spise s\xF8d mad"
+    questionType: 0
+    ffm:
+      openness: 0
+      conscientiousness: -1
+      extraversion: 1
+      agreeableness: 0
+      neuroticism: 1
+  - title: Jeg kan godt lide animationsfilm
+    questionType: 0
+    ffm:
+      openness: 0
+      conscientiousness: -1
+      extraversion: -1
+      agreeableness: -1
+      neuroticism: 1
+  - title: Jeg kan godt lide romance film
+    questionType: 0
+    ffm:
+      openness: -1
+      conscientiousness: 0
+      extraversion: 1
+      agreeableness: 1
+      neuroticism: 0
+  - title: Jeg kan godt lide adventure film
+    questionType: 0
+    ffm:
+      openness: 0
+      conscientiousness: 1
+      extraversion: 0
+      agreeableness: 1
+      neuroticism: -1
+  - title: Jeg kan godt lide komedie film
+    questionType: 0
+    ffm:
+      openness: -1
+      conscientiousness: 0
+      extraversion: 1
+      agreeableness: 1
+      neuroticism: 0
+  - title: Jeg kan godt lide indie film
+    questionType: 0
+    ffm:
+      openness: 1
+      conscientiousness: 1
+      extraversion: 0
+      agreeableness: 0
+      neuroticism: -1
+  - title: Jeg kan godt lide action film
+    questionType: 0
+    ffm:
+      openness: -1
+      conscientiousness: 0
+      extraversion: 1
+      agreeableness: 0
+      neuroticism: 0
+  - title: Jeg kan godt lide tragedie film
+    questionType: 0
+    ffm:
+      openness: 1
+      conscientiousness: 0
+      extraversion: -1
+      agreeableness: 0
+      neuroticism: 1
+  - title: Jeg kan godt lide kult film
+    questionType: 0
+    ffm:
+      openness: 1
+      conscientiousness: -1
+      extraversion: 0
+      agreeableness: -1
+      neuroticism: 1
+  - title: Jeg kan godt lide neo-noir film
+    questionType: 0
+    ffm:
+      openness: 1
+      conscientiousness: 0
+      extraversion: -1
+      agreeableness: -1
+      neuroticism: 0
+  - title: Jeg kan godt lide science fiction film
+    questionType: 0
+    ffm:
+      openness: 0
+      conscientiousness: 1
+      extraversion: -1
+      agreeableness: 0
+      neuroticism: 0
+  - title: Jeg kan godt lide abstrakt kunst
+    questionType: 0
+    ffm:
+      openness: 1
+      conscientiousness: 0
+      extraversion: 0
+      agreeableness: 0
+      neuroticism: 1
+  - title: Jeg kan godt lide pop art
+    questionType: 0
+    ffm:
+      openness: 1
+      conscientiousness: 0
+      extraversion: 0
+      agreeableness: 0
+      neuroticism: 1
+  - title: Jeg kan godt lide folk musik
+    questionType: 0
+    ffm:
+      openness: 1
+      conscientiousness: -1
+      extraversion: 0
+      agreeableness: 1
+      neuroticism: 0
 --- !u!4 &1578896462
 Transform:
   m_ObjectHideFlags: 0
