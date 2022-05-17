@@ -19,7 +19,7 @@ public class CSVlikert : MonoBehaviour
         ReadCSV();
     }
 
-    void ReadCSV()
+    public void ReadCSV()
     {
         string[] data = textAssetData.text.Split(new string[] { ",", "\n" }, StringSplitOptions.None);
         int collumns = 7; //Det ville være fedt hvis programmet selv kunne finde ud af hvor mange collumns den skal springe over, så den ville være dynamisk istedet for statisk.

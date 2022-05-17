@@ -30,6 +30,8 @@ public class TestManager : MonoBehaviour
 
     public float neuroticism;
 
+    public float likertStrengthFactor = 5;
+
     public float likertNumber;
 
     public float curveAdjustment;
@@ -80,6 +82,13 @@ public class TestManager : MonoBehaviour
     {
         // To avoid weird input errors, we clamp it to the scale values
         Mathf.Clamp(likert, 1, 7);
+
+        // Adjust ffm values by our strength factor. This determines how big an effect each question has on the final user test scores. This assumes all ffm scores are assigned as a number between -1 and 1.
+        ffm.openness = ffm.openness * likertStrengthFactor;
+        ffm.conscientiousness = ffm.conscientiousness * likertStrengthFactor;
+        ffm.extraversion = ffm.extraversion * likertStrengthFactor;
+        ffm.agreeableness = ffm.agreeableness * likertStrengthFactor;
+        ffm.neuroticism = ffm.neuroticism * likertStrengthFactor;
 
         // For every trait, we check if it has a correlation, and if it has
         // we run a switch case, adjusting the correlation coeffienct depeding on the Likert scale answer

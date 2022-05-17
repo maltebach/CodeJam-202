@@ -15,9 +15,14 @@ public class GameManager : MonoBehaviour
     [Header("References")]
     public GameObject bottomBar;
 
-    public void Start()
+    public void Awake()
     {
         instance = this;
+    }
+
+    private void Start()
+    {
+        LoadNextScene();
     }
 
     public void OnEnable()
