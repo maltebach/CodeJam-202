@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 
+/*
 public class CSVImportEditor : EditorWindow
 {
     public CSVreader reader;
@@ -38,3 +39,4 @@ public class CSVImportEditor : EditorWindow
 
 
 }
+*/
