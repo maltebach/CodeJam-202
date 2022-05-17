@@ -57,7 +57,7 @@ day,month,year,startTime,endTime,eventName,price,venue,address,openness,conscien
 6,7,22,2000,2200,Filmaften: Taxi Driver,85,Cinemateket,Indre København,65,0,0,30,65
 13,7,22,2000,2200,Filmaften: Ringenes Herre: Kongen vender tilbage,85,Cinemateket,Indre København,0,65,0,65,35
 20,7,22,2000,2200,Filmaften: Interstellar,85,Cinemateket,Indre København,0,65,35,0,0
-20,7,22,1700,2200,Cookout: Bøffer & Øller & Pøller,150,Kødbyen,Kødbyen,0,0,,65,0
+20,7,22,1700,2200,Cookout: Bøffer & Øller & Pøller,150,Kødbyen,Kødbyen,0,0,0,65,0
 27,7,22,1700,2200,Cookout: Burgers & Shakes,150,Kødbyen,Kødbyen,0,0,0,65,0
 26,8,22,1900,2300,Ariana Grande [support: Ella Mai] / Royal Arena,399,Royal Arena,Ørestaden,65,35,65,65,65
 3,10,22,1930,2230,"Bremer/McCoy
@@ -71,7 +71,7 @@ day,month,year,startTime,endTime,eventName,price,venue,address,openness,conscien
 3,6,22,1830,2030,The Room,70,Husets Biograf,Indre København,65,35,0,65,65
 4,6,22,1100,1300,Digte i solen ft. Helle Helle,0,Østre Anlæg,Østerbro,65,0,0,0,0
 17,7,22,1845,2130,Digte med Jørgen Leth,50,Café Mellemrummet,Nørrebro,65,0,0,0,0
-14,7,22,1900,2200,Thorvaldsen og Te,50,Glyptoteket,Vesterbro,,,,,
+14,7,22,1900,2200,Thorvaldsen og Te,50,Glyptoteket,Vesterbro,80,0,0,0,0
 26,8,22,1200,1400,Litterærer lørdage: True-Crime,25,Folkehuset Absalon,Vesterbro,15,0,0,35,65
 1,9,22,1200,1400,Litterærer lørdage: Fantasy,25,Folkehuset Absalon,Vesterbro,65,35,35,0,0
 1,6,22,1000,2000,Ny udstilling: Stenalderen,115,Naturhistorisk Museum,Indre København,80,0,0,0,0
