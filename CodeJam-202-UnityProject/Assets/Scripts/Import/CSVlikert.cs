@@ -16,7 +16,7 @@ public class CSVlikert : MonoBehaviour
     public List<MoroQuestion> likertScales = new List<MoroQuestion>();
     void Start()
     {
-        ReadCSV();
+        //ReadCSV();
     }
 
     public void ReadCSV()

@@ -33,7 +33,6 @@ public class CSVreader : MonoBehaviour
         int collumns = 14; //Det ville være fedt hvis programmet selv kunne finde ud af hvor mange collumns den skal springe over, så den ville være dynamisk istedet for statisk.
         int tableSize = (data.Length / collumns) - 1;
 
-        
         for (int i = 0; i < tableSize; i++)
         {
             //Debug.Log(int.Parse(data[(i + 1) * collumns]));
@@ -42,8 +41,7 @@ public class CSVreader : MonoBehaviour
             moro.date = date;
             FFMData ffm = new FFMData();
             moro.ffm = ffm;
-            int j = 0; 
-
+            int j = 0;
 
             moro.date.day = int.Parse(data[(i + 1) * collumns + j]);
             j++;
@@ -63,6 +61,7 @@ public class CSVreader : MonoBehaviour
             moro.eventName = data[(i + 1) * collumns + j];
             j++;
 
+
             moro.price = float.Parse(data[(i + 1) * collumns + j]);
             j++;
 
@@ -71,6 +70,7 @@ public class CSVreader : MonoBehaviour
 
             moro.address = data[(i + 1) * collumns + j];
             j++;
+
 
             moro.ffm.openness = float.Parse(data[(i + 1) * collumns + j]);
             j++;
@@ -81,6 +81,7 @@ public class CSVreader : MonoBehaviour
             moro.ffm.extraversion = float.Parse(data[(i + 1) * collumns + j]);
             j++;
 
+            Debug.Log(data[(i + 1) * collumns + j]);
             moro.ffm.agreeableness = float.Parse(data[(i + 1) * collumns + j]);
             j++;
 
