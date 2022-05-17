@@ -309,11 +309,9 @@ public class TestManager : MonoBehaviour
 
             ffm.openness *= adjustmentFactor;
 
-            openness *= ffm.openness;
+            openness += ffm.openness;
 
-            Mathf.Clamp(openness,0, 100);
-
-            Debug.Log(openness + adjustmentFactor);
+            openness = Mathf.Clamp(openness,0, 100);
         }
         if (ffm.conscientiousness != 0)
         {
@@ -321,11 +319,9 @@ public class TestManager : MonoBehaviour
 
             ffm.conscientiousness *= adjustmentFactor;
 
-            conscientiousness *= ffm.conscientiousness;
+            conscientiousness += ffm.conscientiousness;
 
-            Mathf.Clamp(conscientiousness, 0, 100);
-
-            Debug.Log(conscientiousness + adjustmentFactor);
+            conscientiousness = Mathf.Clamp(conscientiousness, 0, 100);
         }
         if (ffm.extraversion != 0)
         {
@@ -333,11 +329,9 @@ public class TestManager : MonoBehaviour
 
             ffm.extraversion *= adjustmentFactor;
 
-            extraversion *= ffm.extraversion;
+            extraversion += ffm.extraversion;
 
-            Mathf.Clamp(extraversion, 0, 100);
-
-            Debug.Log(extraversion + adjustmentFactor);
+            extraversion = Mathf.Clamp(extraversion, 0, 100);
         }
         if (ffm.agreeableness != 0)
         {
@@ -345,11 +339,9 @@ public class TestManager : MonoBehaviour
 
             ffm.agreeableness *= adjustmentFactor;
 
-            agreeableness *= ffm.agreeableness;
+            agreeableness += ffm.agreeableness;
 
-            Mathf.Clamp(agreeableness, 0, 100);
-
-            Debug.Log(agreeableness + adjustmentFactor);
+            agreeableness = Mathf.Clamp(agreeableness, 0, 100);
         }
         if (ffm.neuroticism != 0)
         {
@@ -357,11 +349,9 @@ public class TestManager : MonoBehaviour
 
             ffm.neuroticism *= adjustmentFactor;
 
-            neuroticism *= ffm.neuroticism;
+            neuroticism += ffm.neuroticism;
 
-            Mathf.Clamp(neuroticism, 0, 100);
-
-            Debug.Log(neuroticism + adjustmentFactor);
+            neuroticism = Mathf.Clamp(neuroticism, 0, 100);
         } 
     }
 

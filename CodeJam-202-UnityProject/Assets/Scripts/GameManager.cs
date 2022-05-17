@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+
 public class GameManager : MonoBehaviour
 {
     //int som bruges til den der LoadNextScene funktion
@@ -10,6 +11,9 @@ public class GameManager : MonoBehaviour
     public int menuScene;
     bool isLoading;
     private static GameManager instance;
+
+    [Header("References")]
+    public GameObject bottomBar;
 
     public void Start()
     {
@@ -176,6 +180,17 @@ public class GameManager : MonoBehaviour
     }
 
 
+    public void SetBottomBar(bool state)
+    {
+        if(state == false)
+        {
+            bottomBar.SetActive(false);
+        }
+        else
+        {
+            bottomBar.SetActive(true);
+        }
+    }
 
 
 }

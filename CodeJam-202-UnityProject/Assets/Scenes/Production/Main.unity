@@ -268,75 +268,75 @@ MonoBehaviour:
   - title: Dingus
     questionType: 0
     ffm:
-      openness: 0
+      openness: 5
       conscientiousness: 0
       extraversion: 0
-      agreeableness: 0
+      agreeableness: -3
       neuroticism: 0
   - title: Lmao
     questionType: 0
     ffm:
       openness: 0
-      conscientiousness: 0
-      extraversion: 0
-      agreeableness: 0
-      neuroticism: 0
+      conscientiousness: 3
+      extraversion: 3
+      agreeableness: -5
+      neuroticism: 5
   - title: asdasdasd
     questionType: 0
     ffm:
-      openness: 0
-      conscientiousness: 0
-      extraversion: 0
-      agreeableness: 0
-      neuroticism: 0
+      openness: 3
+      conscientiousness: 3
+      extraversion: -3
+      agreeableness: -3
+      neuroticism: -5
   - title: fffff
     questionType: 0
     ffm:
-      openness: 0
-      conscientiousness: 0
+      openness: -5
+      conscientiousness: -3
       extraversion: 0
       agreeableness: 0
-      neuroticism: 0
+      neuroticism: 3
   - title: gggggggggggggggggggggggggggg
     questionType: 0
     ffm:
       openness: 0
       conscientiousness: 0
-      extraversion: 0
+      extraversion: 3
       agreeableness: 0
-      neuroticism: 0
+      neuroticism: 3
   - title: a
     questionType: 0
     ffm:
-      openness: 0
-      conscientiousness: 0
-      extraversion: 0
-      agreeableness: 0
-      neuroticism: 0
+      openness: -5
+      conscientiousness: -5
+      extraversion: -5
+      agreeableness: -5
+      neuroticism: -5
   - title: Yoooo wtf
     questionType: 0
     ffm:
-      openness: 0
-      conscientiousness: 0
+      openness: 5
+      conscientiousness: 3
       extraversion: 0
-      agreeableness: 0
-      neuroticism: 0
+      agreeableness: 3
+      neuroticism: 3
   - title: Do you eat ass?
     questionType: 0
     ffm:
-      openness: 0
-      conscientiousness: 0
-      extraversion: 0
-      agreeableness: 0
-      neuroticism: 0
+      openness: 5
+      conscientiousness: 5
+      extraversion: 5
+      agreeableness: 5
+      neuroticism: -5
   - title: What do you mean you don't eat ass?
     questionType: 0
     ffm:
       openness: 0
       conscientiousness: 0
-      extraversion: 0
+      extraversion: -5
       agreeableness: 0
-      neuroticism: 0
+      neuroticism: 5
   unansweredQuestions: []
   eventPrefab: {fileID: 7393934312647178075, guid: b5f1dced6e1bda544a959a346ed45b50, type: 3}
 --- !u!114 &888998133
@@ -362,9 +362,9 @@ MonoBehaviour:
     ffm:
       openness: 0
       conscientiousness: 0
-      extraversion: 0
+      extraversion: 10
       agreeableness: 0
-      neuroticism: 0
+      neuroticism: 55
     date:
       day: 16
       month: 10
@@ -380,11 +380,11 @@ MonoBehaviour:
     address: "S\xF8torvet 2, K\xF8benhavn K"
     eventImage: {fileID: 3075375336989598424, guid: 8af647750b1b9ef48b06409947b2bef9, type: 3}
     ffm:
-      openness: 0
+      openness: 35
       conscientiousness: 0
       extraversion: 0
-      agreeableness: 0
-      neuroticism: 0
+      agreeableness: 35
+      neuroticism: 75
     date:
       day: 26
       month: 6
@@ -402,9 +402,9 @@ MonoBehaviour:
     ffm:
       openness: 0
       conscientiousness: 0
-      extraversion: 0
+      extraversion: 75
       agreeableness: 0
-      neuroticism: 0
+      neuroticism: 75
     date:
       day: 19
       month: 4
@@ -440,11 +440,11 @@ MonoBehaviour:
     address: Peter Bangs Vej 147, Frederiksberg
     eventImage: {fileID: -7872424597466564420, guid: ddfeb542476682540841534b73cbffeb, type: 3}
     ffm:
-      openness: 0
+      openness: 100
       conscientiousness: 0
       extraversion: 0
       agreeableness: 0
-      neuroticism: 0
+      neuroticism: 50
     date:
       day: 16
       month: 11
@@ -480,10 +480,10 @@ MonoBehaviour:
     address: "Dantes Plads 7, K\xF8benhavn K "
     eventImage: {fileID: 21300000, guid: bb99ea44e00e26f4baa891b6a48bc08d, type: 3}
     ffm:
-      openness: 0
+      openness: 15
       conscientiousness: 0
       extraversion: 0
-      agreeableness: 0
+      agreeableness: 85
       neuroticism: 0
     date:
       day: 1
@@ -501,10 +501,10 @@ MonoBehaviour:
     eventImage: {fileID: 7615911556902982741, guid: 1f4355bb3d26e6c44b546044f3913361, type: 3}
     ffm:
       openness: 0
-      conscientiousness: 0
-      extraversion: 0
+      conscientiousness: 35
+      extraversion: 65
       agreeableness: 0
-      neuroticism: 0
+      neuroticism: 35
     date:
       day: 23
       month: 4
@@ -522,7 +522,7 @@ MonoBehaviour:
     ffm:
       openness: 0
       conscientiousness: 0
-      extraversion: 0
+      extraversion: 80
       agreeableness: 0
       neuroticism: 0
     date:
@@ -540,11 +540,11 @@ MonoBehaviour:
     address: "R\xF8dovre Parkvej 425, R\xF8dovre"
     eventImage: {fileID: 21300000, guid: dda1f89a984b6704ab351a19c2665474, type: 3}
     ffm:
-      openness: 0
+      openness: 50
       conscientiousness: 0
       extraversion: 0
-      agreeableness: 0
-      neuroticism: 0
+      agreeableness: 70
+      neuroticism: 40
     date:
       day: 14
       month: 5
@@ -560,11 +560,11 @@ MonoBehaviour:
     address: "Enghavevej 81 K\xF8benhavn V "
     eventImage: {fileID: 21300000, guid: 748f94a220435d84fba6aea736b86577, type: 3}
     ffm:
-      openness: 0
+      openness: 55
       conscientiousness: 0
-      extraversion: 0
+      extraversion: 55
       agreeableness: 0
-      neuroticism: 0
+      neuroticism: 25
     date:
       day: 19
       month: 5
@@ -580,11 +580,11 @@ MonoBehaviour:
     address: "Enghavevej 81 K\xF8benhavn V"
     eventImage: {fileID: 21300000, guid: 748f94a220435d84fba6aea736b86577, type: 3}
     ffm:
-      openness: 0
+      openness: 75
       conscientiousness: 0
-      extraversion: 0
+      extraversion: 75
       agreeableness: 0
-      neuroticism: 0
+      neuroticism: 30
     date:
       day: 20
       month: 5
@@ -600,11 +600,11 @@ MonoBehaviour:
     address: "Enghave Plads, K\xF8benhavn V"
     eventImage: {fileID: 21300000, guid: 748f94a220435d84fba6aea736b86577, type: 3}
     ffm:
-      openness: 0
+      openness: 65
       conscientiousness: 0
-      extraversion: 0
+      extraversion: 75
       agreeableness: 0
-      neuroticism: 0
+      neuroticism: 30
     date:
       day: 7
       month: 5
@@ -620,10 +620,10 @@ MonoBehaviour:
     address: "Bl\xE5g\xE5rds Plads 5, K\xF8benhavn N "
     eventImage: {fileID: 21300000, guid: 54baad2610cda8949a138a19fe1cab73, type: 3}
     ffm:
-      openness: 0
+      openness: 75
       conscientiousness: 0
-      extraversion: 0
-      agreeableness: 0
+      extraversion: 65
+      agreeableness: 35
       neuroticism: 0
     date:
       day: 22
@@ -641,10 +641,10 @@ MonoBehaviour:
     eventImage: {fileID: 21300000, guid: 720994fef0bd7c746978ea8b869cbade, type: 3}
     ffm:
       openness: 0
-      conscientiousness: 0
-      extraversion: 0
+      conscientiousness: 20
+      extraversion: 10
       agreeableness: 0
-      neuroticism: 0
+      neuroticism: 70
     date:
       day: 22
       month: 4
@@ -660,9 +660,9 @@ MonoBehaviour:
     address: "S\xF8nder Blvd. 73,  K\xF8benhavn V"
     eventImage: {fileID: 21300000, guid: 4e31da414c57c584580460ebecee830f, type: 3}
     ffm:
-      openness: 0
-      conscientiousness: 0
-      extraversion: 0
+      openness: 60
+      conscientiousness: 30
+      extraversion: 20
       agreeableness: 0
       neuroticism: 0
     date:
@@ -674,6 +674,7 @@ MonoBehaviour:
     relatabilityValue: 65
   unshownEvents: []
   eventPrefab: {fileID: 7393934312647178075, guid: 7a4cd6894f8d86b4b9dee6409ea507e0, type: 3}
+  randomMode: 0
 --- !u!4 &888998134
 Transform:
   m_ObjectHideFlags: 0
@@ -805,6 +806,10 @@ MonoBehaviour:
   extraversion: 40
   agreeableness: 65
   neuroticism: 40
+  likertNumber: 0
+  curveAdjustment: 0
+  peakAdjustment: 1.2
+  mean: 50
 --- !u!4 &1898993063
 Transform:
   m_ObjectHideFlags: 0
@@ -851,6 +856,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextScene: 0
   menuScene: 0
+  bottomBar: {fileID: 2140648791}
 --- !u!4 &2080596777
 Transform:
   m_ObjectHideFlags: 0
@@ -878,6 +884,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvas: {fileID: 830650711}
+--- !u!1 &2140648791 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6934084826281423335, guid: d48c7320764e7d240bb599c8ac45f035, type: 3}
+  m_PrefabInstance: {fileID: 6934084827058572653}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1577638207895006009
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1069,6 +1080,10 @@ PrefabInstance:
     - target: {fileID: 6934084826281423335, guid: d48c7320764e7d240bb599c8ac45f035, type: 3}
       propertyPath: m_Name
       value: BottomBar
+      objectReference: {fileID: 0}
+    - target: {fileID: 6934084826281423335, guid: d48c7320764e7d240bb599c8ac45f035, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d48c7320764e7d240bb599c8ac45f035, type: 3}

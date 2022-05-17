@@ -54,6 +54,8 @@ public class MoroElementHandler : MonoBehaviour
                     likertCursor = likert.cursor;
                     if(!likertAnswered)
                     {
+                        TestManager.instance.Evaluate(moroQuestion.ffm, likertCursor);
+                        MoroEventManager.instance.EvalAllEvents();
                         likertAnswered = true;
                     }
 

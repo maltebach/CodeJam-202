@@ -47,7 +47,10 @@ public class QuestionManager : MonoBehaviour
         }
         else
         {
-
+            //On the last page we switch over to the feed scene and evaluate all events to sort the list of events for the feed.
+            GameManager.Instance.SetBottomBar(true);
+            MoroEventManager.instance.EvalAllEvents();
+            GameManager.Instance.LoadNextScene();
         }
     }
 
