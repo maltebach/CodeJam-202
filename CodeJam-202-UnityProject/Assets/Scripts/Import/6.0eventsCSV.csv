@@ -1,0 +1,85 @@
+day,month,year,startTime,endTime,eventName,price,venue,address,openness,conscientiousness,extraversion,agreeableness,neuroticism
+19,6,22,1200,2000,Fernisering: Afgang 2022 / MFA Degree Show,0,Kunsthal Charlottenborg,"Indre København
+",80,0,0,0,0
+17,6,22,1200,2000,The Informants – filmprogram kurateret af New Red Order,0,Kunsthal Charlottenborg,"Indre København
+",80,0,0,0,0
+8,7,22,2000,2200,"Long Runs – Hotel Cecil [Copenhagen Jazz Festival 2022]
+",170,Hotel Cecil,Indre København,65,0,0,0,0
+2,6,22,2200,0060,Pleasure Control Presents: DJ Mell G + Sedef Adasi at Distortion Club,200,Pumpehuset,Indre København,0,0,65,0,0
+29,5,22,1100,1600,Kunstakademiets Maj Marked,0,"Det Kongelige Danske Kunstakademis Billedkunstskole
+",Indre København,80,0,0,0,0
+15,6,22,0012,0000,COPENHELL 2022,500,Refshaleøen,Refshaleøen,65,0,65,0,35
+25,5,22,1800,2100,"Palæstina Folkekøkken
+",50,Folkets Hus,Nørrebro,65,0,0,0,0
+5,6,22,1200,1800,Samba- og Dansefestival i Enghaveparke,0,Enghaveparken,Vesterbro,0,0,65,0,0
+26,5,22,2100,0100,I KAN IKKE SLÅ OS IHJEL,159,Operaen Christiania,Christania,65,0,65,0,0
+17,9,22,2000,2300,"Die Antword // Pumpehuset
+",250,Pumpehuset,Indre København,65,0,65,0,0
+21,5,22,1845,2100,"Shadow World - Inside the Global Arms Trade",75,Cinemateket,Indre København,65,0,0,0,0
+26,5,22,2000,2130,Pitchblack Playback: Radiohead: OK Computer (25th Anniversary),250,"Empire Bio
+",Nørrebro,65,0,65,0,0
+24,5,22,1900,2100,"Thomas Vinterberg & Thomas Bo Larsen TALK | København
+",199,Det Kongelige Teater,Indre København,65,0,0,65,0
+21,5,22,2000,2230,The Rocky Horror Picture Show,70,Husets Biograf,Indre København,65,0,0,65,0
+18,6,22,1500,2000,"Bas i Byhaven 2022",0,"Byhaven Pumpehuset
+",Indre København,0,0,65,0,0
+11,6,22,1500,2000,Kicking The Curb Party w. Leizure & Tender Youth & Emma Acs (DJ),0,"Byhaven Pumpehuset
+",Indre København,65,0,65,0,35
+3,6,22,1700,1900,"Fernisering på Nina Sikkersoqs udstilling \ Sikkernerup Nalaa
+",0,Det Grønlandske Hus KBH,Indre København,80,0,65,0,0
+27,5,22,2100,0200,"Reggae Spot på Momentum. Gæst: Mamba Di Lion",50,"Huset-KBH
+",Indre København,0,0,65,0,0
+3,6,22,1900,2200,Science & Cocktails: The Neuroscience of Health and Performance,150,DR Koncerthuset,Ørestaden,65,0,0,0,0
+13,8,22,1400,1800,"Vild Vin Festival 2022 - Summer Edition",0,Villa Kultur,Østerbro,80,0,65,35,0
+28,6,22,1900,2100,"Science & Cocktails: Reality & Physics & Philosophy with Nobel prize Frank Wilczek
+",100,DR Koncerthuset,Ørestaden,65,0,0,0,0
+9,7,22,1900,2120,MARIANNE & LEONARD: WORDS OF LOVE m. græsk naturvin & talk,100,Cinemateket,Indre København,80,0,0,0,0
+20,7,22,1920,2040,Sang og Sjask: Fællessang / oplæg / naturvin ,0,"Gethsemane Kirk
+",Vesterbro,80,0,0,0,0
+22,8,22,1600,1800,Vinsmagning: Slovakisk Naturvin,50,20a,Nørrebro,80,0,0,0,0
+5,7,22,1500,1700,"Pop-up udstilling og naturvin
+",0,Pètillant,Østerbro,80,0,0,0,0
+7,8,22,1400,1600,"Naturvin - Smagning og foredrag
+",150,Kødbyens Fiskebar,Kødbyen,80,0,0,0,0
+22,9,22,2000,2300,Kind mod Kind @Hotel Cecil,185,Hotel Cecil,Indre København,80,0,0,65,0
+26,5,22,1100,0200,"FOXY FESTIVAL",0,Reffen,Refshaleøen,65,0,0,65,0
+2,6,22,1900,2100,Christiania Comedy Club,50,Christianias Jazzclub & Børneteater,Christania,35,0,0,65,20
+18,10,22,1900,0000,"Pest Fest 2022",333,Pumpehuset,Indre København,65,0,65,0,35
+2,9,22,2000,2200,Her Går Det Godt: Live Podcast,150,Bremen Teater,Vesterbro,0,0,0,65,0
+22,8,22,2000,2300,"Tame Impala - Royal Arena",390,Royal Arena,Ørestaden,0,0,65,80,0
+19,5,22,2000,2200,Filmaften: Find Nemo,85,Cinemateket,Indre København,0,35,0,0,65
+26,5,22,2000,2200,Filmaften: Parasite,85,Cinemateket,Indre København,80,0,0,0,0
+2,6,22,2000,2200,Filmaften: The Notebook,85,Cinemateket,Indre København,0,0,0,65,0
+8,6,22,2000,2200,Filmaften: The Dark Knight,85,Cinemateket,Indre København,35,0,65,0,0
+15,6,22,2000,2200,Filmaften: Titanic,85,Cinemateket,Indre København,65,0,0,0,65
+22,6,22,2000,2200,Filmaften: Superbad,85,Cinemateket,Indre København,35,0,0,65,20
+29,6,22,2000,2200,Filmaften: Pulp Fiction,85,Cinemateket,Indre København,65,0,0,0,65
+6,7,22,2000,2200,Filmaften: Taxi Driver,85,Cinemateket,Indre København,65,0,0,30,65
+13,7,22,2000,2200,Filmaften: Ringenes Herre: Kongen vender tilbage,85,Cinemateket,Indre København,0,65,0,65,35
+20,7,22,2000,2200,Filmaften: Interstellar,85,Cinemateket,Indre København,0,65,35,0,0
+20,7,22,1700,2200,Cookout: Bøffer & Øller & Pøller,150,Kødbyen,Kødbyen,0,0,0,65,0
+27,7,22,1700,2200,Cookout: Burgers & Shakes,150,Kødbyen,Kødbyen,0,0,0,65,0
+26,8,22,1900,2300,Ariana Grande [support: Ella Mai] / Royal Arena,399,Royal Arena,Ørestaden,65,35,65,65,65
+3,10,22,1930,2230,"Bremer/McCoy
+",199,Bremen Teater,Vesterbro,65,0,0,0,0
+19,5,22,2000,2130,Torsdags Jazz: Arturo Serra,0,Søhesten,Indre København,65,0,0,,0
+4,7,22,2100,2230,Yussef Dayes (UK) – Copenhagen Jazz Festival 2022,300,DR Koncerthuset,Ørestaden,65,0,0,0,0
+10,6,22,1900,2200,FABRÄK ,120,Rust,Nørrebro,0,0,65,0,0
+21,5,22,1900,2300,Denzel Curry [support: Skt. DeLarge + Playthatboizay],299,Vega,Vesterbro,0,0,80,0,0
+16,6,22,1300,1600,Frugt & Juice & Sydens rytmer på Guldbergsgade ,0,Guldbergsgade,Nørrebro,65,65,0,0,0
+30,7,22,1000,2000,Fantastiske Kvinder,100,Lousiana,Indre København,80,0,65,0,0
+3,6,22,1830,2030,The Room,70,Husets Biograf,Indre København,65,35,0,65,65
+4,6,22,1100,1300,Digte i solen ft. Helle Helle,0,Østre Anlæg,Østerbro,65,0,0,0,0
+17,7,22,1845,2130,Digte med Jørgen Leth,50,Café Mellemrummet,Nørrebro,65,0,0,0,0
+14,7,22,1900,2200,Thorvaldsen og Te,50,Glyptoteket,Vesterbro,80,0,0,0,0
+26,8,22,1200,1400,Litterærer lørdage: True-Crime,25,Folkehuset Absalon,Vesterbro,15,0,0,35,65
+1,9,22,1200,1400,Litterærer lørdage: Fantasy,25,Folkehuset Absalon,Vesterbro,65,35,35,0,0
+1,6,22,1000,2000,Ny udstilling: Stenalderen,115,Naturhistorisk Museum,Indre København,80,0,0,0,0
+20,6,22,1900,2200,Chilli Klaus Talk og Chilli Smagning,150,Bremen Teater,Vesterbro,65,0,0,0,20
+24,6,22,1100,2000,Renæssancens Erotiske  Eftervirkning,65,Statens Museum For Kunst,Indre København,80,0,0,0,0
+25,6,22,1200,1500,Spicy sauce & Tacos ,0,Mexihagen,Nørrebro,0,0,0,0,20
+9,7,22,1300,2100,Den Abstrakte Erotika,100,Lousiana,Indre København,65,0,0,0,0
+9,8,22,1200,1930,Andy Warhol Udstilling,90,Statens Museum for Kunst,Indre København,65,35,0,0,65
+4,8,22,1200,1930,A History of Representational Art,90,Nationalmuseet ,Indre København,65,0,0,0,35
+15,6,22,1000,1300,Italiensk Is på Enghave Plads,0,Enghave Plads,Vesterbro,0,20,0,65,65
+11,6,22,1100,1300,En hyldest til Dan Turrèl,0,Østre Anlæg,Østerbro,65,0,0,0,0
