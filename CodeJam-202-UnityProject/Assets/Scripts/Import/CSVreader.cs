@@ -35,7 +35,7 @@ public class CSVreader : MonoBehaviour
         
         for (int i = 0; i < tableSize; i++)
         {
-            Debug.Log(int.Parse(data[(i + 1) * collumns]));
+            //Debug.Log(int.Parse(data[(i + 1) * collumns]));
             MoroEvent moro = new MoroEvent();
             Date date = new Date();
             moro.date = date;
