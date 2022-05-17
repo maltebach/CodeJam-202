@@ -802,7 +802,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 039c575089530fb4e99671fc7d9c32e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textAssetData: {fileID: 4900000, guid: 2142b47bbedcb2d4b8add8ebe3c599b2, type: 3}
+  textAssetData: {fileID: 4900000, guid: 4a5190a8b8736604b847cc560760a967, type: 3}
   moroEvents: []
 --- !u!114 &1578896461
 MonoBehaviour:
@@ -816,8 +816,256 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abbc4c0360b6e784fb8a3606527f80a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textAssetData: {fileID: 4900000, guid: e35e45914cec6424fb70212ae64ecaf5, type: 3}
-  likertScales: []
+  textAssetData: {fileID: 4900000, guid: f159a20a2b2f166409bf03f45b49d031, type: 3}
+  likertScales:
+  - title: Udadvendt & entusiastisk
+    questionType: 0
+    ffm:
+      openness: 0
+      conscientiousness: 0
+      extraversion: 1
+      agreeableness: 0
+      neuroticism: 0
+  - title: Kritisk & stridig
+    questionType: 0
+    ffm:
+      openness: 0
+      conscientiousness: 0
+      extraversion: 0
+      agreeableness: -1
+      neuroticism: 0
+  - title: "P\xE5lidelig & selv-disciplineret"
+    questionType: 0
+    ffm:
+      openness: 0
+      conscientiousness: 1
+      extraversion: 0
+      agreeableness: 0
+      neuroticism: 0
+  - title: "\xC6ngstelig & let opr\xF8rt"
+    questionType: 0
+    ffm:
+      openness: 0
+      conscientiousness: 0
+      extraversion: 0
+      agreeableness: 0
+      neuroticism: 1
+  - title: "\xC5ben for nye oplevelser & kompleks"
+    questionType: 0
+    ffm:
+      openness: 1
+      conscientiousness: 0
+      extraversion: 0
+      agreeableness: 0
+      neuroticism: 0
+  - title: Reserveret & stille
+    questionType: 0
+    ffm:
+      openness: 0
+      conscientiousness: 0
+      extraversion: -1
+      agreeableness: 0
+      neuroticism: 0
+  - title: Sympatisk & varm
+    questionType: 0
+    ffm:
+      openness: 0
+      conscientiousness: 0
+      extraversion: 0
+      agreeableness: 1
+      neuroticism: 0
+  - title: "Uorganiseret & sk\xF8desl\xF8s"
+    questionType: 0
+    ffm:
+      openness: 0
+      conscientiousness: -1
+      extraversion: 0
+      agreeableness: 0
+      neuroticism: 0
+  - title: Rolig & emotionel stabil
+    questionType: 0
+    ffm:
+      openness: 0
+      conscientiousness: 0
+      extraversion: 0
+      agreeableness: 0
+      neuroticism: -1
+  - title: konventionel & ukreativ
+    questionType: 0
+    ffm:
+      openness: -1
+      conscientiousness: 0
+      extraversion: 0
+      agreeableness: 0
+      neuroticism: 0
+  - title: Jeg kan godt lide pop-musik
+    questionType: 0
+    ffm:
+      openness: -1
+      conscientiousness: 0
+      extraversion: 1
+      agreeableness: 1
+      neuroticism: 1
+  - title: Jeg kan godt lide rap musik
+    questionType: 0
+    ffm:
+      openness: 0
+      conscientiousness: 0
+      extraversion: 1
+      agreeableness: 0
+      neuroticism: 0
+  - title: Jeg kan godt lide jazz musik
+    questionType: 0
+    ffm:
+      openness: 1
+      conscientiousness: 0
+      extraversion: 0
+      agreeableness: 0
+      neuroticism: 0
+  - title: Jeg kan godt lide alternativ musik
+    questionType: 0
+    ffm:
+      openness: 1
+      conscientiousness: 1
+      extraversion: 0
+      agreeableness: 0
+      neuroticism: 1
+  - title: Jeg kan godt lide at spise frugt
+    questionType: 0
+    ffm:
+      openness: 1
+      conscientiousness: 1
+      extraversion: 0
+      agreeableness: 0
+      neuroticism: 0
+  - title: "Jeg kan godt lide at spise k\xF8d"
+    questionType: 0
+    ffm:
+      openness: -1
+      conscientiousness: -1
+      extraversion: 1
+      agreeableness: -1
+      neuroticism: 0
+  - title: Jeg kan godt lide at drikke vin
+    questionType: 0
+    ffm:
+      openness: 1
+      conscientiousness: 0
+      extraversion: 1
+      agreeableness: -1
+      neuroticism: 0
+  - title: "Jeg kan lide at spise s\xF8d mad"
+    questionType: 0
+    ffm:
+      openness: 0
+      conscientiousness: -1
+      extraversion: 1
+      agreeableness: 0
+      neuroticism: 1
+  - title: Jeg kan godt lide animationsfilm
+    questionType: 0
+    ffm:
+      openness: 0
+      conscientiousness: -1
+      extraversion: -1
+      agreeableness: -1
+      neuroticism: 1
+  - title: Jeg kan godt lide romance film
+    questionType: 0
+    ffm:
+      openness: -1
+      conscientiousness: 0
+      extraversion: 1
+      agreeableness: 1
+      neuroticism: 0
+  - title: Jeg kan godt lide adventure film
+    questionType: 0
+    ffm:
+      openness: 0
+      conscientiousness: 1
+      extraversion: 0
+      agreeableness: 1
+      neuroticism: -1
+  - title: Jeg kan godt lide komedie film
+    questionType: 0
+    ffm:
+      openness: -1
+      conscientiousness: 0
+      extraversion: 1
+      agreeableness: 1
+      neuroticism: 0
+  - title: Jeg kan godt lide indie film
+    questionType: 0
+    ffm:
+      openness: 1
+      conscientiousness: 1
+      extraversion: 0
+      agreeableness: 0
+      neuroticism: -1
+  - title: Jeg kan godt lide action film
+    questionType: 0
+    ffm:
+      openness: -1
+      conscientiousness: 0
+      extraversion: 1
+      agreeableness: 0
+      neuroticism: 0
+  - title: Jeg kan godt lide tragedie film
+    questionType: 0
+    ffm:
+      openness: 1
+      conscientiousness: 0
+      extraversion: -1
+      agreeableness: 0
+      neuroticism: 1
+  - title: Jeg kan godt lide kult film
+    questionType: 0
+    ffm:
+      openness: 1
+      conscientiousness: -1
+      extraversion: 0
+      agreeableness: -1
+      neuroticism: 1
+  - title: Jeg kan godt lide neo-noir film
+    questionType: 0
+    ffm:
+      openness: 1
+      conscientiousness: 0
+      extraversion: -1
+      agreeableness: -1
+      neuroticism: 0
+  - title: Jeg kan godt lide science fiction film
+    questionType: 0
+    ffm:
+      openness: 0
+      conscientiousness: 1
+      extraversion: -1
+      agreeableness: 0
+      neuroticism: 0
+  - title: Jeg kan godt lide abstrakt kunst
+    questionType: 0
+    ffm:
+      openness: 1
+      conscientiousness: 0
+      extraversion: 0
+      agreeableness: 0
+      neuroticism: 1
+  - title: Jeg kan godt lide pop art
+    questionType: 0
+    ffm:
+      openness: 1
+      conscientiousness: 0
+      extraversion: 0
+      agreeableness: 0
+      neuroticism: 1
+  - title: Jeg kan godt lide folk musik
+    questionType: 0
+    ffm:
+      openness: 1
+      conscientiousness: -1
+      extraversion: 0
+      agreeableness: 1
+      neuroticism: 0
 --- !u!4 &1578896462
 Transform:
   m_ObjectHideFlags: 0
