@@ -8,7 +8,9 @@ using UnityEngine.UI;
 //https://www.youtube.com/watch?v=9gdBzbqnvPk
 public class SwipeEffect : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHandler
 {
-
+    //Used to evaluate this swipe card, added by Pil
+    public FFMData ffmLeft;
+    public FFMData ffmRight;
 
     public bool finalCard = false; //bool used later for checking if the final card is swiped
 
@@ -76,4 +78,16 @@ public class SwipeEffect : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndD
     }
 
 
+
+    public FFMData GetFFM()
+    {
+        if(_swipeLeft)
+        {
+            return ffmLeft;
+        }
+        else
+        {
+            return ffmRight;
+        }
+    }
 }

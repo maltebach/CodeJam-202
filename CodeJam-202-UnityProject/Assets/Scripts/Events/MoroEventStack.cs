@@ -47,29 +47,51 @@ public class MoroEventStack : MonoBehaviour
     /// </summary>
     public void ExpandStack()
     {
+
+
         MoroElementHandler element; //Create reference to an element handler. Currently empty.
+
+
 
         if(!lastWasQuestion) //Check to see if last element was a question. This is done to avoid having multiple questions in a row.
         {
             float rand = Random.Range(0f, 1f); //Generate a float from 0 to 1. If this number is smaller than the questionFrequency variable, we generate a question instead of an event.
-            if (rand < questionFrequency)
+            if (rand < questionFrequency && !MoroQuestionManager.instance.OutOfQuestions())
             {
                 //Define our element handler as one for a specific question.
-                element = MoroQuestionManager.instance.GetQuestion(1, GetCursor()); 
+                element = MoroQuestionManager.instance.GetQuestion(MoroQuestionManager.instance.GetNextQuestion(), GetCursor()); 
 
                 //Since we just generated a question we set lastWasQuestion to true, such that we do not generate another question right after.
                 lastWasQuestion = true;
             }
             else
             {
-                element = MoroEventManager.instance.GetBuilder(TestManager.instance.GetFilteredIndex(), GetCursor()); //Define our element handler as one for a specific event.
+                if (!MoroEventManager.instance.OutOfEvents())
+                {
+                    element = MoroEventManager.instance.GetBuilder(MoroEventManager.instance.GetNextEvent(), GetCursor()); //Define our element handler as one for a specific event.
+                }
+                else
+                {
+                    ScrollHandler.instance.StopScroll();
+                    return;
+                }
             }
         }
         else
         {
-            element = MoroEventManager.instance.GetBuilder(TestManager.instance.GetFilteredIndex(), GetCursor()); //Define our element handler as one for a specific event.
-            lastWasQuestion = false; //Set to false as we would like to be able to generate questions again.
+            if (!MoroEventManager.instance.OutOfEvents())
+            {
+                element = MoroEventManager.instance.GetBuilder(MoroEventManager.instance.GetNextEvent(), GetCursor()); //Define our element handler as one for a specific event.
+                lastWasQuestion = false; //Set to false as we would like to be able to generate questions again.
+            }
+            else
+            {
+                ScrollHandler.instance.StopScroll();
+                return;
+            }
+
         }
+
 
 
         //elements.Add(element); //Add our element handler to the interal list. This is used to keep track of the order of elements. CURRENTLY UNUSED.

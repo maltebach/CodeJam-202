@@ -614,6 +614,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sr: {fileID: 282144556}
   parentTransform: {fileID: 1651033621}
+  endPos: -1
+  stopped: 0
 --- !u!114 &1058122540
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -626,7 +628,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c014a1a2b385304a86c3a12c34f4a46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  questionFrequency: 0.25
+  questionFrequency: 1
   gap: 100
   startYOffset: 120
   debugStackCount: 3
@@ -980,7 +982,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -17, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1919637739
 MonoBehaviour:

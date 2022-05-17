@@ -32,17 +32,8 @@ public class MoroEventBuilder : MoroElement
 
     public MoroEvent moroEvent; //used primarily just to make the code look a bit cleaner.
 
-    public override void BuildElement(int index)
+    public override void BuildElement()
     {
-        moroEvent = MoroEventManager.instance.moroEvents[index];
-        UpdateEvent();
-
-    }
-
-    public void UpdateEvent()
-    {
-
-
         //Set all attributes from given event. Checks to see if the proper Game Object is present before it sets the value.
         if (eventName != null)
             eventName.text = moroEvent.eventName;
@@ -187,5 +178,10 @@ public class MoroEventBuilder : MoroElement
         //set Image
         if (eventImage != null)
             eventImage.sprite = moroEvent.eventImage;
+    }
+
+    public override void AttachElement(MoroElementHandler handler)
+    {
+        moroEvent = handler.moroEvent;
     }
 }

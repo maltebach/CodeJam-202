@@ -18,6 +18,9 @@ public class MoroElementHandler : MonoBehaviour
 
     public int referenceIndex; //Reference index makes sure the event handler knows which element is associated with the handler. This index is passed on to the built element itself
 
+    public MoroEvent moroEvent;
+
+    public MoroQuestion moroQuestion;
 
     MoroElement element; //Could be a local variable further down.
 
@@ -29,6 +32,8 @@ public class MoroElementHandler : MonoBehaviour
     RealLikertScale likert;
 
     int likertCursor = -1;
+
+    bool likertAnswered = false;
 
     private void Start()
     {
@@ -44,9 +49,16 @@ public class MoroElementHandler : MonoBehaviour
         {
             if(!isCulled)
             {
-                if (likertCursor == -1 && likert != null)
+                if (likertCursor == -1 && likert != null && likert.cursor != -1)
                 {
                     likertCursor = likert.cursor;
+                    if(!likertAnswered)
+                    {
+                        TestManager.instance.Evaluate(moroQuestion.ffm, likertCursor);
+                        MoroEventManager.instance.EvalAllEvents();
+                        likertAnswered = true;
+                    }
+
                 }
 
                 element.CullElement();
@@ -77,14 +89,17 @@ public class MoroElementHandler : MonoBehaviour
         }
         else
         {
+
+            element.AttachElement(this);
+
             float width = CanvasRef.instance.GetCanvasWidth() - (xMargin * 2); //Width is set based on the xMargin value. This is dynamic to support different screen sizes. xMargin is multiplied by 2 because there's a margin on both sides of the element and the element is placed on the middle of the screen.
-            element.BuildElement(referenceIndex); //Make sure the element knows its respective reference index so that it can tell manager objects which element it represents.
+            element.BuildElement(); //Make sure the element knows its respective reference index so that it can tell manager objects which element it represents.
       
-            if(element.IsLikert())
+            if(element.IsLikert()) //element.IsLikert() only returns true if the element is a likert question.
             {
                 likert = element.GetComponent<RealLikertScale>();
                 
-                if(likertCursor != -1)
+                //if(likertCursor != -1)
                 {
                 likert.SetLikert(likertCursor);
                 }

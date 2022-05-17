@@ -8,31 +8,13 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: Assets/Scenes/EventListeScene.unity
-    guid: c368914a0f518f04fad4110337d61ad9
-  - enabled: 0
-    path: Assets/Scenes/Pages/Front Page.unity
-    guid: 8fd7f25608668794c9c2782dbf7a863d
-  - enabled: 0
-    path: Assets/Scenes/Pages/Front Page(visual done).unity
-    guid: 637fd3c1160840040b7bf7c01837b99a
-  - enabled: 0
-    path: Assets/Scenes/Pages/Main Page.unity
-    guid: 39ce66a66d4d104489d6bbb61d3085b8
-  - enabled: 0
-    path: Assets/Scenes/Pages/End Page.unity
-    guid: 614221d580f4574409b916d1d54ad46c
-  - enabled: 0
-    path: Assets/Scenes/Likert.unity
-    guid: 0f1c1ed744cf85b4c851261bf4b839d2
-  - enabled: 0
-    path: Assets/Scenes/Likert 2.unity
-    guid: 52fd9a6f36329774ba696c89c1d13485
   - enabled: 1
-    path: Assets/Scenes/Likert TIPI.unity
-    guid: ade02e77394bff1459911b16eaea305f
+    path: Assets/Scenes/Production/Main.unity
+    guid: 2f157b2350a4fd04aa7c1f7784f5069d
   - enabled: 1
-    path: Assets/P2 (malte)/BurgerMenu.unity
-    guid: 032ad6e2c26bd874db6f9e608d4d6214
+    path: Assets/Scenes/Production/Onboarding.unity
+    guid: 376b2b9622d8bcd4da55ea16140aaa27
+  - enabled: 1
+    path: Assets/Scenes/Production/Feed.unity
+    guid: 7d8daae5a514dce4a8982b515ad8d434
   m_configObjects: {}

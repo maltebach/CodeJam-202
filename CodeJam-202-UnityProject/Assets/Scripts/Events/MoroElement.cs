@@ -12,7 +12,7 @@ public abstract class MoroElement : MonoBehaviour
     }
 
     //BuildElement is called when the element is "built", or made visible on the screen. It is cheaper to delete and rebuild elements as you scroll than to keep all elements around.
-    public virtual void BuildElement(int index)
+    public virtual void BuildElement()
     {
         Debug.LogError("BuildElement method must be defined");
     }
@@ -21,5 +21,10 @@ public abstract class MoroElement : MonoBehaviour
     public virtual bool IsLikert()
     {
         return false;
+    }
+
+    public virtual void AttachElement(MoroElementHandler handler)
+    {
+        Debug.LogError("AttachElement Method must be defined");
     }
 }
