@@ -1,0 +1,32 @@
+Question,openness,conscientiousness,extraversion,agreeableness,neuroticism,Question type
+"Udadvendt, entusiastisk",0,0,1,0,0,0
+"Kritisk, stridig",0,0,0,-1,0,0
+"Pålidelig, selv-disciplineret",0,1,0,0,0,0
+"Ængstelig, let oprørt",0,0,0,0,1,0
+"Åben for nye oplevelser, kompleks",1,0,0,0,0,0
+"Reserveret, stille",0,0,-1,0,0,0
+"Sympatisk, varm",0,0,0,1,0,0
+"Uorganiseret, skødesløs",0,-1,0,0,0,0
+"Rolig, emotionel stabil",0,0,0,0,-1,0
+"konventionel, ukreativ",-1,0,0,0,0,0
+Jeg kan godt lide pop-musik,-1,0,1,1,1,0
+Jeg kan godt lide rap musik,0,0,1,0,0,0
+Jeg kan godt lide jazz musik,1,0,0,0,0,0
+Jeg kan godt lide alternativ musik,1,1,0,0,1,0
+Jeg kan godt lide at spise frugt,1,1,0,0,0,0
+Jeg kan godt lide at spise kød,-1,-1,1,-1,0,0
+Jeg kan godt lide at drikke vin,1,0,1,-1,0,0
+Jeg kan lide at spise sød mad,0,-1,1,0,1,0
+Jeg kan godt lide animationsfilm,0,-1,-1,-1,1,0
+Jeg kan godt lide romance film,-1,0,1,1,0,0
+Jeg kan godt lide adventure film,0,1,0,1,-1,0
+Jeg kan godt lide komedie film,-1,0,1,1,0,0
+Jeg kan godt lide indie film,1,1,0,0,-1,0
+Jeg kan godt lide action film,-1,0,1,0,0,0
+Jeg kan godt lide tragedie film,1,0,-1,0,1,0
+Jeg kan godt lide kult film,1,-1,0,-1,1,0
+Jeg kan godt lide neo-noir film,1,0,-1,-1,0,0
+Jeg kan godt lide science fiction film,0,1,-1,0,0,0
+Jeg kan godt lide abstrakt kunst,1,0,0,0,1,0
+Jeg kan godt lide pop art,1,0,0,0,1,0
+Jeg kan godt lide folk musik,1,-1,0,1,0,0
