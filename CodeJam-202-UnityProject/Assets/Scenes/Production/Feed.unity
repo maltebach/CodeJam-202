@@ -628,7 +628,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c014a1a2b385304a86c3a12c34f4a46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  questionFrequency: 1
+  questionFrequency: 0.35
   gap: 100
   startYOffset: 120
   debugStackCount: 3

@@ -60,11 +60,40 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementPrefab: {fileID: 2991164599931565918, guid: 0ab9084aaeb0c7448a3508f4c15b18d7, type: 3}
   rect: {fileID: 6447829403282465485}
-  element: {fileID: 0}
   height: 1000
   xMargin: 150
   disappearBuffer: 150
   referenceIndex: 0
+  moroEvent:
+    eventName: 
+    eventDescription: 
+    price: 0
+    distance: 0
+    venue: 
+    address: 
+    eventImage: {fileID: 0}
+    ffm:
+      openness: 0
+      conscientiousness: 0
+      extraversion: 0
+      agreeableness: 0
+      neuroticism: 0
+    date:
+      day: 0
+      month: 0
+      year: 0
+      startTime: 0
+      endTime: 0
+    relatabilityValue: 0
+  moroQuestion:
+    title: 'TODO: Set title'
+    questionType: 0
+    ffm:
+      openness: 0
+      conscientiousness: 0
+      extraversion: 0
+      agreeableness: 0
+      neuroticism: 0
 --- !u!1001 &1269251234119380574
 PrefabInstance:
   m_ObjectHideFlags: 0

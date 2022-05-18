@@ -652,7 +652,7 @@ MonoBehaviour:
   eventDescription: {fileID: 0}
   eventDistance: {fileID: 0}
   eventPrice: {fileID: 8066972798161270226}
-  eventVenue: {fileID: 0}
+  eventVenue: {fileID: 3102220599727702607}
   eventAddress: {fileID: 0}
   eventDate: {fileID: 2989755337733787114}
   eventTime: {fileID: 759820417772074750}
@@ -677,6 +677,7 @@ MonoBehaviour:
       year: 0
       startTime: 0
       endTime: 0
+    relatabilityValue: 0
 --- !u!114 &2567877179808371573
 MonoBehaviour:
   m_ObjectHideFlags: 0
