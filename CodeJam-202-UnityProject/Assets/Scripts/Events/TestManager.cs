@@ -374,7 +374,7 @@ public class TestManager : MonoBehaviour
         
         float traitSubtractedByMean = ffmTrait - mean;
         float ffmAdjustmentMetric = peakAdjustment * Mathf.Exp(-((Mathf.Pow(traitSubtractedByMean,2f)) / (2 * Mathf.Pow(curveAdjustment,2f))));
-        Debug.Log(ffmAdjustmentMetric);
+        //Debug.Log(ffmAdjustmentMetric);
         return ffmAdjustmentMetric;
     }
 
