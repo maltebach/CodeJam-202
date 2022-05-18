@@ -3649,15 +3649,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89b442840f8143e41bccbd0c87556502, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  openness: 40
-  conscientiousness: 40
-  extraversion: 40
-  agreeableness: 65
-  neuroticism: 40
+  openness: 45
+  conscientiousness: 45
+  extraversion: 50
+  agreeableness: 60
+  neuroticism: 45
   likertStrengthFactor: 5
   likertNumber: 0
-  curveAdjustment: 0
-  peakAdjustment: 1.2
+  curveAdjustment: 24
+  peakAdjustment: 3.5
   mean: 50
 --- !u!4 &1898993063
 Transform:

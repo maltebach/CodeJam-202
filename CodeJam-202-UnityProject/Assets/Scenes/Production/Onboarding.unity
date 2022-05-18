@@ -1014,16 +1014,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ffmLeft:
-    openness: 0
-    conscientiousness: 0
+    openness: 1
+    conscientiousness: 1
     extraversion: 0
     agreeableness: 0
     neuroticism: 0
   ffmRight:
-    openness: 0
-    conscientiousness: 0
-    extraversion: 0
-    agreeableness: 0
+    openness: -1
+    conscientiousness: -1
+    extraversion: 1
+    agreeableness: -1
     neuroticism: 0
   finalCard: 0
 --- !u!114 &468673075
@@ -5904,10 +5904,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ffmLeft:
-    openness: 0
+    openness: 1
     conscientiousness: 0
-    extraversion: 0
-    agreeableness: 0
+    extraversion: 1
+    agreeableness: -1
     neuroticism: 0
   ffmRight:
     openness: 0
