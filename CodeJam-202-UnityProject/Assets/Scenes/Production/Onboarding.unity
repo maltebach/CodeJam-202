@@ -3883,7 +3883,7 @@ MonoBehaviour:
   swipes:
   - {fileID: 468673074}
   - {fileID: 2144602843}
-  swipeCardStrength: 7
+  swipeCardStrength: 6
 --- !u!1 &1512432574
 GameObject:
   m_ObjectHideFlags: 0
