@@ -1014,17 +1014,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ffmLeft:
-    openness: 3
+    openness: 0
     conscientiousness: 0
-    extraversion: 5
-    agreeableness: 3
-    neuroticism: -5
-  ffmRight:
-    openness: 5
-    conscientiousness: 3
     extraversion: 0
-    agreeableness: -3
-    neuroticism: -3
+    agreeableness: 0
+    neuroticism: 0
+  ffmRight:
+    openness: 0
+    conscientiousness: 0
+    extraversion: 0
+    agreeableness: 0
+    neuroticism: 0
   finalCard: 0
 --- !u!114 &468673075
 MonoBehaviour:
@@ -2015,7 +2015,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &838568822
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3883,8 +3883,6 @@ MonoBehaviour:
   swipes:
   - {fileID: 468673074}
   - {fileID: 2144602843}
-  - {fileID: 160237605}
-  - {fileID: 1667048043}
   swipeCardStrength: 7
 --- !u!1 &1512432574
 GameObject:
@@ -4677,18 +4675,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1502998728}
-        m_TargetAssemblyTypeName: LikertEval, Assembly-CSharp
-        m_MethodName: Evaluate
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 1502998726}
         m_TargetAssemblyTypeName: QuestionManager, Assembly-CSharp
         m_MethodName: NextPage
@@ -5115,7 +5101,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1972823036
 Transform:
   m_ObjectHideFlags: 0
@@ -5918,11 +5904,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ffmLeft:
-    openness: 3
-    conscientiousness: 3
-    extraversion: 3
-    agreeableness: -5
-    neuroticism: 3
+    openness: 0
+    conscientiousness: 0
+    extraversion: 0
+    agreeableness: 0
+    neuroticism: 0
   ffmRight:
     openness: 0
     conscientiousness: 0
