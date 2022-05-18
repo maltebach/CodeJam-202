@@ -3649,7 +3649,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89b442840f8143e41bccbd0c87556502, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  openness: 45
+  openness: 50
   conscientiousness: 45
   extraversion: 50
   agreeableness: 60
