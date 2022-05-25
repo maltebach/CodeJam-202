@@ -33,7 +33,7 @@ public class MoroEventStack : MonoBehaviour
     /// This just loops through a number of times to generate that amount of elements on startup. Used primarily for debug purposes.
     /// </summary>
     /// <param name="j"></param>
-    public void DebugPopulateStack(int j)
+    void DebugPopulateStack(int j)
     {
         for (int i = 0; i < j; i++)
         {
@@ -45,13 +45,9 @@ public class MoroEventStack : MonoBehaviour
     /// <summary>
     /// Used to add an element to the "stack". This method gets an element from the event or question manager objects and generates the element at the appropriate place.
     /// </summary>
-    public void ExpandStack()
+    void ExpandStack()
     {
-
-
         MoroElementHandler element; //Create reference to an element handler. Currently empty.
-
-
 
         if(!lastWasQuestion) //Check to see if last element was a question. This is done to avoid having multiple questions in a row.
         {
@@ -91,11 +87,6 @@ public class MoroEventStack : MonoBehaviour
             }
 
         }
-
-
-
-        //elements.Add(element); //Add our element handler to the interal list. This is used to keep track of the order of elements. CURRENTLY UNUSED.
-
         MoveCursor(element.height + gap); //We move the cursor the distance of our elements height and the gap we want between elements. This supports elements of differing heights.
     }
     
@@ -103,7 +94,7 @@ public class MoroEventStack : MonoBehaviour
     /// Method used to move the cursor.
     /// </summary>
     /// <param name="amount"></param>
-    public void MoveCursor(float amount)
+    void MoveCursor(float amount)
     {
         cursor -= amount; //Is turned negative as the cursor moves down the page. This is done here such that all values we use to determine how far to move the cursor can be positive.
     }
@@ -125,17 +116,17 @@ public class MoroEventStack : MonoBehaviour
     /// <returns></returns>
     bool CheckOutOfBounds()
     {
-        if((-cursor) < ScrollHandler.instance.GetScrollPos() + CanvasRef.instance.GetCanvasHeight()) //Honestly I don't remember why this works. As far as I can tell, we check if cursor is below the screen in relation to an offset based on how far the scrollview is scrolled down.
+        //Honestly I don't remember why this works. 
+        //As far as I can tell, we check if cursor is below the screen in relation to an offset based on how far the scrollview is scrolled down.
+        if ((-cursor) < ScrollHandler.instance.GetScrollPos() + CanvasRef.instance.GetCanvasHeight()) 
         {
-            //Debug.Log("Out of bounds triggered");
             return true;
         }
         return false;
     }
 
-    //We check for out of bounds, and if we hit one we expand the stack. This is currently done in FixedUpdate, as it only checks 60 times a second as opposed to potentially thousands of times per second.
-    //This does cause a slight delay on the initial elements are generated on startup if the debugStackCount value is left 0.
-    private void FixedUpdate()
+    //We check for out of bounds, and if we hit one we expand the stack.
+    private void Update()
     {
         if(CheckOutOfBounds())
         {

@@ -16,8 +16,6 @@ public class MoroElementHandler : MonoBehaviour
 
     public float disappearBuffer = 150; //This just gives a little control as to when an element disappears. Represents a buffer window after element leaves the screen (in pixels)
 
-    public int referenceIndex; //Reference index makes sure the event handler knows which element is associated with the handler. This index is passed on to the built element itself
-
     public MoroEvent moroEvent;
 
     public MoroQuestion moroQuestion;
@@ -43,9 +41,11 @@ public class MoroElementHandler : MonoBehaviour
 
     private void Update()
     {
-        //This if statement checks if the element handler is currently outside of the screen. If it is outside it will check if the associated element is culled, and if not will cull it.
+        //This if statement checks if the element handler is currently outside of the screen. 
+        //If it is outside it will check if the associated element is culled, and if not will cull it.
         //Similarly if the element handler is on screen it will make sure the element is built.
-        if(ScrollHandler.instance.GetScrollPos() > (0 + height + disappearBuffer - rect.anchoredPosition.y) || ScrollHandler.instance.GetScrollPos() < (-CanvasRef.instance.GetCanvasHeight() - disappearBuffer - rect.anchoredPosition.y))
+        if(ScrollHandler.instance.GetScrollPos() > (0 + height + disappearBuffer - rect.anchoredPosition.y) 
+            || ScrollHandler.instance.GetScrollPos() < (-CanvasRef.instance.GetCanvasHeight() - disappearBuffer - rect.anchoredPosition.y))
         {
             if(!isCulled)
             {

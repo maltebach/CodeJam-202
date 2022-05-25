@@ -30,7 +30,7 @@ public class MoroEventBuilder : MoroElement
 
     public Image eventImage;
 
-    public MoroEvent moroEvent; //used primarily just to make the code look a bit cleaner.
+    MoroEvent moroEvent; //used primarily just to make the code look a bit cleaner.
 
     public override void BuildElement()
     {

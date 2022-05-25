@@ -32,13 +32,9 @@ public class TestManager : MonoBehaviour
 
     public float likertStrengthFactor = 5;
 
-    public float likertNumber;
-
     public float curveAdjustment;
 
     public float peakAdjustment = 1.2f;
-
-    private float standardDeviationSquaredPI;
 
     public float mean = 50f;
 
@@ -55,12 +51,6 @@ public class TestManager : MonoBehaviour
             Destroy(this);
         }
     }
-
-    private void Start()
-    {
-        standardDeviationSquaredPI = curveAdjustment * Mathf.Sqrt(2 * Mathf.PI);
-    }
-
 
     public int GetFilteredIndex()
     {
@@ -82,6 +72,13 @@ public class TestManager : MonoBehaviour
     {
         // To avoid weird input errors, we clamp it to the scale values
         Mathf.Clamp(likert, 1, 7);
+
+        //If likert is 4, we can compeltely ignore the result as a likert of 4 represents a neutral answer to a likert question.
+        //If we don't do this, we would multiply the traits by 0 in the following switch statements.
+        if(likert == 4)
+        {
+            return;
+        }
 
         // Adjust ffm values by our strength factor. This determines how big an effect each question has on the final user test scores. This assumes all ffm scores are assigned as a number between -1 and 1.
         ffm.openness = ffm.openness * likertStrengthFactor;
@@ -320,7 +317,7 @@ public class TestManager : MonoBehaviour
 
             openness += ffm.openness;
 
-            openness = Mathf.Clamp(openness,0, 100);
+            openness = Mathf.Clamp(openness, 0, 100);
         }
         if (ffm.conscientiousness != 0)
         {
@@ -369,7 +366,7 @@ public class TestManager : MonoBehaviour
     /// </summary>
     /// <param name="ffmTrait"></param>
     /// <returns></returns>
-    public float GaussianCalculation(float ffmTrait)
+    private float GaussianCalculation(float ffmTrait)
     {
         
         float traitSubtractedByMean = ffmTrait - mean;

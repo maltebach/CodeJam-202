@@ -23,6 +23,8 @@ public abstract class MoroElement : MonoBehaviour
         return false;
     }
 
+    //This method is used by elements to get the relevant data required to build the element in question.
+    //e.g. a QuestionBuilder will recieve a specifc MoroQuestion and its associated data such as FFMData object and title.
     public virtual void AttachElement(MoroElementHandler handler)
     {
         Debug.LogError("AttachElement Method must be defined");

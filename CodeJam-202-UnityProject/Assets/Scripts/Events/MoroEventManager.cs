@@ -4,7 +4,7 @@ using UnityEngine;
 
 /// <summary>
 /// MoroEvent is a class that just contains data relevent to any given event.
-/// Things such as the name of the event, name of the venue, price etc.
+/// Things such as the name of the event, name of the venue, price etc. 
 /// </summary>
 [System.Serializable]
 public class MoroEvent
@@ -147,7 +147,8 @@ public class MoroEventManager : MonoBehaviour
         //We take the difference between the user test scores and the event's scores.
         if (ffm.openness != 0)      //If a trait is 0, it means the factor has no correlation with the event.
         {
-            //Taking the difference gives us a number that tells us how far the event's trait score is from the user test score. A lower number here means they are closer together and therefor more relevant for the user.
+            //Taking the difference gives us a number that tells us how far the event's trait score is from the user test score.
+            //A lower number here means they are closer together and therefor more relevant for the user.
             o = TestManager.instance.openness - ffm.openness;
 
             //We take the absolute value, as we don't want to have negative numbers in this calculation.
@@ -188,7 +189,8 @@ public class MoroEventManager : MonoBehaviour
         //We need to check if number of factors is 0, this would likely mean a mistake on the person who added the event's part.
         if (numOfFactors != 0)
         {
-            //We take the average of all of the previous calculations to end up with our single number that represents "Relatability". In reality this number just shows how close the user's test scores are to the event's scores.
+            //We take the average of all of the previous calculations to end up with our single number that represents "Relatability". 
+            //In reality this number just shows how close the user's test scores are to the event's scores.
             relatability = (o + a + e + c + n) / numOfFactors;
         }
         else
@@ -197,7 +199,8 @@ public class MoroEventManager : MonoBehaviour
             Debug.LogWarning("Event has 0 factors! Index: " + index);
 
             //We also set the relatability to 50. This number could be anything but 50 technically represents the absolute average.
-            //We do this, as otherwise it would return a relatability score of 0, also meaning it would appear first in the list always. In case an error like this makes it to production we don't want to place a random event first.
+            //We do this, as otherwise it would return a relatability score of 0, also meaning it would appear first in the list always. 
+            //In case an error like this makes it to production we don't want to place a random event first.
             relatability = 50;
         }
 
