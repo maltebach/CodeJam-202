@@ -1,3 +1,5 @@
+// This script is based off of Trevor Mocks Youtube video: https://www.youtube.com/watch?v=aUi9aijvpgs
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,8 +12,12 @@ using System.Linq;
 
 public class DataPersistenceManager : MonoBehaviour
 {
+    [Header("File Storage Config")]
+    [SerializeField] private string fileName;
+
     private GameData gameData;
     private List<IDataPersistence> dataPersistenceObjects;
+    private FileDataHandler dataHandler;
 
     public static DataPersistenceManager instance { get; private set; }
 
@@ -28,6 +34,7 @@ public class DataPersistenceManager : MonoBehaviour
     //Loads the game when started
     private void Start()
     {
+        this.dataHandler = new FileDataHandler(Application.persistentDataPath, fileName);
         this.dataPersistenceObjects = FindAllDataPersistenceObjects();
         LoadGame();
     }
@@ -39,10 +46,13 @@ public class DataPersistenceManager : MonoBehaviour
 
     public void LoadGame()
     {
+        this.gameData = dataHandler.Load();
+
         // - Load any saved data from a file using the data handler
         //if no data can be loaded, initialize to a new game
         if (this.gameData == null)
         {
+            
             Debug.Log("No data was found. Initializing data to defaults.");
             NewGame();
         }
@@ -69,7 +79,8 @@ public class DataPersistenceManager : MonoBehaviour
 
         Debug.Log("Saved death count = " + gameData.deathCount);
 
-        // TODO - save that data to a file using the data handler
+        // - save that data to a file using the data handler
+        dataHandler.Save(gameData);
     }
 
     private void OnApplicationQuit()
