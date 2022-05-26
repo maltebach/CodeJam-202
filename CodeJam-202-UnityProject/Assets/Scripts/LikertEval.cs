@@ -32,7 +32,7 @@ public class LikertEval : MonoBehaviour
     }
 
     //This method loops through all of our text objects and sets their text parameter to the correct title as defined in the moro question with the same list index.
-    public void Setup()
+    void Setup()
     {
         for (int i = 0; i < questions.Count; i++)
         {

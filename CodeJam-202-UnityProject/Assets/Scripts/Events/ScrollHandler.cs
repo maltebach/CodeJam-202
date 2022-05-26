@@ -13,8 +13,8 @@ public class ScrollHandler : MonoBehaviour
 
     public Transform parentTransform;
 
-    public float endPos = -1;
-    public bool stopped = false;
+    float endPos = -1;
+    bool stopped = false;
     //Singleton logic.
     private void Awake()
     {
@@ -54,12 +54,6 @@ public class ScrollHandler : MonoBehaviour
     public void StopScroll()
     {
         endPos = sr.verticalNormalizedPosition;
-        stopped = true;
-    }
-
-    public void StopScroll(float offset)
-    {
-        endPos = sr.verticalNormalizedPosition + offset;
         stopped = true;
     }
 }
