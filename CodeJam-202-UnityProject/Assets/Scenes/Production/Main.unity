@@ -3575,7 +3575,6 @@ MonoBehaviour:
   agreeableness: 60
   neuroticism: 45
   likertStrengthFactor: 5
-  likertNumber: 0
   curveAdjustment: 24
   peakAdjustment: 3.5
   mean: 50
