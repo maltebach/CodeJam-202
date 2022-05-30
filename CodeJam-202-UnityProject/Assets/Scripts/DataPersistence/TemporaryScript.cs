@@ -4,20 +4,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//TemporaryScript now inherits from IDataPersistence
 public class TemporaryScript : MonoBehaviour, IDataPersistence
 {
 
-   public int deathCount = 1;
+   public int fiveFactorModelScore = 1;
 
 
-    public void LoadData (GameData data)
+    public void LoadData (AppData data)
     {
-        this.deathCount = data.deathCount;
+        this.fiveFactorModelScore = data.fiveFactorModelScore;
     }
 
-    public void SaveData (ref GameData data)
-        //Actually, we do not need the 'ref' keyword in C# as non-primitive types are automatically. 
+    public void SaveData (ref AppData data)
+        //Actually, we do not need the 'ref' keyword in C# as non-primitive types
+        //are automatically passed by reference. 
     {
-        data.deathCount = this.deathCount;
+        data.fiveFactorModelScore = this.fiveFactorModelScore;
     }
 }

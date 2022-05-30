@@ -3,22 +3,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-//using System.Linq giver syntax muligheder for at finde IDataPersistence Objekter
+//using System.Linq giver syntax muligheder for at finde IDataPersistence objekter
 using System.Linq;
 
-/// <summary>
-/// 
-/// </summary>
 
 public class DataPersistenceManager : MonoBehaviour
 {
     [Header("File Storage Config")]
     [SerializeField] private string fileName;
 
-    private GameData gameData;
+    private AppData appData;
     private List<IDataPersistence> dataPersistenceObjects;
     private FileDataHandler dataHandler;
 
+    //Will be able to get the instance publicly, but change it privately.
     public static DataPersistenceManager instance { get; private set; }
 
     private void Awake()
@@ -27,65 +25,67 @@ public class DataPersistenceManager : MonoBehaviour
         {
             Debug.LogError("Found more than one Data Persistence Manager in the scene");
         }
+        //Initialize instance
         instance = this;
     }
 
 
-    //Loads the game when started
+    //Loads the FFM score when started
     private void Start()
     {
         this.dataHandler = new FileDataHandler(Application.persistentDataPath, fileName);
         this.dataPersistenceObjects = FindAllDataPersistenceObjects();
-        LoadGame();
+        LoadFFM();
     }
 
-    public void NewGame()
+    //constructs the AppData class.
+    public void NewProfile()
     {
-        this.gameData = new GameData();
+        this.appData = new AppData();
     }
 
-    public void LoadGame()
+    public void LoadFFM()
     {
-        this.gameData = dataHandler.Load();
+        this.appData = dataHandler.Load();
 
-        // - Load any saved data from a file using the data handler
-        //if no data can be loaded, initialize to a new game
-        if (this.gameData == null)
+        // Load any saved data from a file using the data handler
+        // if no data can be loaded, initialize to a new game
+        if (this.appData == null)
         {
             
             Debug.Log("No data was found. Initializing data to defaults.");
-            NewGame();
+            NewProfile();
         }
 
-        // - push the Loaded data to all other scripts that need it
+        // Push the Loaded data to all other scripts that need it
         foreach (IDataPersistence dataPersistenceObj in dataPersistenceObjects)
         {
-            dataPersistenceObj.LoadData(gameData);
+            dataPersistenceObj.LoadData(appData);
         }
-        Debug.Log("Loaded death count = " + gameData.deathCount);
+        Debug.LogFormat("Loaded FFM Score = " + appData.openness, appData.conscientiousness, appData.extraversion, appData.agreeableness, appData.neuroticism);
     }
 
 
-    public void SaveGame()
+    public void SaveFFM()
     {
-        // - pass the data to other scripts so they can update it
+        // Pass the data to other scripts so they can update it
         // (again, we are passing by 'ref' (reference) because we want to modify the value, and not only read it.
         // if we had passed without 'ref' (passing by value) it would copy the data instead).
 
         foreach(IDataPersistence dataPersistenceObj in dataPersistenceObjects)
         {
-             dataPersistenceObj.SaveData(ref gameData);
+             dataPersistenceObj.SaveData(ref appData);
         }
 
-        Debug.Log("Saved death count = " + gameData.deathCount);
+        Debug.LogFormat("Saved FFM Score = " + appData.openness, appData.conscientiousness, appData.extraversion, appData.agreeableness, appData.neuroticism);
 
         // - save that data to a file using the data handler
-        dataHandler.Save(gameData);
+        dataHandler.Save(appData);
     }
 
     private void OnApplicationQuit()
     {
-        SaveGame();
+        SaveFFM();
     }
 
     /// <summary>
