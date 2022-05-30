@@ -4,22 +4,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-//TemporaryScript now inherits from IDataPersistence
-public class TemporaryScript : MonoBehaviour, IDataPersistence
+//ExampleScript now inherits from IDataPersistence
+public class ExampleScript : MonoBehaviour, IDataPersistence
 {
 
-   public int fiveFactorModelScore = 1;
+   public int openness = 1;
 
 
     public void LoadData (AppData data)
     {
-        this.fiveFactorModelScore = data.fiveFactorModelScore;
+        this.openness = data.openness;
     }
 
     public void SaveData (ref AppData data)
         //Actually, we do not need the 'ref' keyword in C# as non-primitive types
         //are automatically passed by reference. 
     {
-        data.fiveFactorModelScore = this.fiveFactorModelScore;
+        data.openness = this.openness;
     }
 }
