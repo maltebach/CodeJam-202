@@ -13,22 +13,22 @@ public class FileDataHandler
 {
     //Directory path for where we want to save the data.
     private string dataDirPath = "";
+
     //Name of the file that we want to save to.
     private string dataFileName = "";
 
     //Public constructor
-
     public FileDataHandler(string dataDirPath, string dataFileName)
     {
         this.dataDirPath = dataDirPath;
         this.dataFileName = dataFileName;
     }
 
-    public GameData Load()
+    public AppData Load()
     {
-        //Combines the name and lcoation of the file.
+        //Combines the name and location of the file.
         string fullPath = Path.Combine(dataDirPath, dataFileName);
-        GameData loadedData = null;
+        AppData loadedData = null;
 
         // if file exist, run try/catch statement. 
         if (File.Exists(fullPath))
@@ -51,7 +51,7 @@ public class FileDataHandler
                     }
 
                     // deserialize data from JSON format back into the C# Object 
-                    loadedData = JsonUtility.FromJson<GameData>(dataToLoad);
+                    loadedData = JsonUtility.FromJson<AppData>(dataToLoad);
                 }
             }
             catch (Exception e)
@@ -64,7 +64,7 @@ public class FileDataHandler
         return loadedData;
     }
 
-    public void Save(GameData data)
+    public void Save(AppData data)
     {
         // we could use "dataDirPath + "/" + dataFileName"
         // but since different operating systems have different file seperaters "/", we can use the following: 

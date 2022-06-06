@@ -16,7 +16,7 @@ public class FFMData
 }
 
 
-public class TestManager : MonoBehaviour
+public class TestManager : MonoBehaviour, IDataPersistence
 {
     public static TestManager instance;
 
@@ -50,6 +50,24 @@ public class TestManager : MonoBehaviour
         {
             Destroy(this);
         }
+    }
+
+    public void LoadData(AppData data)
+    {
+        this.openness = data.openness;
+        this.conscientiousness = data.conscientiousness;
+        this.extraversion = data.extraversion;
+        this.agreeableness = data.agreeableness;
+        this.neuroticism = data.neuroticism;
+    }
+
+    public void SaveData(ref AppData data)
+    {
+        data.openness = this.openness;
+        data.conscientiousness = this.conscientiousness;
+        data.extraversion = this.extraversion;
+        data.agreeableness = this.agreeableness;
+        data.neuroticism = this.neuroticism;
     }
 
     public int GetFilteredIndex()
