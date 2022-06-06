@@ -555,7 +555,6 @@ GameObject:
   - component: {fileID: 1253361143755410078}
   - component: {fileID: 4505912612083892290}
   - component: {fileID: 7682529694567280851}
-  - component: {fileID: 2567877179808371573}
   m_Layer: 5
   m_Name: Event
   m_TagString: Untagged
@@ -657,42 +656,6 @@ MonoBehaviour:
   eventDate: {fileID: 2989755337733787114}
   eventTime: {fileID: 759820417772074750}
   eventImage: {fileID: 4058035818879528645}
-  moroEvent:
-    eventName: 
-    eventDescription: 
-    price: 0
-    distance: 0
-    venue: 
-    address: 
-    eventImage: {fileID: 0}
-    ffm:
-      openness: 0
-      conscientiousness: 0
-      extraversion: 0
-      agreeableness: 0
-      neuroticism: 0
-    date:
-      day: 0
-      month: 0
-      year: 0
-      startTime: 0
-      endTime: 0
-    relatabilityValue: 0
---- !u!114 &2567877179808371573
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2991164599931565918}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f0d5f21680727d949a05a558143650cd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scaledImage: {fileID: 931957455527923066}
-  margins: {x: 100, y: 100}
-  scaleFactor: {x: 20, y: 2}
 --- !u!1 &3371665517656280728
 GameObject:
   m_ObjectHideFlags: 0
