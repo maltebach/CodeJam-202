@@ -16,7 +16,7 @@ public class FFMData
 }
 
 
-public class TestManager : MonoBehaviour, IDataPersistence
+public class TestManager : MonoBehaviour
 {
     public static TestManager instance;
 
@@ -52,24 +52,6 @@ public class TestManager : MonoBehaviour, IDataPersistence
         }
     }
 
-    public void LoadData(AppData data)
-    {
-        this.openness = data.openness;
-        this.conscientiousness = data.conscientiousness;
-        this.extraversion = data.extraversion;
-        this.agreeableness = data.agreeableness;
-        this.neuroticism = data.neuroticism;
-    }
-
-    public void SaveData(ref AppData data)
-    {
-        data.openness = this.openness;
-        data.conscientiousness = this.conscientiousness;
-        data.extraversion = this.extraversion;
-        data.agreeableness = this.agreeableness;
-        data.neuroticism = this.neuroticism;
-    }
-
     public int GetFilteredIndex()
     {
         int i = -1;
@@ -98,7 +80,9 @@ public class TestManager : MonoBehaviour, IDataPersistence
             return;
         }
 
-        // Adjust ffm values by our strength factor. This determines how big an effect each question has on the final user test scores. This assumes all ffm scores are assigned as a number between -1 and 1.
+        /*
+        // Adjust ffm values by our strength factor. This determines how big an effect each question has on the final user test scores. 
+        This assumes all ffm scores are assigned as a number between -1 and 1.*/
         ffm.openness = ffm.openness * likertStrengthFactor;
         ffm.conscientiousness = ffm.conscientiousness * likertStrengthFactor;
         ffm.extraversion = ffm.extraversion * likertStrengthFactor;
